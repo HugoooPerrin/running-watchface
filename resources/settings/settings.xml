@@ -11,15 +11,24 @@
         </settingConfig>
     </setting>
 
+    <setting propertyKey="@Properties.METHOD_ID" title="@Strings.METHOD_TITLE">
+        <settingConfig type="list" >
+            <listEntry value="0">@Strings.save</listEntry>
+            <listEntry value="1">@Strings.compute</listEntry>
+        </settingConfig>
+    </setting>
+
     <setting propertyKey="@Properties.BONUS_1_ID" title="@Strings.BONUS_1_TITLE">
         <settingConfig type="list" >
             <listEntry value="0">@Strings.counter</listEntry>
             <listEntry value="1">@Strings.vo2</listEntry>
             <listEntry value="2">@Strings.avg_rhr</listEntry>
+            <listEntry value="7">@Strings.rhr</listEntry>
             <listEntry value="3">@Strings.avg_hr</listEntry>
             <listEntry value="4">@Strings.resting_time</listEntry>
             <listEntry value="5">@Strings.steps</listEntry>
             <listEntry value="6">@Strings.free_one</listEntry>
+            <listEntry value="8">@Strings.seconds</listEntry>
         </settingConfig>
     </setting>
 
@@ -28,10 +37,12 @@
             <listEntry value="0">@Strings.counter</listEntry>
             <listEntry value="1">@Strings.vo2</listEntry>
             <listEntry value="2">@Strings.avg_rhr</listEntry>
+            <listEntry value="7">@Strings.rhr</listEntry>
             <listEntry value="3">@Strings.avg_hr</listEntry>
             <listEntry value="4">@Strings.resting_time</listEntry>
             <listEntry value="5">@Strings.steps</listEntry>
             <listEntry value="6">@Strings.free_one</listEntry>
+            <listEntry value="8">@Strings.seconds</listEntry>
         </settingConfig>
     </setting>
 

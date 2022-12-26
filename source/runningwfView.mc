@@ -64,10 +64,34 @@ class runningwfView extends WatchUi.WatchFace {
 
         //-----------------------------------
         // DATA
+        var method = getApp().getProperty("METHOD_ID") as Number;
+
+        var distance = "--";
+        var time = "--";
+        var runs = "--";
+        var climbed = "--";
+
+        if (method == 0) {
+            // Get pre-computed weekly metrics
+            distance = Storage.getValue("distance");
+            time = Storage.getValue("time");
+            runs = Storage.getValue("runs");
+            climbed = Storage.getValue("climbed");
+
+        } else if (method == 1) {
+            // Compute weekly metrics
+            var window = getApp().getProperty("DATA_SOURCE_ID") as Number;
+            var running_metrics = new RunningMetrics(window);
+
+            running_metrics.compute();
+            
+            distance = running_metrics.get_distance();
+            time = running_metrics.get_time();
+            runs = running_metrics.get_runs();
+            climbed = running_metrics.get_climbed();
+        }
 
         // Elevation gain
-        var climbed = Storage.getValue("climbed");
-
         var name1 = View.findDrawableById("Name1") as Text;
         var data1 = View.findDrawableById("Data1") as Text;
         name1.setColor(getApp().getProperty("ForegroundColor") as Number);
@@ -75,8 +99,6 @@ class runningwfView extends WatchUi.WatchFace {
         data1.setText(climbed.format("%d"));
 
         // Duration
-        var time = Storage.getValue("time");
-
         var name2 = View.findDrawableById("Name2") as Text;
         var data2 = View.findDrawableById("Data2") as Text;
         name2.setColor(getApp().getProperty("ForegroundColor") as Number);
@@ -84,8 +106,6 @@ class runningwfView extends WatchUi.WatchFace {
         data2.setText(time);
 
         // Distance
-        var distance = Storage.getValue("distance");
-
         var name3 = View.findDrawableById("Name3") as Text;
         var data3 = View.findDrawableById("Data3") as Text;
         name3.setColor(getApp().getProperty("ForegroundColor") as Number);
@@ -93,8 +113,6 @@ class runningwfView extends WatchUi.WatchFace {
         data3.setText(distance);
 
         // Number of runs
-        var runs = Storage.getValue("runs");
-
         var name4 = View.findDrawableById("Name4") as Text;
         var data4 = View.findDrawableById("Data4") as Text;
         name4.setColor(getApp().getProperty("ForegroundColor") as Number);

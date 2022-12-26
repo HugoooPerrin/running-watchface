@@ -44,6 +44,14 @@ class BonusMetrics {
         // Custom data
         } else if (metric_id == 6) {
             self.compute_custom_data();
+
+        // Daily resting heart rate
+        } else if (metric_id == 7) {
+            self.compute_resting_hr();
+
+        // Seconds
+        } else if (metric_id == 8) {
+            self.compute_seconds();
         }
 
     }
@@ -141,6 +149,20 @@ class BonusMetrics {
 
         title = getApp().getProperty("NAME_ID");
         value = getApp().getProperty("DATA_ID");
+    }
+
+    function compute_resting_hr() {
+        profile = UserProfile.getProfile();
+
+        title = "rHR";
+        value = (profile.restingHeartRate != null) ? profile.restingHeartRate.format("%d") : "--";
+    }
+
+    function compute_seconds() {
+        var clockTime = System.getClockTime();
+
+        title = "Secs";
+        value = clockTime.sec.format("%02d");
     }
 }
         

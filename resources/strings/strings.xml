@@ -18,16 +18,22 @@
     <string id="week">Current week</string>
     <string id="rolling7d">Last 7 days</string>
 
+    <string id="METHOD_TITLE">Update method</string>
+    <string id="save">Pre-compute once</string>
+    <string id="compute">Compute on each update</string>
+
     <string id="BONUS_1_TITLE">1st datafield</string>
     <string id="BONUS_2_TITLE">2nd datafield</string>
 
     <string id="counter">Race countdown (define date below)</string>
     <string id="vo2">Estimated VO2max</string>
     <string id="avg_rhr">7d resting HR</string>
+    <string id="rhr">Resting HR</string>
     <string id="avg_hr">1m average HR</string>
     <string id="resting_time">Time to recovery</string>
     <string id="steps">Daily steps</string>
     <string id="free_one">Custom datafield</string>
+    <string id="seconds">Seconds</string>
 
     <string id="RACE_DATE_TITLE">Next race date</string>
     <string id="NAME_TITLE">Custom data title</string>
