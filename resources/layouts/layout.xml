@@ -1,0 +1,32 @@
+<layout id="WatchFace">
+
+    <drawable class="Background" />
+
+    <label id="HoursLabel" x="center" y="45" font="Graphics.FONT_SYSTEM_NUMBER_THAI_HOT" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="MinutesLabel" x="center" y="108" font="Graphics.FONT_SYSTEM_NUMBER_THAI_HOT" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    
+    <label id="Name1" x="40" y="162" font="Graphics.FONT_SYSTEM_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="Data1" x="40" y="137" font="Graphics.FONT_SYSTEM_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    
+    <label id="Name2" x="92" y="225" font="Graphics.FONT_SYSTEM_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="Data2" x="92" y="200" font="Graphics.FONT_SYSTEM_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    
+    <label id="Name3" x="168" y="225" font="Graphics.FONT_SYSTEM_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="Data3" x="168" y="200" font="Graphics.FONT_SYSTEM_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+
+    <label id="Name4" x="220" y="162" font="Graphics.FONT_SYSTEM_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="Data4" x="220" y="137" font="Graphics.FONT_SYSTEM_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+
+    <label id="Name5" x="219" y="73" font="Graphics.FONT_SYSTEM_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="Data5" x="219" y="90" font="Graphics.FONT_SYSTEM_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+
+    <label id="Name6" x="169" y="18" font="Graphics.FONT_SYSTEM_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="Data6" x="167" y="35" font="Graphics.FONT_SYSTEM_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+
+    <label id="Name7" x="95" y="18" font="Graphics.FONT_SYSTEM_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="Data7" x="95" y="35" font="Graphics.FONT_SYSTEM_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+
+    <label id="Name8" x="40" y="73" font="Graphics.FONT_SYSTEM_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="Data8" x="40" y="90" font="Graphics.FONT_SYSTEM_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+
+</layout>

@@ -1,0 +1,35 @@
+<strings>
+
+    <string id="AppName">runningwf</string>
+
+    <string id="VERSION_TITLE">App version</string>
+
+    <string id="BackgroundColorTitle">Background Color</string>
+    <string id="ForegroundColorTitle">Minutes Color</string>
+
+    <string id="ColorBlack">Black</string>
+    <string id="ColorDarkGray">Dark Gray</string>
+    <string id="ColorLightGray">Light Gray</string>
+    <string id="ColorWhite">White</string>
+    <string id="ColorBlue">Blue</string>
+    <string id="ColorRed">Red</string>
+
+    <string id="DATA_SOURCE_TITLE">Data source</string>
+    <string id="week">Current week</string>
+    <string id="rolling7d">Last 7 days</string>
+
+    <string id="BONUS_1_TITLE">1st datafield</string>
+    <string id="BONUS_2_TITLE">2nd datafield</string>
+
+    <string id="counter">Race countdown (define date below)</string>
+    <string id="vo2">Estimated VO2max</string>
+    <string id="avg_rhr">7d resting HR</string>
+    <string id="avg_hr">1m average HR</string>
+    <string id="resting_time">Time to recovery</string>
+    <string id="steps">Daily steps</string>
+    <string id="free_one">Custom datafield</string>
+
+    <string id="RACE_DATE_TITLE">Next race date</string>
+    <string id="NAME_TITLE">Custom data title</string>
+    <string id="DATA_TITLE">Custom data value</string>
+</strings>
