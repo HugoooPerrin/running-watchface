@@ -2,8 +2,8 @@ import Toybox.Time;
 import Toybox.Time.Gregorian;
 import Toybox.UserProfile;
 import Toybox.Math;
-import Toybox.Position;
 import Toybox.ActivityMonitor;
+import Toybox.SensorHistory;
 
 
 // BONUS METRICS CLASS
@@ -171,10 +171,13 @@ class BonusMetrics {
     }
 
     function compute_elevation() {
-        info = Position.getInfo();
+        info = SensorHistory.getElevationHistory({
+            :period => 1, 
+            :order  => 0,
+        });
 
-        title = "Alt.";
-        value = (info has :altitude && info.altitude != null) ? info.altitude.format("%d") : "--";
+        title = "Alti.";
+        value = (info != null) ? info.next().data.format("%d") : "--";
     }
 }
         
