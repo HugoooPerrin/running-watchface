@@ -34,6 +34,7 @@
     <string id="steps">Daily steps</string>
     <string id="free_one">Custom datafield</string>
     <string id="seconds">Seconds</string>
+    <string id="altitude">Altitude</string>
 
     <string id="RACE_DATE_TITLE">Next race date</string>
     <string id="NAME_TITLE">Custom data title</string>

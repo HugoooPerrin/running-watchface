@@ -1,4 +1,3 @@
-
 import Toybox.Lang;
 import Toybox.Time;
 import Toybox.Time.Gregorian;
@@ -76,13 +75,19 @@ class RunningMetrics {
 
         // Past days
         var loop = (self.n_days <= history.size()) ? self.n_days-1 : history.size();
+        var daily_floor;
         for (var i = 0; i < loop; i++) {
-            climbed += history[i].floorsClimbed * 3;
+            daily_floor = (history[i].floorsClimbed < history[i].floorsDescended) ? history[i].floorsDescended : history[i].floorsClimbed;
+            climbed += daily_floor * 3;
         }
         
         // Adding current day
         var info = ActivityMonitor.getInfo();
-        climbed += info.floorsClimbed * 3;
+        if (info.floorsClimbed < info.floorsDescended) {
+            climbed += info.floorsDescended * 3;
+        } else {
+            climbed += info.floorsClimbed * 3;
+        }
 
     }
 

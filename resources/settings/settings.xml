@@ -29,6 +29,7 @@
             <listEntry value="5">@Strings.steps</listEntry>
             <listEntry value="6">@Strings.free_one</listEntry>
             <listEntry value="8">@Strings.seconds</listEntry>
+            <listEntry value="9">@Strings.altitude</listEntry>
         </settingConfig>
     </setting>
 
@@ -43,6 +44,7 @@
             <listEntry value="5">@Strings.steps</listEntry>
             <listEntry value="6">@Strings.free_one</listEntry>
             <listEntry value="8">@Strings.seconds</listEntry>
+            <listEntry value="9">@Strings.altitude</listEntry>
         </settingConfig>
     </setting>
 

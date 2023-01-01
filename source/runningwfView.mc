@@ -14,22 +14,26 @@ class runningwfView extends WatchUi.WatchFace {
     function initialize() {
         WatchFace.initialize();
 
-        // Compute weekly metrics
-        var window = getApp().getProperty("DATA_SOURCE_ID") as Number;
-        var running_metrics = new RunningMetrics(window);
+        var method = getApp().getProperty("METHOD_ID") as Number;
 
-        running_metrics.compute();
-        
-        var distance = running_metrics.get_distance();
-        var time = running_metrics.get_time();
-        var runs = running_metrics.get_runs();
-        var climbed = running_metrics.get_climbed();
+        if (method == 0) {
+            // Compute weekly metrics
+            var window = getApp().getProperty("DATA_SOURCE_ID") as Number;
+            var running_metrics = new RunningMetrics(window);
 
-        // Store them
-        Storage.setValue("distance", distance);
-        Storage.setValue("time", time);
-        Storage.setValue("runs", runs);
-        Storage.setValue("climbed", climbed);
+            running_metrics.compute();
+            
+            var distance = running_metrics.get_distance();
+            var time = running_metrics.get_time();
+            var runs = running_metrics.get_runs();
+            var climbed = running_metrics.get_climbed();
+
+            // Store them
+            Storage.setValue("distance", distance);
+            Storage.setValue("time", time);
+            Storage.setValue("runs", runs);
+            Storage.setValue("climbed", climbed);
+        }
     }
 
     // Load your resources here
@@ -169,24 +173,26 @@ class runningwfView extends WatchUi.WatchFace {
     // memory.
     function onHide() as Void {
 
-        var data_source = getApp().getProperty("DATA_SOURCE_ID") as Number;
+        var method = getApp().getProperty("METHOD_ID") as Number;
 
-        // Compute weekly metrics
-        var window = getApp().getProperty("DATA_SOURCE_ID") as Number;
-        var running_metrics = new RunningMetrics(window);
+        if (method == 0) {
+            // Compute weekly metrics
+            var window = getApp().getProperty("DATA_SOURCE_ID") as Number;
+            var running_metrics = new RunningMetrics(window);
 
-        running_metrics.compute();
-        
-        var distance = running_metrics.get_distance();
-        var time = running_metrics.get_time();
-        var runs = running_metrics.get_runs();
-        var climbed = running_metrics.get_climbed();
+            running_metrics.compute();
+            
+            var distance = running_metrics.get_distance();
+            var time = running_metrics.get_time();
+            var runs = running_metrics.get_runs();
+            var climbed = running_metrics.get_climbed();
 
-        // Store them
-        Storage.setValue("distance", distance);
-        Storage.setValue("time", time);
-        Storage.setValue("runs", runs);
-        Storage.setValue("climbed", climbed);
+            // Store them
+            Storage.setValue("distance", distance);
+            Storage.setValue("time", time);
+            Storage.setValue("runs", runs);
+            Storage.setValue("climbed", climbed);
+        }
     }
 
     // The user has just looked at their watch. Timers and animations may be started here.

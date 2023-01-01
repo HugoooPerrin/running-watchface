@@ -2,6 +2,7 @@ import Toybox.Time;
 import Toybox.Time.Gregorian;
 import Toybox.UserProfile;
 import Toybox.Math;
+import Toybox.Position;
 import Toybox.ActivityMonitor;
 
 
@@ -52,6 +53,10 @@ class BonusMetrics {
         // Seconds
         } else if (metric_id == 8) {
             self.compute_seconds();
+
+        // Elevation
+        } else if (metric_id == 9) {
+            self.compute_elevation();
         }
 
     }
@@ -163,6 +168,13 @@ class BonusMetrics {
 
         title = "Secs";
         value = clockTime.sec.format("%02d");
+    }
+
+    function compute_elevation() {
+        info = Position.getInfo();
+
+        title = "Alt.";
+        value = (info has :altitude && info.altitude != null) ? info.altitude.format("%d") : "--";
     }
 }
         
