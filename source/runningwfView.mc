@@ -168,7 +168,10 @@ class runningwfView extends WatchUi.WatchFace {
         View.onUpdate(dc);
 
         // Hour strip
-        draw_strip(dc);
+        var hour_strip = Application.getApp().getProperty("Strip");
+        if (hour_strip) {
+            draw_strip(dc);
+        }
     }
 
     // Called when this View is removed from the screen. Save the

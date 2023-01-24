@@ -5,6 +5,8 @@
     <property id="BackgroundColor" type="number">0x000000</property>
     <property id="ForegroundColor" type="number">0xFF0000</property>
 
+    <property id="Strip" type="boolean">true</property>
+
     <property id="DATA_SOURCE_ID" type="number">0</property>
 
     <property id="METHOD_ID" type="number">0</property>

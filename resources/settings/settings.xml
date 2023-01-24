@@ -78,4 +78,8 @@
         </settingConfig>
     </setting>
 
+    <setting propertyKey="@Properties.Strip" title="@Strings.stripTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
 </settings>
