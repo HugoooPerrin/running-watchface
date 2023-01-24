@@ -166,6 +166,9 @@ class runningwfView extends WatchUi.WatchFace {
         //-----------------------------------
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
+
+        // Hour strip
+        draw_strip(dc);
     }
 
     // Called when this View is removed from the screen. Save the
