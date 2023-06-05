@@ -1,3 +1,4 @@
+import Toybox.Lang;
 import Toybox.Time;
 import Toybox.Time.Gregorian;
 import Toybox.UserProfile;
@@ -77,7 +78,7 @@ class BonusMetrics {
     }
 
     function compute_counter() {
-        var race_day = new Time.Moment(getApp().getProperty("RACE_DATE_ID") as Number);
+        var race_day = new Time.Moment(getApp().getProperty("RACE_DATE_ID") as Lang.Number);
 
         var now = Gregorian.utcInfo(Time.now(), Time.FORMAT_SHORT);
         var today = Gregorian.moment({
@@ -87,7 +88,10 @@ class BonusMetrics {
         });
     
         title = "Race";
-        value = Math.round(race_day.subtract(today).value() / 86400.0).format("%d")+"d";
+        var days = Math.round(race_day.subtract(today).value() / 86400.0);
+        var weeks = Math.floor(days / 7.0);
+
+        value = (weeks > 1) ? weeks.format("%d")+"w" : days.format("%d")+"d";
     }
 
     function compute_avg_resting_hr() {
@@ -172,8 +176,7 @@ class BonusMetrics {
 
     function compute_elevation() {
         info = SensorHistory.getElevationHistory({
-            :period => 1, 
-            :order  => 0,
+            :period => 1,
         });
 
         title = "Alti.";

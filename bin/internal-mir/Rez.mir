@@ -1,0 +1,1905 @@
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var LauncherIcon as Symbol;
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 12; ]
+    module Fonts {
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 15; ]
+    module JsonData {
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 15; ]
+        <init> {
+        }
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 18; ]
+    module Layouts {
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 18; ]
+        <init> {
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 19; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 20 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_custom_drawable_12925420821509363985.1 = local;
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_12925420821509363985.1 %tmp.1;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 22 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_HoursLabel.2 = local;
+            %tmp.7 = getm $.Toybox.WatchUi;
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            %tmp.12 = "HoursLabel";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            %tmp.17 = getm $.Toybox.Graphics;
+            %tmp.18 = getv %tmp.17 :COLOR_WHITE;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            %tmp.23 = 260;
+            %tmp.24 = 0.5;
+            %tmp.25 = mul %tmp.23 %tmp.24;
+            %tmp.26 = dup %tmp.20;
+            %tmp.27 = aputv %tmp.26 %tmp.22 %tmp.25;
+            %tmp.29 = const :locY;
+            %tmp.30 = 45;
+            %tmp.31 = dup %tmp.27;
+            %tmp.32 = aputv %tmp.31 %tmp.29 %tmp.30;
+            %tmp.34 = const :justification;
+            %tmp.35 = getm $.Toybox.Graphics;
+            %tmp.36 = getv %tmp.35 :TEXT_JUSTIFY_CENTER;
+            %tmp.37 = dup %tmp.32;
+            %tmp.38 = aputv %tmp.37 %tmp.34 %tmp.36;
+            %tmp.40 = const :font;
+            %tmp.41 = getm $.Toybox.Graphics;
+            %tmp.42 = getv %tmp.41 :FONT_SYSTEM_NUMBER_THAI_HOT;
+            %tmp.43 = dup %tmp.38;
+            %tmp.44 = aputv %tmp.43 %tmp.40 %tmp.42;
+            %tmp.5 = newc %tmp.8 (%tmp.44);
+            lputv %rez_cmp_local_text_HoursLabel.2 %tmp.5;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 24 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_MinutesLabel.3 = local;
+            %tmp.47 = getm $.Toybox.WatchUi;
+            %tmp.48 = getv function ? %tmp.47 :Text;
+            %tmp.49 = newd 6;
+            %tmp.51 = const :identifier;
+            %tmp.52 = "MinutesLabel";
+            %tmp.53 = dup %tmp.49;
+            %tmp.54 = aputv %tmp.53 %tmp.51 %tmp.52;
+            %tmp.56 = const :color;
+            %tmp.57 = getm $.Toybox.Graphics;
+            %tmp.58 = getv %tmp.57 :COLOR_WHITE;
+            %tmp.59 = dup %tmp.54;
+            %tmp.60 = aputv %tmp.59 %tmp.56 %tmp.58;
+            %tmp.62 = const :locX;
+            %tmp.63 = 260;
+            %tmp.64 = 0.5;
+            %tmp.65 = mul %tmp.63 %tmp.64;
+            %tmp.66 = dup %tmp.60;
+            %tmp.67 = aputv %tmp.66 %tmp.62 %tmp.65;
+            %tmp.69 = const :locY;
+            %tmp.70 = 108;
+            %tmp.71 = dup %tmp.67;
+            %tmp.72 = aputv %tmp.71 %tmp.69 %tmp.70;
+            %tmp.74 = const :justification;
+            %tmp.75 = getm $.Toybox.Graphics;
+            %tmp.76 = getv %tmp.75 :TEXT_JUSTIFY_CENTER;
+            %tmp.77 = dup %tmp.72;
+            %tmp.78 = aputv %tmp.77 %tmp.74 %tmp.76;
+            %tmp.80 = const :font;
+            %tmp.81 = getm $.Toybox.Graphics;
+            %tmp.82 = getv %tmp.81 :FONT_SYSTEM_NUMBER_THAI_HOT;
+            %tmp.83 = dup %tmp.78;
+            %tmp.84 = aputv %tmp.83 %tmp.80 %tmp.82;
+            %tmp.45 = newc %tmp.48 (%tmp.84);
+            lputv %rez_cmp_local_text_MinutesLabel.3 %tmp.45;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 26 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Name1.4 = local;
+            %tmp.87 = getm $.Toybox.WatchUi;
+            %tmp.88 = getv function ? %tmp.87 :Text;
+            %tmp.89 = newd 6;
+            %tmp.91 = const :identifier;
+            %tmp.92 = "Name1";
+            %tmp.93 = dup %tmp.89;
+            %tmp.94 = aputv %tmp.93 %tmp.91 %tmp.92;
+            %tmp.96 = const :color;
+            %tmp.97 = getm $.Toybox.Graphics;
+            %tmp.98 = getv %tmp.97 :COLOR_WHITE;
+            %tmp.99 = dup %tmp.94;
+            %tmp.100 = aputv %tmp.99 %tmp.96 %tmp.98;
+            %tmp.102 = const :locX;
+            %tmp.103 = 40;
+            %tmp.104 = dup %tmp.100;
+            %tmp.105 = aputv %tmp.104 %tmp.102 %tmp.103;
+            %tmp.107 = const :locY;
+            %tmp.108 = 162;
+            %tmp.109 = dup %tmp.105;
+            %tmp.110 = aputv %tmp.109 %tmp.107 %tmp.108;
+            %tmp.112 = const :justification;
+            %tmp.113 = getm $.Toybox.Graphics;
+            %tmp.114 = getv %tmp.113 :TEXT_JUSTIFY_CENTER;
+            %tmp.115 = dup %tmp.110;
+            %tmp.116 = aputv %tmp.115 %tmp.112 %tmp.114;
+            %tmp.118 = const :font;
+            %tmp.119 = getm $.Toybox.Graphics;
+            %tmp.120 = getv %tmp.119 :FONT_SYSTEM_XTINY;
+            %tmp.121 = dup %tmp.116;
+            %tmp.122 = aputv %tmp.121 %tmp.118 %tmp.120;
+            %tmp.85 = newc %tmp.88 (%tmp.122);
+            lputv %rez_cmp_local_text_Name1.4 %tmp.85;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 28 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Data1.5 = local;
+            %tmp.125 = getm $.Toybox.WatchUi;
+            %tmp.126 = getv function ? %tmp.125 :Text;
+            %tmp.127 = newd 6;
+            %tmp.129 = const :identifier;
+            %tmp.130 = "Data1";
+            %tmp.131 = dup %tmp.127;
+            %tmp.132 = aputv %tmp.131 %tmp.129 %tmp.130;
+            %tmp.134 = const :color;
+            %tmp.135 = getm $.Toybox.Graphics;
+            %tmp.136 = getv %tmp.135 :COLOR_WHITE;
+            %tmp.137 = dup %tmp.132;
+            %tmp.138 = aputv %tmp.137 %tmp.134 %tmp.136;
+            %tmp.140 = const :locX;
+            %tmp.141 = 40;
+            %tmp.142 = dup %tmp.138;
+            %tmp.143 = aputv %tmp.142 %tmp.140 %tmp.141;
+            %tmp.145 = const :locY;
+            %tmp.146 = 137;
+            %tmp.147 = dup %tmp.143;
+            %tmp.148 = aputv %tmp.147 %tmp.145 %tmp.146;
+            %tmp.150 = const :justification;
+            %tmp.151 = getm $.Toybox.Graphics;
+            %tmp.152 = getv %tmp.151 :TEXT_JUSTIFY_CENTER;
+            %tmp.153 = dup %tmp.148;
+            %tmp.154 = aputv %tmp.153 %tmp.150 %tmp.152;
+            %tmp.156 = const :font;
+            %tmp.157 = getm $.Toybox.Graphics;
+            %tmp.158 = getv %tmp.157 :FONT_SYSTEM_TINY;
+            %tmp.159 = dup %tmp.154;
+            %tmp.160 = aputv %tmp.159 %tmp.156 %tmp.158;
+            %tmp.123 = newc %tmp.126 (%tmp.160);
+            lputv %rez_cmp_local_text_Data1.5 %tmp.123;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 30 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Name2.6 = local;
+            %tmp.163 = getm $.Toybox.WatchUi;
+            %tmp.164 = getv function ? %tmp.163 :Text;
+            %tmp.165 = newd 6;
+            %tmp.167 = const :identifier;
+            %tmp.168 = "Name2";
+            %tmp.169 = dup %tmp.165;
+            %tmp.170 = aputv %tmp.169 %tmp.167 %tmp.168;
+            %tmp.172 = const :color;
+            %tmp.173 = getm $.Toybox.Graphics;
+            %tmp.174 = getv %tmp.173 :COLOR_WHITE;
+            %tmp.175 = dup %tmp.170;
+            %tmp.176 = aputv %tmp.175 %tmp.172 %tmp.174;
+            %tmp.178 = const :locX;
+            %tmp.179 = 92;
+            %tmp.180 = dup %tmp.176;
+            %tmp.181 = aputv %tmp.180 %tmp.178 %tmp.179;
+            %tmp.183 = const :locY;
+            %tmp.184 = 225;
+            %tmp.185 = dup %tmp.181;
+            %tmp.186 = aputv %tmp.185 %tmp.183 %tmp.184;
+            %tmp.188 = const :justification;
+            %tmp.189 = getm $.Toybox.Graphics;
+            %tmp.190 = getv %tmp.189 :TEXT_JUSTIFY_CENTER;
+            %tmp.191 = dup %tmp.186;
+            %tmp.192 = aputv %tmp.191 %tmp.188 %tmp.190;
+            %tmp.194 = const :font;
+            %tmp.195 = getm $.Toybox.Graphics;
+            %tmp.196 = getv %tmp.195 :FONT_SYSTEM_XTINY;
+            %tmp.197 = dup %tmp.192;
+            %tmp.198 = aputv %tmp.197 %tmp.194 %tmp.196;
+            %tmp.161 = newc %tmp.164 (%tmp.198);
+            lputv %rez_cmp_local_text_Name2.6 %tmp.161;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 32 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Data2.7 = local;
+            %tmp.201 = getm $.Toybox.WatchUi;
+            %tmp.202 = getv function ? %tmp.201 :Text;
+            %tmp.203 = newd 6;
+            %tmp.205 = const :identifier;
+            %tmp.206 = "Data2";
+            %tmp.207 = dup %tmp.203;
+            %tmp.208 = aputv %tmp.207 %tmp.205 %tmp.206;
+            %tmp.210 = const :color;
+            %tmp.211 = getm $.Toybox.Graphics;
+            %tmp.212 = getv %tmp.211 :COLOR_WHITE;
+            %tmp.213 = dup %tmp.208;
+            %tmp.214 = aputv %tmp.213 %tmp.210 %tmp.212;
+            %tmp.216 = const :locX;
+            %tmp.217 = 92;
+            %tmp.218 = dup %tmp.214;
+            %tmp.219 = aputv %tmp.218 %tmp.216 %tmp.217;
+            %tmp.221 = const :locY;
+            %tmp.222 = 200;
+            %tmp.223 = dup %tmp.219;
+            %tmp.224 = aputv %tmp.223 %tmp.221 %tmp.222;
+            %tmp.226 = const :justification;
+            %tmp.227 = getm $.Toybox.Graphics;
+            %tmp.228 = getv %tmp.227 :TEXT_JUSTIFY_CENTER;
+            %tmp.229 = dup %tmp.224;
+            %tmp.230 = aputv %tmp.229 %tmp.226 %tmp.228;
+            %tmp.232 = const :font;
+            %tmp.233 = getm $.Toybox.Graphics;
+            %tmp.234 = getv %tmp.233 :FONT_SYSTEM_TINY;
+            %tmp.235 = dup %tmp.230;
+            %tmp.236 = aputv %tmp.235 %tmp.232 %tmp.234;
+            %tmp.199 = newc %tmp.202 (%tmp.236);
+            lputv %rez_cmp_local_text_Data2.7 %tmp.199;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 34 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Name3.8 = local;
+            %tmp.239 = getm $.Toybox.WatchUi;
+            %tmp.240 = getv function ? %tmp.239 :Text;
+            %tmp.241 = newd 6;
+            %tmp.243 = const :identifier;
+            %tmp.244 = "Name3";
+            %tmp.245 = dup %tmp.241;
+            %tmp.246 = aputv %tmp.245 %tmp.243 %tmp.244;
+            %tmp.248 = const :color;
+            %tmp.249 = getm $.Toybox.Graphics;
+            %tmp.250 = getv %tmp.249 :COLOR_WHITE;
+            %tmp.251 = dup %tmp.246;
+            %tmp.252 = aputv %tmp.251 %tmp.248 %tmp.250;
+            %tmp.254 = const :locX;
+            %tmp.255 = 168;
+            %tmp.256 = dup %tmp.252;
+            %tmp.257 = aputv %tmp.256 %tmp.254 %tmp.255;
+            %tmp.259 = const :locY;
+            %tmp.260 = 225;
+            %tmp.261 = dup %tmp.257;
+            %tmp.262 = aputv %tmp.261 %tmp.259 %tmp.260;
+            %tmp.264 = const :justification;
+            %tmp.265 = getm $.Toybox.Graphics;
+            %tmp.266 = getv %tmp.265 :TEXT_JUSTIFY_CENTER;
+            %tmp.267 = dup %tmp.262;
+            %tmp.268 = aputv %tmp.267 %tmp.264 %tmp.266;
+            %tmp.270 = const :font;
+            %tmp.271 = getm $.Toybox.Graphics;
+            %tmp.272 = getv %tmp.271 :FONT_SYSTEM_XTINY;
+            %tmp.273 = dup %tmp.268;
+            %tmp.274 = aputv %tmp.273 %tmp.270 %tmp.272;
+            %tmp.237 = newc %tmp.240 (%tmp.274);
+            lputv %rez_cmp_local_text_Name3.8 %tmp.237;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 36 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Data3.9 = local;
+            %tmp.277 = getm $.Toybox.WatchUi;
+            %tmp.278 = getv function ? %tmp.277 :Text;
+            %tmp.279 = newd 6;
+            %tmp.281 = const :identifier;
+            %tmp.282 = "Data3";
+            %tmp.283 = dup %tmp.279;
+            %tmp.284 = aputv %tmp.283 %tmp.281 %tmp.282;
+            %tmp.286 = const :color;
+            %tmp.287 = getm $.Toybox.Graphics;
+            %tmp.288 = getv %tmp.287 :COLOR_WHITE;
+            %tmp.289 = dup %tmp.284;
+            %tmp.290 = aputv %tmp.289 %tmp.286 %tmp.288;
+            %tmp.292 = const :locX;
+            %tmp.293 = 168;
+            %tmp.294 = dup %tmp.290;
+            %tmp.295 = aputv %tmp.294 %tmp.292 %tmp.293;
+            %tmp.297 = const :locY;
+            %tmp.298 = 200;
+            %tmp.299 = dup %tmp.295;
+            %tmp.300 = aputv %tmp.299 %tmp.297 %tmp.298;
+            %tmp.302 = const :justification;
+            %tmp.303 = getm $.Toybox.Graphics;
+            %tmp.304 = getv %tmp.303 :TEXT_JUSTIFY_CENTER;
+            %tmp.305 = dup %tmp.300;
+            %tmp.306 = aputv %tmp.305 %tmp.302 %tmp.304;
+            %tmp.308 = const :font;
+            %tmp.309 = getm $.Toybox.Graphics;
+            %tmp.310 = getv %tmp.309 :FONT_SYSTEM_TINY;
+            %tmp.311 = dup %tmp.306;
+            %tmp.312 = aputv %tmp.311 %tmp.308 %tmp.310;
+            %tmp.275 = newc %tmp.278 (%tmp.312);
+            lputv %rez_cmp_local_text_Data3.9 %tmp.275;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 38 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Name4.10 = local;
+            %tmp.315 = getm $.Toybox.WatchUi;
+            %tmp.316 = getv function ? %tmp.315 :Text;
+            %tmp.317 = newd 6;
+            %tmp.319 = const :identifier;
+            %tmp.320 = "Name4";
+            %tmp.321 = dup %tmp.317;
+            %tmp.322 = aputv %tmp.321 %tmp.319 %tmp.320;
+            %tmp.324 = const :color;
+            %tmp.325 = getm $.Toybox.Graphics;
+            %tmp.326 = getv %tmp.325 :COLOR_WHITE;
+            %tmp.327 = dup %tmp.322;
+            %tmp.328 = aputv %tmp.327 %tmp.324 %tmp.326;
+            %tmp.330 = const :locX;
+            %tmp.331 = 220;
+            %tmp.332 = dup %tmp.328;
+            %tmp.333 = aputv %tmp.332 %tmp.330 %tmp.331;
+            %tmp.335 = const :locY;
+            %tmp.336 = 162;
+            %tmp.337 = dup %tmp.333;
+            %tmp.338 = aputv %tmp.337 %tmp.335 %tmp.336;
+            %tmp.340 = const :justification;
+            %tmp.341 = getm $.Toybox.Graphics;
+            %tmp.342 = getv %tmp.341 :TEXT_JUSTIFY_CENTER;
+            %tmp.343 = dup %tmp.338;
+            %tmp.344 = aputv %tmp.343 %tmp.340 %tmp.342;
+            %tmp.346 = const :font;
+            %tmp.347 = getm $.Toybox.Graphics;
+            %tmp.348 = getv %tmp.347 :FONT_SYSTEM_XTINY;
+            %tmp.349 = dup %tmp.344;
+            %tmp.350 = aputv %tmp.349 %tmp.346 %tmp.348;
+            %tmp.313 = newc %tmp.316 (%tmp.350);
+            lputv %rez_cmp_local_text_Name4.10 %tmp.313;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 40 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Data4.11 = local;
+            %tmp.353 = getm $.Toybox.WatchUi;
+            %tmp.354 = getv function ? %tmp.353 :Text;
+            %tmp.355 = newd 6;
+            %tmp.357 = const :identifier;
+            %tmp.358 = "Data4";
+            %tmp.359 = dup %tmp.355;
+            %tmp.360 = aputv %tmp.359 %tmp.357 %tmp.358;
+            %tmp.362 = const :color;
+            %tmp.363 = getm $.Toybox.Graphics;
+            %tmp.364 = getv %tmp.363 :COLOR_WHITE;
+            %tmp.365 = dup %tmp.360;
+            %tmp.366 = aputv %tmp.365 %tmp.362 %tmp.364;
+            %tmp.368 = const :locX;
+            %tmp.369 = 220;
+            %tmp.370 = dup %tmp.366;
+            %tmp.371 = aputv %tmp.370 %tmp.368 %tmp.369;
+            %tmp.373 = const :locY;
+            %tmp.374 = 137;
+            %tmp.375 = dup %tmp.371;
+            %tmp.376 = aputv %tmp.375 %tmp.373 %tmp.374;
+            %tmp.378 = const :justification;
+            %tmp.379 = getm $.Toybox.Graphics;
+            %tmp.380 = getv %tmp.379 :TEXT_JUSTIFY_CENTER;
+            %tmp.381 = dup %tmp.376;
+            %tmp.382 = aputv %tmp.381 %tmp.378 %tmp.380;
+            %tmp.384 = const :font;
+            %tmp.385 = getm $.Toybox.Graphics;
+            %tmp.386 = getv %tmp.385 :FONT_SYSTEM_TINY;
+            %tmp.387 = dup %tmp.382;
+            %tmp.388 = aputv %tmp.387 %tmp.384 %tmp.386;
+            %tmp.351 = newc %tmp.354 (%tmp.388);
+            lputv %rez_cmp_local_text_Data4.11 %tmp.351;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 42 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Name5.12 = local;
+            %tmp.391 = getm $.Toybox.WatchUi;
+            %tmp.392 = getv function ? %tmp.391 :Text;
+            %tmp.393 = newd 6;
+            %tmp.395 = const :identifier;
+            %tmp.396 = "Name5";
+            %tmp.397 = dup %tmp.393;
+            %tmp.398 = aputv %tmp.397 %tmp.395 %tmp.396;
+            %tmp.400 = const :color;
+            %tmp.401 = getm $.Toybox.Graphics;
+            %tmp.402 = getv %tmp.401 :COLOR_WHITE;
+            %tmp.403 = dup %tmp.398;
+            %tmp.404 = aputv %tmp.403 %tmp.400 %tmp.402;
+            %tmp.406 = const :locX;
+            %tmp.407 = 219;
+            %tmp.408 = dup %tmp.404;
+            %tmp.409 = aputv %tmp.408 %tmp.406 %tmp.407;
+            %tmp.411 = const :locY;
+            %tmp.412 = 73;
+            %tmp.413 = dup %tmp.409;
+            %tmp.414 = aputv %tmp.413 %tmp.411 %tmp.412;
+            %tmp.416 = const :justification;
+            %tmp.417 = getm $.Toybox.Graphics;
+            %tmp.418 = getv %tmp.417 :TEXT_JUSTIFY_CENTER;
+            %tmp.419 = dup %tmp.414;
+            %tmp.420 = aputv %tmp.419 %tmp.416 %tmp.418;
+            %tmp.422 = const :font;
+            %tmp.423 = getm $.Toybox.Graphics;
+            %tmp.424 = getv %tmp.423 :FONT_SYSTEM_XTINY;
+            %tmp.425 = dup %tmp.420;
+            %tmp.426 = aputv %tmp.425 %tmp.422 %tmp.424;
+            %tmp.389 = newc %tmp.392 (%tmp.426);
+            lputv %rez_cmp_local_text_Name5.12 %tmp.389;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 44 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Data5.13 = local;
+            %tmp.429 = getm $.Toybox.WatchUi;
+            %tmp.430 = getv function ? %tmp.429 :Text;
+            %tmp.431 = newd 6;
+            %tmp.433 = const :identifier;
+            %tmp.434 = "Data5";
+            %tmp.435 = dup %tmp.431;
+            %tmp.436 = aputv %tmp.435 %tmp.433 %tmp.434;
+            %tmp.438 = const :color;
+            %tmp.439 = getm $.Toybox.Graphics;
+            %tmp.440 = getv %tmp.439 :COLOR_WHITE;
+            %tmp.441 = dup %tmp.436;
+            %tmp.442 = aputv %tmp.441 %tmp.438 %tmp.440;
+            %tmp.444 = const :locX;
+            %tmp.445 = 219;
+            %tmp.446 = dup %tmp.442;
+            %tmp.447 = aputv %tmp.446 %tmp.444 %tmp.445;
+            %tmp.449 = const :locY;
+            %tmp.450 = 90;
+            %tmp.451 = dup %tmp.447;
+            %tmp.452 = aputv %tmp.451 %tmp.449 %tmp.450;
+            %tmp.454 = const :justification;
+            %tmp.455 = getm $.Toybox.Graphics;
+            %tmp.456 = getv %tmp.455 :TEXT_JUSTIFY_CENTER;
+            %tmp.457 = dup %tmp.452;
+            %tmp.458 = aputv %tmp.457 %tmp.454 %tmp.456;
+            %tmp.460 = const :font;
+            %tmp.461 = getm $.Toybox.Graphics;
+            %tmp.462 = getv %tmp.461 :FONT_SYSTEM_TINY;
+            %tmp.463 = dup %tmp.458;
+            %tmp.464 = aputv %tmp.463 %tmp.460 %tmp.462;
+            %tmp.427 = newc %tmp.430 (%tmp.464);
+            lputv %rez_cmp_local_text_Data5.13 %tmp.427;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 46 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Name6.14 = local;
+            %tmp.467 = getm $.Toybox.WatchUi;
+            %tmp.468 = getv function ? %tmp.467 :Text;
+            %tmp.469 = newd 6;
+            %tmp.471 = const :identifier;
+            %tmp.472 = "Name6";
+            %tmp.473 = dup %tmp.469;
+            %tmp.474 = aputv %tmp.473 %tmp.471 %tmp.472;
+            %tmp.476 = const :color;
+            %tmp.477 = getm $.Toybox.Graphics;
+            %tmp.478 = getv %tmp.477 :COLOR_WHITE;
+            %tmp.479 = dup %tmp.474;
+            %tmp.480 = aputv %tmp.479 %tmp.476 %tmp.478;
+            %tmp.482 = const :locX;
+            %tmp.483 = 169;
+            %tmp.484 = dup %tmp.480;
+            %tmp.485 = aputv %tmp.484 %tmp.482 %tmp.483;
+            %tmp.487 = const :locY;
+            %tmp.488 = 18;
+            %tmp.489 = dup %tmp.485;
+            %tmp.490 = aputv %tmp.489 %tmp.487 %tmp.488;
+            %tmp.492 = const :justification;
+            %tmp.493 = getm $.Toybox.Graphics;
+            %tmp.494 = getv %tmp.493 :TEXT_JUSTIFY_CENTER;
+            %tmp.495 = dup %tmp.490;
+            %tmp.496 = aputv %tmp.495 %tmp.492 %tmp.494;
+            %tmp.498 = const :font;
+            %tmp.499 = getm $.Toybox.Graphics;
+            %tmp.500 = getv %tmp.499 :FONT_SYSTEM_XTINY;
+            %tmp.501 = dup %tmp.496;
+            %tmp.502 = aputv %tmp.501 %tmp.498 %tmp.500;
+            %tmp.465 = newc %tmp.468 (%tmp.502);
+            lputv %rez_cmp_local_text_Name6.14 %tmp.465;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 48 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Data6.15 = local;
+            %tmp.505 = getm $.Toybox.WatchUi;
+            %tmp.506 = getv function ? %tmp.505 :Text;
+            %tmp.507 = newd 6;
+            %tmp.509 = const :identifier;
+            %tmp.510 = "Data6";
+            %tmp.511 = dup %tmp.507;
+            %tmp.512 = aputv %tmp.511 %tmp.509 %tmp.510;
+            %tmp.514 = const :color;
+            %tmp.515 = getm $.Toybox.Graphics;
+            %tmp.516 = getv %tmp.515 :COLOR_WHITE;
+            %tmp.517 = dup %tmp.512;
+            %tmp.518 = aputv %tmp.517 %tmp.514 %tmp.516;
+            %tmp.520 = const :locX;
+            %tmp.521 = 167;
+            %tmp.522 = dup %tmp.518;
+            %tmp.523 = aputv %tmp.522 %tmp.520 %tmp.521;
+            %tmp.525 = const :locY;
+            %tmp.526 = 35;
+            %tmp.527 = dup %tmp.523;
+            %tmp.528 = aputv %tmp.527 %tmp.525 %tmp.526;
+            %tmp.530 = const :justification;
+            %tmp.531 = getm $.Toybox.Graphics;
+            %tmp.532 = getv %tmp.531 :TEXT_JUSTIFY_CENTER;
+            %tmp.533 = dup %tmp.528;
+            %tmp.534 = aputv %tmp.533 %tmp.530 %tmp.532;
+            %tmp.536 = const :font;
+            %tmp.537 = getm $.Toybox.Graphics;
+            %tmp.538 = getv %tmp.537 :FONT_SYSTEM_TINY;
+            %tmp.539 = dup %tmp.534;
+            %tmp.540 = aputv %tmp.539 %tmp.536 %tmp.538;
+            %tmp.503 = newc %tmp.506 (%tmp.540);
+            lputv %rez_cmp_local_text_Data6.15 %tmp.503;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 50 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Name7.16 = local;
+            %tmp.543 = getm $.Toybox.WatchUi;
+            %tmp.544 = getv function ? %tmp.543 :Text;
+            %tmp.545 = newd 6;
+            %tmp.547 = const :identifier;
+            %tmp.548 = "Name7";
+            %tmp.549 = dup %tmp.545;
+            %tmp.550 = aputv %tmp.549 %tmp.547 %tmp.548;
+            %tmp.552 = const :color;
+            %tmp.553 = getm $.Toybox.Graphics;
+            %tmp.554 = getv %tmp.553 :COLOR_WHITE;
+            %tmp.555 = dup %tmp.550;
+            %tmp.556 = aputv %tmp.555 %tmp.552 %tmp.554;
+            %tmp.558 = const :locX;
+            %tmp.559 = 95;
+            %tmp.560 = dup %tmp.556;
+            %tmp.561 = aputv %tmp.560 %tmp.558 %tmp.559;
+            %tmp.563 = const :locY;
+            %tmp.564 = 18;
+            %tmp.565 = dup %tmp.561;
+            %tmp.566 = aputv %tmp.565 %tmp.563 %tmp.564;
+            %tmp.568 = const :justification;
+            %tmp.569 = getm $.Toybox.Graphics;
+            %tmp.570 = getv %tmp.569 :TEXT_JUSTIFY_CENTER;
+            %tmp.571 = dup %tmp.566;
+            %tmp.572 = aputv %tmp.571 %tmp.568 %tmp.570;
+            %tmp.574 = const :font;
+            %tmp.575 = getm $.Toybox.Graphics;
+            %tmp.576 = getv %tmp.575 :FONT_SYSTEM_XTINY;
+            %tmp.577 = dup %tmp.572;
+            %tmp.578 = aputv %tmp.577 %tmp.574 %tmp.576;
+            %tmp.541 = newc %tmp.544 (%tmp.578);
+            lputv %rez_cmp_local_text_Name7.16 %tmp.541;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 52 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Data7.17 = local;
+            %tmp.581 = getm $.Toybox.WatchUi;
+            %tmp.582 = getv function ? %tmp.581 :Text;
+            %tmp.583 = newd 6;
+            %tmp.585 = const :identifier;
+            %tmp.586 = "Data7";
+            %tmp.587 = dup %tmp.583;
+            %tmp.588 = aputv %tmp.587 %tmp.585 %tmp.586;
+            %tmp.590 = const :color;
+            %tmp.591 = getm $.Toybox.Graphics;
+            %tmp.592 = getv %tmp.591 :COLOR_WHITE;
+            %tmp.593 = dup %tmp.588;
+            %tmp.594 = aputv %tmp.593 %tmp.590 %tmp.592;
+            %tmp.596 = const :locX;
+            %tmp.597 = 95;
+            %tmp.598 = dup %tmp.594;
+            %tmp.599 = aputv %tmp.598 %tmp.596 %tmp.597;
+            %tmp.601 = const :locY;
+            %tmp.602 = 35;
+            %tmp.603 = dup %tmp.599;
+            %tmp.604 = aputv %tmp.603 %tmp.601 %tmp.602;
+            %tmp.606 = const :justification;
+            %tmp.607 = getm $.Toybox.Graphics;
+            %tmp.608 = getv %tmp.607 :TEXT_JUSTIFY_CENTER;
+            %tmp.609 = dup %tmp.604;
+            %tmp.610 = aputv %tmp.609 %tmp.606 %tmp.608;
+            %tmp.612 = const :font;
+            %tmp.613 = getm $.Toybox.Graphics;
+            %tmp.614 = getv %tmp.613 :FONT_SYSTEM_TINY;
+            %tmp.615 = dup %tmp.610;
+            %tmp.616 = aputv %tmp.615 %tmp.612 %tmp.614;
+            %tmp.579 = newc %tmp.582 (%tmp.616);
+            lputv %rez_cmp_local_text_Data7.17 %tmp.579;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 54 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Name8.18 = local;
+            %tmp.619 = getm $.Toybox.WatchUi;
+            %tmp.620 = getv function ? %tmp.619 :Text;
+            %tmp.621 = newd 6;
+            %tmp.623 = const :identifier;
+            %tmp.624 = "Name8";
+            %tmp.625 = dup %tmp.621;
+            %tmp.626 = aputv %tmp.625 %tmp.623 %tmp.624;
+            %tmp.628 = const :color;
+            %tmp.629 = getm $.Toybox.Graphics;
+            %tmp.630 = getv %tmp.629 :COLOR_WHITE;
+            %tmp.631 = dup %tmp.626;
+            %tmp.632 = aputv %tmp.631 %tmp.628 %tmp.630;
+            %tmp.634 = const :locX;
+            %tmp.635 = 40;
+            %tmp.636 = dup %tmp.632;
+            %tmp.637 = aputv %tmp.636 %tmp.634 %tmp.635;
+            %tmp.639 = const :locY;
+            %tmp.640 = 73;
+            %tmp.641 = dup %tmp.637;
+            %tmp.642 = aputv %tmp.641 %tmp.639 %tmp.640;
+            %tmp.644 = const :justification;
+            %tmp.645 = getm $.Toybox.Graphics;
+            %tmp.646 = getv %tmp.645 :TEXT_JUSTIFY_CENTER;
+            %tmp.647 = dup %tmp.642;
+            %tmp.648 = aputv %tmp.647 %tmp.644 %tmp.646;
+            %tmp.650 = const :font;
+            %tmp.651 = getm $.Toybox.Graphics;
+            %tmp.652 = getv %tmp.651 :FONT_SYSTEM_XTINY;
+            %tmp.653 = dup %tmp.648;
+            %tmp.654 = aputv %tmp.653 %tmp.650 %tmp.652;
+            %tmp.617 = newc %tmp.620 (%tmp.654);
+            lputv %rez_cmp_local_text_Name8.18 %tmp.617;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 56 12 ]
+            [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Data8.19 = local;
+            %tmp.657 = getm $.Toybox.WatchUi;
+            %tmp.658 = getv function ? %tmp.657 :Text;
+            %tmp.659 = newd 6;
+            %tmp.661 = const :identifier;
+            %tmp.662 = "Data8";
+            %tmp.663 = dup %tmp.659;
+            %tmp.664 = aputv %tmp.663 %tmp.661 %tmp.662;
+            %tmp.666 = const :color;
+            %tmp.667 = getm $.Toybox.Graphics;
+            %tmp.668 = getv %tmp.667 :COLOR_WHITE;
+            %tmp.669 = dup %tmp.664;
+            %tmp.670 = aputv %tmp.669 %tmp.666 %tmp.668;
+            %tmp.672 = const :locX;
+            %tmp.673 = 40;
+            %tmp.674 = dup %tmp.670;
+            %tmp.675 = aputv %tmp.674 %tmp.672 %tmp.673;
+            %tmp.677 = const :locY;
+            %tmp.678 = 90;
+            %tmp.679 = dup %tmp.675;
+            %tmp.680 = aputv %tmp.679 %tmp.677 %tmp.678;
+            %tmp.682 = const :justification;
+            %tmp.683 = getm $.Toybox.Graphics;
+            %tmp.684 = getv %tmp.683 :TEXT_JUSTIFY_CENTER;
+            %tmp.685 = dup %tmp.680;
+            %tmp.686 = aputv %tmp.685 %tmp.682 %tmp.684;
+            %tmp.688 = const :font;
+            %tmp.689 = getm $.Toybox.Graphics;
+            %tmp.690 = getv %tmp.689 :FONT_SYSTEM_TINY;
+            %tmp.691 = dup %tmp.686;
+            %tmp.692 = aputv %tmp.691 %tmp.688 %tmp.690;
+            %tmp.655 = newc %tmp.658 (%tmp.692);
+            lputv %rez_cmp_local_text_Data8.19 %tmp.655;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 58 12 ]
+            %tmp.693 = newa Array<WatchUi.Drawable> 19;
+            %tmp.695 = lgetv %rez_cmp_local_custom_drawable_12925420821509363985.1;
+            %tmp.696 = dup %tmp.693;
+            %tmp.697 = aputv %tmp.696 0 %tmp.695;
+            %tmp.699 = lgetv %rez_cmp_local_text_HoursLabel.2;
+            %tmp.700 = dup %tmp.697;
+            %tmp.701 = aputv %tmp.700 1 %tmp.699;
+            %tmp.703 = lgetv %rez_cmp_local_text_MinutesLabel.3;
+            %tmp.704 = dup %tmp.701;
+            %tmp.705 = aputv %tmp.704 2 %tmp.703;
+            %tmp.707 = lgetv %rez_cmp_local_text_Name1.4;
+            %tmp.708 = dup %tmp.705;
+            %tmp.709 = aputv %tmp.708 3 %tmp.707;
+            %tmp.711 = lgetv %rez_cmp_local_text_Data1.5;
+            %tmp.712 = dup %tmp.709;
+            %tmp.713 = aputv %tmp.712 4 %tmp.711;
+            %tmp.715 = lgetv %rez_cmp_local_text_Name2.6;
+            %tmp.716 = dup %tmp.713;
+            %tmp.717 = aputv %tmp.716 5 %tmp.715;
+            %tmp.719 = lgetv %rez_cmp_local_text_Data2.7;
+            %tmp.720 = dup %tmp.717;
+            %tmp.721 = aputv %tmp.720 6 %tmp.719;
+            %tmp.723 = lgetv %rez_cmp_local_text_Name3.8;
+            %tmp.724 = dup %tmp.721;
+            %tmp.725 = aputv %tmp.724 7 %tmp.723;
+            %tmp.727 = lgetv %rez_cmp_local_text_Data3.9;
+            %tmp.728 = dup %tmp.725;
+            %tmp.729 = aputv %tmp.728 8 %tmp.727;
+            %tmp.731 = lgetv %rez_cmp_local_text_Name4.10;
+            %tmp.732 = dup %tmp.729;
+            %tmp.733 = aputv %tmp.732 9 %tmp.731;
+            %tmp.735 = lgetv %rez_cmp_local_text_Data4.11;
+            %tmp.736 = dup %tmp.733;
+            %tmp.737 = aputv %tmp.736 10 %tmp.735;
+            %tmp.739 = lgetv %rez_cmp_local_text_Name5.12;
+            %tmp.740 = dup %tmp.737;
+            %tmp.741 = aputv %tmp.740 11 %tmp.739;
+            %tmp.743 = lgetv %rez_cmp_local_text_Data5.13;
+            %tmp.744 = dup %tmp.741;
+            %tmp.745 = aputv %tmp.744 12 %tmp.743;
+            %tmp.747 = lgetv %rez_cmp_local_text_Name6.14;
+            %tmp.748 = dup %tmp.745;
+            %tmp.749 = aputv %tmp.748 13 %tmp.747;
+            %tmp.751 = lgetv %rez_cmp_local_text_Data6.15;
+            %tmp.752 = dup %tmp.749;
+            %tmp.753 = aputv %tmp.752 14 %tmp.751;
+            %tmp.755 = lgetv %rez_cmp_local_text_Name7.16;
+            %tmp.756 = dup %tmp.753;
+            %tmp.757 = aputv %tmp.756 15 %tmp.755;
+            %tmp.759 = lgetv %rez_cmp_local_text_Data7.17;
+            %tmp.760 = dup %tmp.757;
+            %tmp.761 = aputv %tmp.760 16 %tmp.759;
+            %tmp.763 = lgetv %rez_cmp_local_text_Name8.18;
+            %tmp.764 = dup %tmp.761;
+            %tmp.765 = aputv %tmp.764 17 %tmp.763;
+            %tmp.767 = lgetv %rez_cmp_local_text_Data8.19;
+            %tmp.768 = dup %tmp.765;
+            %tmp.769 = aputv %tmp.768 18 %tmp.767;
+            ret %tmp.769;
+_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop:
+        }
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 62; ]
+    module Menus {
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 62; ]
+        <init> {
+        }
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 65; ]
+    module Strings {
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 65; ]
+        <init> {
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 66; @position = 27; initialized = true; ]
+        var free_one as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 67; @position = 27; initialized = true; ]
+        var ColorBlue as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 68; @position = 27; initialized = true; ]
+        var altitude as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 69; @position = 27; initialized = true; ]
+        var RACE_DATE_TITLE as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 70; @position = 27; initialized = true; ]
+        var BackgroundColorTitle as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 71; @position = 27; initialized = true; ]
+        var week as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 72; @position = 27; initialized = true; ]
+        var stripTitle as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 73; @position = 27; initialized = true; ]
+        var save as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 74; @position = 27; initialized = true; ]
+        var VERSION_TITLE as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 75; @position = 27; initialized = true; ]
+        var resting_time as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 76; @position = 27; initialized = true; ]
+        var AppName as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 77; @position = 27; initialized = true; ]
+        var compute as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 78; @position = 27; initialized = true; ]
+        var ColorRed as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 79; @position = 27; initialized = true; ]
+        var rolling7d as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 80; @position = 27; initialized = true; ]
+        var seconds as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 81; @position = 27; initialized = true; ]
+        var vo2 as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 82; @position = 27; initialized = true; ]
+        var ColorWhite as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 83; @position = 27; initialized = true; ]
+        var ColorLightGray as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 84; @position = 27; initialized = true; ]
+        var DATA_SOURCE_TITLE as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 85; @position = 27; initialized = true; ]
+        var avg_hr as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 86; @position = 27; initialized = true; ]
+        var NAME_TITLE as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 87; @position = 27; initialized = true; ]
+        var ColorDarkGray as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 88; @position = 27; initialized = true; ]
+        var ColorBlack as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 89; @position = 27; initialized = true; ]
+        var BONUS_2_TITLE as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 90; @position = 27; initialized = true; ]
+        var counter as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 91; @position = 27; initialized = true; ]
+        var steps as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 92; @position = 27; initialized = true; ]
+        var BONUS_1_TITLE as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 93; @position = 27; initialized = true; ]
+        var ForegroundColorTitle as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 94; @position = 27; initialized = true; ]
+        var METHOD_TITLE as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 95; @position = 27; initialized = true; ]
+        var DATA_TITLE as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 96; @position = 27; initialized = true; ]
+        var rhr as Symbol;
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 97; @position = 27; initialized = true; ]
+        var avg_rhr as Symbol;
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 100; ]
+    module Styles {
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 100; ]
+        <init> {
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 101; ]
+        module system_size__menu_header {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 101; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 102; @position = 18; ]
+            const width as Number = 260;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 103; @position = 18; ]
+            const height as Number = 81;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 106; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 106; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 107; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__hint_button_left_bottom.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 108; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 111; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 111; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 112; @position = 18; ]
+            const x as Number = 10;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 113; @position = 18; ]
+            const y as Number = 173;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 116; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 116; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 117; @position = 18; ]
+            const x as Number = 26;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 118; @position = 18; ]
+            const y as Number = 26;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 121; ]
+        module system_icon_dark__about {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 121; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 122; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__about.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 123; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 124; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 125; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 128; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 128; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 129; @position = 18; ]
+            const x as Number = 224;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 130; @position = 18; ]
+            const y as Number = 172;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 133; ]
+        module confirmation_color_dark__body {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 133; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 135 18 ]
+                %tmp.770 = getm $.Toybox.Graphics;
+                %tmp.771 = getv %tmp.770 :COLOR_TRANSPARENT;
+                putv self :background %tmp.771;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 134; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 135; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 138; ]
+        module system_icon_light__question {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 138; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 139; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__question.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 140; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 143; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 143; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 144; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 147; ]
+        module prompt_font__title {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 147; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 148 18 ]
+                %tmp.772 = getm $.Toybox.Graphics;
+                %tmp.773 = getv %tmp.772 :TEXT_JUSTIFY_CENTER;
+                %tmp.774 = getm $.Toybox.Graphics;
+                %tmp.775 = getv %tmp.774 :TEXT_JUSTIFY_VCENTER;
+                %tmp.776 = bitor %tmp.773 %tmp.775;
+                putv self :justification %tmp.776;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 149 18 ]
+                %tmp.777 = getm $.Toybox.Graphics;
+                %tmp.778 = getv %tmp.777 :FONT_XTINY;
+                putv self :font %tmp.778;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 148; @position = 18; ]
+            const justification;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 149; @position = 18; ]
+            const font;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 152; ]
+        module system_icon_dark__discard {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 152; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 153; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__discard.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 154; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 155; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 156; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 159; ]
+        module system_size__menu_item {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 159; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 160; @position = 18; ]
+            const width as Number = 260;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 161; @position = 18; ]
+            const height as Number = 68;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 164; ]
+        module prompt_color_dark__title {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 164; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 166 18 ]
+                %tmp.779 = getm $.Toybox.Graphics;
+                %tmp.780 = getv %tmp.779 :COLOR_TRANSPARENT;
+                putv self :background %tmp.780;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 165; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 166; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 169; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 169; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 170; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_destructive__cancel.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 171; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 174; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 174; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 175; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 176; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 179; ]
+        module system_color_dark__text {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 179; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 181 18 ]
+                %tmp.781 = getm $.Toybox.Graphics;
+                %tmp.782 = getv %tmp.781 :COLOR_TRANSPARENT;
+                putv self :background %tmp.782;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 180; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 181; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 184; ]
+        module system_icon_destructive__discard {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 184; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 185; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_destructive__discard.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 186; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 189; ]
+        module prompt_loc__title {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 189; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 190; @position = 18; ]
+            const x as Number = 26;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 191; @position = 18; ]
+            const y as Number = 19;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 194; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 194; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 195; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 196; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 199; ]
+        module prompt_color_light__title {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 199; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 201 18 ]
+                %tmp.783 = getm $.Toybox.Graphics;
+                %tmp.784 = getv %tmp.783 :COLOR_TRANSPARENT;
+                putv self :background %tmp.784;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 200; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 201; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 204; ]
+        module prompt_size__title {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 204; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 205; @position = 18; ]
+            const width as Number = 208;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 206; @position = 18; ]
+            const height as Number = 48;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 209; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 209; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 210; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 211; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 214; ]
+        module confirmation_font__body {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 214; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 215 18 ]
+                %tmp.785 = getm $.Toybox.Graphics;
+                %tmp.786 = getv %tmp.785 :TEXT_JUSTIFY_CENTER;
+                %tmp.787 = getm $.Toybox.Graphics;
+                %tmp.788 = getv %tmp.787 :TEXT_JUSTIFY_VCENTER;
+                %tmp.789 = bitor %tmp.786 %tmp.788;
+                putv self :justification %tmp.789;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 216 18 ]
+                %tmp.790 = getm $.Toybox.Graphics;
+                %tmp.791 = getv %tmp.790 :FONT_TINY;
+                putv self :font %tmp.791;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 215; @position = 18; ]
+            const justification;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 216; @position = 18; ]
+            const font;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 219; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 219; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 220; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__hint_button_left_middle.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 221; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 224; ]
+        module system_color_dark__background {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 224; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 225; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 226; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 229; ]
+        module system_icon_light__cancel {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 229; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 230; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__cancel.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 231; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 234; ]
+        module system_size__launch_icon {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 234; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 235; @position = 18; ]
+            const scaleX as Number = 40;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 236; @position = 18; ]
+            const scaleY as Number = 40;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 237; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 240; ]
+        module confirmation_input__confirm {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 240; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 241 18 ]
+                %tmp.792 = getm $.Toybox.WatchUi;
+                %tmp.793 = getv %tmp.792 :KEY_ENTER;
+                putv self :button %tmp.793;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 241; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 244; ]
+        module system_icon_light__about {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 244; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 245; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__about.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 246; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 249; ]
+        module system_size__toast_icon {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 249; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 250; @position = 18; ]
+            const scaleX as Number = 21;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 251; @position = 18; ]
+            const scaleY as Number = 21;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 252; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 255; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 255; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 256; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/confirmation_icon__hint_reject.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 257; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 260; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 260; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 261; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 262; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 265; ]
+        module prompt_font__body_with_title {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 265; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 266 18 ]
+                %tmp.794 = getm $.Toybox.Graphics;
+                %tmp.795 = getv %tmp.794 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.795;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 267 18 ]
+                %tmp.796 = getm $.Toybox.Graphics;
+                %tmp.797 = getv %tmp.796 :FONT_TINY;
+                putv self :font %tmp.797;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 266; @position = 18; ]
+            const justification;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 267; @position = 18; ]
+            const font;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 270; ]
+        module confirmation_loc__body {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 270; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 271; @position = 18; ]
+            const x as Number = 52;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 272; @position = 18; ]
+            const y as Number = 52;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 275; ]
+        module prompt_color_dark__background {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 275; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 276; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 277; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 280; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 280; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 281; @position = 18; ]
+            const x as Number = 227;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 282; @position = 18; ]
+            const y as Number = 53;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 285; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 285; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 286; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/confirmation_icon__hint_completion.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 287; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 290; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 290; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 291; @position = 18; ]
+            const x as Number = 13;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 292; @position = 18; ]
+            const y as Number = 174;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 293; @position = 18; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 296; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 296; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 297; @position = 18; ]
+            const x as Number = 1;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 298; @position = 18; ]
+            const y as Number = 109;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 301; ]
+        module activity_color_dark__background {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 301; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 302; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 303; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 306; ]
+        module prompt_size__body_no_title {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 306; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 307; @position = 18; ]
+            const width as Number = 208;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 308; @position = 18; ]
+            const height as Number = 208;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 311; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 311; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 312; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__hint_button_left_bottom.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 313; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 316; ]
+        module system_size__menu_icon {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 316; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 317; @position = 18; ]
+            const scaleX as Number = 40;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 318; @position = 18; ]
+            const scaleY as Number = 40;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 319; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 322; ]
+        module system_icon_destructive__warning {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 322; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 323; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_destructive__warning.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 324; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 327; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 327; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 328; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__hint_button_left_top.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 329; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 332; ]
+        module prompt_color_light__background {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 332; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 333; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 334; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 337; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 337; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 338; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 341; ]
+        module system_icon_dark__cancel {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 341; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 342; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__cancel.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 343; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 344; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 345; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 348; ]
+        module confirmation_input__delete {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 348; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 349 18 ]
+                %tmp.798 = getm $.Toybox.WatchUi;
+                %tmp.799 = getv %tmp.798 :KEY_ENTER;
+                putv self :button %tmp.799;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 349; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 352; ]
+        module prompt_size__body_with_title {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 352; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 353; @position = 18; ]
+            const width as Number = 208;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 354; @position = 18; ]
+            const height as Number = 156;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 357; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 357; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 358; @position = 18; ]
+            const x as Number = 224;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 359; @position = 18; ]
+            const y as Number = 50;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 362; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 362; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 363; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__hint_button_left_top.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 364; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 367; ]
+        module system_color_light__text {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 367; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 369 18 ]
+                %tmp.800 = getm $.Toybox.Graphics;
+                %tmp.801 = getv %tmp.800 :COLOR_TRANSPARENT;
+                putv self :background %tmp.801;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 368; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 369; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 372; ]
+        module system_input__action_menu {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 372; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 373 18 ]
+                %tmp.802 = getm $.Toybox.WatchUi;
+                %tmp.803 = getv %tmp.802 :KEY_ENTER;
+                putv self :button %tmp.803;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 373; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 376; ]
+        module system_icon_light__save {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 376; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 377; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__save.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 378; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 381; ]
+        module system_icon_light__check {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 381; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 382; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__check.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 383; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 386; ]
+        module prompt_color_light__body {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 386; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 388 18 ]
+                %tmp.804 = getm $.Toybox.Graphics;
+                %tmp.805 = getv %tmp.804 :COLOR_TRANSPARENT;
+                putv self :background %tmp.805;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 387; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 388; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 391; ]
+        module system_loc__subwindow {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 391; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 392; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 395; ]
+        module confirmation_input__reject {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 395; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 396 18 ]
+                %tmp.806 = getm $.Toybox.WatchUi;
+                %tmp.807 = getv %tmp.806 :KEY_DOWN;
+                putv self :button %tmp.807;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 396; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 399; ]
+        module system_icon_light__warning {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 399; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 400; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__warning.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 401; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 404; ]
+        module system_icon_light__revert {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 404; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 405; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__revert.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 406; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 409; ]
+        module system_size__subwindow {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 409; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 410; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 413; ]
+        module confirmation_color_light__body {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 413; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 415 18 ]
+                %tmp.808 = getm $.Toybox.Graphics;
+                %tmp.809 = getv %tmp.808 :COLOR_TRANSPARENT;
+                putv self :background %tmp.809;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 414; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 415; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 418; ]
+        module activity_color_light__background {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 418; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 419; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 420; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 423; ]
+        module system_icon_dark__check {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 423; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 424; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__check.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 425; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 426; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 427; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 430; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 430; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 431; @position = 18; ]
+            const x as Number = 13;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 432; @position = 18; ]
+            const y as Number = 174;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 433; @position = 18; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 436; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 436; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 437; @position = 18; ]
+            const x as Number = 208;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 438; @position = 18; ]
+            const y as Number = 50;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 441; ]
+        module system_size__screen {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 441; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 442; @position = 18; ]
+            const width as Number = 260;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 443; @position = 18; ]
+            const height as Number = 260;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 446; ]
+        module system_color_light__background {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 446; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 447; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 448; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 451; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 451; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 452; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__hint_button_left_middle.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 453; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 456; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 456; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 457; @position = 18; ]
+            const x as Number = 205;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 458; @position = 18; ]
+            const y as Number = 50;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 461; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 461; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 462; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 463; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 466; ]
+        module system_icon_dark__revert {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 466; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 467; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__revert.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 468; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 469; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 470; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 473; ]
+        module activity_color_dark__text {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 473; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 475 18 ]
+                %tmp.810 = getm $.Toybox.Graphics;
+                %tmp.811 = getv %tmp.810 :COLOR_TRANSPARENT;
+                putv self :background %tmp.811;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 474; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 475; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 478; ]
+        module confirmation_input__keep {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 478; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 479 18 ]
+                %tmp.812 = getm $.Toybox.WatchUi;
+                %tmp.813 = getv %tmp.812 :KEY_DOWN;
+                putv self :button %tmp.813;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 479; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 482; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 482; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 483; @position = 18; ]
+            const x as Number = 26;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 484; @position = 18; ]
+            const y as Number = 78;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 487; ]
+        module system_icon_dark__question {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 487; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 488; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__question.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 489; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 490; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 491; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 494; ]
+        module system_icon_light__discard {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 494; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 495; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__discard.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 496; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 499; ]
+        module device_info {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 499; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 501 18 ]
+                %tmp.814 = getm $.Toybox.System;
+                %tmp.815 = getv %tmp.814 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.815;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 500; @position = 18; ]
+            const screenWidth as Number = 260;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 501; @position = 18; ]
+            const screenShape;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 502; @position = 18; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 503; @position = 18; ]
+            const screenHeight as Number = 260;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 504; @position = 18; ]
+            const hasTouchScreen as Boolean = true;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 507; ]
+        module system_icon_dark__search {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 507; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 508; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__search.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 509; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 510; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 511; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 514; ]
+        module activity_color_light__text {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 514; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 516 18 ]
+                %tmp.816 = getm $.Toybox.Graphics;
+                %tmp.817 = getv %tmp.816 :COLOR_TRANSPARENT;
+                putv self :background %tmp.817;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 515; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 516; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 519; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 519; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 520; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/confirmation_icon__hint_keep.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 521; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 524; ]
+        module system_icon_dark__save {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 524; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 525; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__save.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 526; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 527; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 528; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 531; ]
+        module prompt_font__body_no_title {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 531; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 532 18 ]
+                %tmp.818 = getm $.Toybox.Graphics;
+                %tmp.819 = getv %tmp.818 :TEXT_JUSTIFY_CENTER;
+                %tmp.820 = getm $.Toybox.Graphics;
+                %tmp.821 = getv %tmp.820 :TEXT_JUSTIFY_VCENTER;
+                %tmp.822 = bitor %tmp.819 %tmp.821;
+                putv self :justification %tmp.822;
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 533 18 ]
+                %tmp.823 = getm $.Toybox.Graphics;
+                %tmp.824 = getv %tmp.823 :FONT_TINY;
+                putv self :font %tmp.824;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 532; @position = 18; ]
+            const justification;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 533; @position = 18; ]
+            const font;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 536; ]
+        module system_icon_light__search {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 536; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 537; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__search.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 538; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 541; ]
+        module prompt_size__title_icon {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 541; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 542; @position = 18; ]
+            const scaleX as Float = 0.1539;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 543; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 546; ]
+        module system_icon_dark__warning {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 546; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 547; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_dark__warning.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 548; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 549; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 550; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 553; ]
+        module prompt_loc__title_icon {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 553; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 554; @position = 18; ]
+            const x as Number = 130;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 555; @position = 18; ]
+            const y as Number = 39;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 556; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 557; @position = 18; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 560; ]
+        module prompt_color_dark__body {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 560; ]
+            <init> {
+[ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 562 18 ]
+                %tmp.825 = getm $.Toybox.Graphics;
+                %tmp.826 = getv %tmp.825 :COLOR_TRANSPARENT;
+                putv self :background %tmp.826;
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 561; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 562; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 565; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 565; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 566; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/confirmation_icon__hint_delete.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 567; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 570; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 570; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 571; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 572; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 575; ]
+        module confirmation_size__body {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 575; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 576; @position = 18; ]
+            const width as Number = 156;
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 577; @position = 18; ]
+            const height as Number = 156;
+        }
+        [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 580; ]
+        module system_icon_positive__check {
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 580; ]
+            <init> {
+            }
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 581; @position = 18; ]
+            const filename as String = "/home/hugo/.Garmin/ConnectIQ/Devices/fr255/system_icon_positive__check.svg";
+            [ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 582; @position = 18; ]
+            const dithering as String = "none";
+        }
+    }
+}
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}

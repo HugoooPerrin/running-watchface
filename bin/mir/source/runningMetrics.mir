@@ -1,0 +1,468 @@
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 2; ]
+import Toybox.Time;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 3; ]
+import Toybox.Time.Gregorian;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 4; ]
+import Toybox.UserProfile;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 5; ]
+import Toybox.Math;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 6; ]
+import Toybox.ActivityMonitor;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 10; ]
+class RunningMetrics{
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 10; ]
+    <init> {
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 10; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 13; @position = 8; ]
+    var distance;
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 14; @position = 8; ]
+    var duration;
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 15; @position = 8; ]
+    var runs;
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 16; @position = 8; ]
+    var climbed;
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 17; @position = 8; ]
+    var n_days;
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 20; ]
+    function initialize(window) as Void {
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_20_32_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 23 8 ]
+        %tmp.1 = 0;
+        putv self :distance %tmp.1;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 24 8 ]
+        %tmp.2 = 0;
+        putv self :duration %tmp.2;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 25 8 ]
+        %tmp.3 = 0;
+        putv self :runs %tmp.3;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 26 8 ]
+        %tmp.4 = 0;
+        putv self :climbed %tmp.4;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 29 8 ]
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_29_17_begin:
+        %tmp.6 = lgetv %window;
+        %tmp.7 = 0;
+        %tmp.8 = eq %tmp.6 %tmp.7;
+        bf %tmp.8 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_29_17_false;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_29_17_true:
+        %tmp.9 = self;
+        %tmp.10 = getv function %tmp.9 :get_day_of_week;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        push %tmp.11;
+        goto @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_29_17_end;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_29_17_false:
+        %tmp.12 = 7;
+        push %tmp.12;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_29_17_end:
+        %tmp.13 = phi [%tmp.8 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_29_17_begin] [%tmp.11 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_29_17_true] [%tmp.12 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_29_17_false] [%tmp.13 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_29_17_end];
+        putv self :n_days %tmp.13;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_20_32_stop:
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 32; ]
+    function get_n_days_id(n_days) {
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_32_35_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 33 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_32_35_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_32_35_stop" ]
+        %n_days_secs.1 = local;
+        %tmp.3 = getm $.Toybox.Time;
+        %tmp.4 = getv function ? %tmp.3 :Duration;
+        %tmp.5 = 1;
+        %tmp.6 = sub 0 %tmp.5;
+        %tmp.8 = lgetv %n_days;
+        %tmp.9 = 1;
+        %tmp.10 = sub %tmp.8 %tmp.9;
+        %tmp.11 = mul %tmp.6 %tmp.10;
+        %tmp.12 = getm $.Toybox.Time.Gregorian;
+        %tmp.13 = getv %tmp.12 :SECONDS_PER_DAY;
+        %tmp.14 = mul %tmp.11 %tmp.13;
+        %tmp.1 = newc %tmp.4 (%tmp.14);
+        lputv %n_days_secs.1 %tmp.1;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 34 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_32_35_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_32_35_stop" ]
+        %n_days_info.2 = local;
+        %tmp.15 = getm $.Toybox.Time.Gregorian;
+        %tmp.16 = getv function %tmp.15 :utcInfo;
+        %tmp.17 = getm $.Toybox.Time;
+        %tmp.18 = getv function %tmp.17 :now;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = getv function %tmp.19 :add;
+        %tmp.22 = lgetv %n_days_secs.1;
+        %tmp.23 = invoke %tmp.19 %tmp.20(%tmp.22);
+        %tmp.24 = getm $.Toybox.Time;
+        %tmp.25 = getv %tmp.24 :FORMAT_SHORT;
+        %tmp.26 = invoke %tmp.15 %tmp.16(%tmp.23, %tmp.25);
+        lputv %n_days_info.2 %tmp.26;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 35 8 ]
+        %tmp.27 = getm $.Toybox.Time.Gregorian;
+        %tmp.28 = getv function %tmp.27 :moment;
+        %tmp.29 = newd 5;
+        %tmp.31 = const :year;
+        %tmp.32 = lgetv %n_days_info.2;
+        %tmp.33 = getv %tmp.32 :year;
+        %tmp.34 = dup %tmp.29;
+        %tmp.35 = aputv %tmp.34 %tmp.31 %tmp.33;
+        %tmp.37 = const :month;
+        %tmp.38 = lgetv %n_days_info.2;
+        %tmp.39 = getv %tmp.38 :month;
+        %tmp.40 = dup %tmp.35;
+        %tmp.41 = aputv %tmp.40 %tmp.37 %tmp.39;
+        %tmp.43 = const :day;
+        %tmp.44 = lgetv %n_days_info.2;
+        %tmp.45 = getv %tmp.44 :day;
+        %tmp.46 = dup %tmp.41;
+        %tmp.47 = aputv %tmp.46 %tmp.43 %tmp.45;
+        %tmp.49 = const :hour;
+        %tmp.50 = 0;
+        %tmp.51 = dup %tmp.47;
+        %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+        %tmp.54 = const :minute;
+        %tmp.55 = 1;
+        %tmp.56 = dup %tmp.52;
+        %tmp.57 = aputv %tmp.56 %tmp.54 %tmp.55;
+        %tmp.58 = invoke %tmp.27 %tmp.28(%tmp.57);
+        ret %tmp.58;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_32_35_stop:
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 44; ]
+    function compute() {
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_44_23_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 49 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_44_23_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_44_23_stop" ]
+        %n_days_id.1 = local;
+        %tmp.1 = lgetv %self;
+        %tmp.2 = getv function %tmp.1 :get_n_days_id;
+        %tmp.3 = lgetv %self;
+        %tmp.4 = getv %tmp.3 :n_days;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
+        lputv %n_days_id.1 %tmp.5;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 52 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_44_23_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_44_23_stop" ]
+        %activityIterator.2 = local;
+        %tmp.6 = getm $.Toybox.UserProfile;
+        %tmp.7 = getv function %tmp.6 :getUserActivityHistory;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %activityIterator.2 %tmp.8;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 54 8 ]
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_54_8_if_stmt:
+        %tmp.10 = lgetv %activityIterator.2;
+        %tmp.11 = null;
+        %tmp.12 = ne %tmp.10 %tmp.11;
+        bf %tmp.12 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_54_8_if_end;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_54_8_if_true:
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_54_38_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 57 12 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_54_38_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_54_38_stop" ]
+        %activity.3 = local;
+        %tmp.13 = lgetv %activityIterator.2;
+        %tmp.14 = as %tmp.13 { (!Null) };
+        %tmp.15 = getv function %tmp.14 :next;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        lputv %activity.3 %tmp.16;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 59 12 ]
+        while @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_59_12_while_test @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_59_12_while_end;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_59_12_while_test:
+        %tmp.18 = lgetv %activity.3;
+        %tmp.19 = null;
+        %tmp.20 = ne %tmp.18 %tmp.19;
+        bf %tmp.20 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_59_12_while_end;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_59_12_while_begin:
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_59_37_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 61 16 ]
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_61_16_if_stmt:
+        %tmp.21 = lgetv %activity.3;
+        %tmp.22 = as %tmp.21 { (!Null) };
+        %tmp.23 = getv %tmp.22 :type;
+        %tmp.24 = 1;
+        %tmp.25 = eq %tmp.23 %tmp.24;
+        %tmp.26 = lgetv %activity.3;
+        %tmp.27 = as %tmp.26 { (!Null) };
+        %tmp.28 = getv %tmp.27 :startTime;
+        %tmp.29 = getv function %tmp.28 :greaterThan;
+        %tmp.31 = lgetv %n_days_id.1;
+        %tmp.32 = invoke %tmp.28 %tmp.29(%tmp.31);
+        %tmp.33 = bitand %tmp.25 %tmp.32;
+        bf %tmp.33 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_61_16_if_end;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_61_16_if_true:
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_61_86_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 64 20 ]
+        %tmp.34 = getv self :distance;
+        %tmp.35 = lgetv %activity.3;
+        %tmp.36 = as %tmp.35 { (!Null) };
+        %tmp.37 = getv %tmp.36 :distance;
+        %tmp.38 = add %tmp.34 %tmp.37;
+        putv self :distance dup %tmp.38;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 65 20 ]
+        %tmp.39 = getv self :duration;
+        %tmp.40 = lgetv %activity.3;
+        %tmp.41 = as %tmp.40 { (!Null) };
+        %tmp.42 = getv %tmp.41 :duration;
+        %tmp.43 = add %tmp.39 %tmp.42;
+        putv self :duration dup %tmp.43;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 66 20 ]
+        %tmp.46 = getv ? :runs;
+        %tmp.47 = add %tmp.46 1;
+        putv self :runs dup %tmp.47;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_61_86_stop:
+        goto @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_61_16_if_end;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_61_16_if_end:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 68 16 ]
+        %tmp.48 = lgetv %activityIterator.2;
+        %tmp.49 = as %tmp.48 { (!Null) };
+        %tmp.50 = getv function %tmp.49 :next;
+        %tmp.51 = invoke %tmp.49 %tmp.50();
+        lputv %activity.3 %tmp.51;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_59_37_stop:
+        goto @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_59_12_while_test;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_59_12_while_end:
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_54_38_stop:
+        goto @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_54_8_if_end;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_54_8_if_end:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 74 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_44_23_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_44_23_stop" ]
+        %history.4 = local;
+        %tmp.52 = getm $.Toybox.ActivityMonitor;
+        %tmp.53 = getv function %tmp.52 :getHistory;
+        %tmp.54 = invoke %tmp.52 %tmp.53();
+        lputv %history.4 %tmp.54;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 77 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_44_23_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_44_23_stop" ]
+        %loop.5 = local;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_77_19_begin:
+        %tmp.55 = lgetv %self;
+        %tmp.56 = getv %tmp.55 :n_days;
+        %tmp.57 = lgetv %history.4;
+        %tmp.58 = getv function %tmp.57 :size;
+        %tmp.59 = invoke %tmp.57 %tmp.58();
+        %tmp.60 = lte %tmp.56 %tmp.59;
+        bf %tmp.60 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_77_19_false;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_77_19_true:
+        %tmp.61 = lgetv %self;
+        %tmp.62 = getv %tmp.61 :n_days;
+        %tmp.63 = 1;
+        %tmp.64 = sub %tmp.62 %tmp.63;
+        push %tmp.64;
+        goto @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_77_19_end;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_77_19_false:
+        %tmp.65 = lgetv %history.4;
+        %tmp.66 = getv function %tmp.65 :size;
+        %tmp.67 = invoke %tmp.65 %tmp.66();
+        push %tmp.67;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_77_19_end:
+        %tmp.68 = phi [%tmp.60 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_77_19_begin] [%tmp.64 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_77_19_true] [%tmp.67 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_77_19_false] [%tmp.68 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_77_19_end];
+        lputv %loop.5 %tmp.68;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 78 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_44_23_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_44_23_stop" ]
+        %daily_floor.6 = local;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 79 8 ]
+        for @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_79_8_for_test @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_79_8_for_incr @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_79_8_for_end;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_79_8_for_init:
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_79_8_for_begin" "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_79_8_for_end" ]
+        %i.7 = local;
+        %tmp.69 = 0;
+        lputv %i.7 %tmp.69;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_79_8_for_test:
+        %tmp.71 = lgetv %i.7;
+        %tmp.73 = lgetv %loop.5;
+        %tmp.74 = lt %tmp.71 %tmp.73;
+        bf %tmp.74 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_79_8_for_end;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_79_8_for_begin:
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_79_39_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 80 12 ]
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_80_26_begin:
+        %tmp.76 = lgetv %history.4;
+        %tmp.78 = lgetv %i.7;
+        %tmp.79 = agetv %tmp.76 %tmp.78;
+        %tmp.80 = getv %tmp.79 :floorsClimbed;
+        %tmp.82 = lgetv %history.4;
+        %tmp.84 = lgetv %i.7;
+        %tmp.85 = agetv %tmp.82 %tmp.84;
+        %tmp.86 = getv %tmp.85 :floorsDescended;
+        %tmp.87 = lt %tmp.80 %tmp.86;
+        bf %tmp.87 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_80_26_false;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_80_26_true:
+        %tmp.89 = lgetv %history.4;
+        %tmp.91 = lgetv %i.7;
+        %tmp.92 = agetv %tmp.89 %tmp.91;
+        %tmp.93 = getv %tmp.92 :floorsDescended;
+        push %tmp.93;
+        goto @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_80_26_end;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_80_26_false:
+        %tmp.95 = lgetv %history.4;
+        %tmp.97 = lgetv %i.7;
+        %tmp.98 = agetv %tmp.95 %tmp.97;
+        %tmp.99 = getv %tmp.98 :floorsClimbed;
+        push %tmp.99;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_80_26_end:
+        %tmp.100 = phi [%tmp.87 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_80_26_begin] [%tmp.93 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_80_26_true] [%tmp.99 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_80_26_false] [%tmp.100 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_80_26_end];
+        lputv %daily_floor.6 %tmp.100;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 81 12 ]
+        %tmp.101 = getv self :climbed;
+        %tmp.103 = lgetv %daily_floor.6;
+        %tmp.104 = 3;
+        %tmp.105 = mul %tmp.103 %tmp.104;
+        %tmp.106 = add %tmp.101 %tmp.105;
+        putv self :climbed dup %tmp.106;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_79_39_stop:
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_79_8_for_incr:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 79 ]
+        %tmp.109 = lgetv %i.7;
+        %tmp.110 = add %tmp.109 1;
+        lputv %i.7 %tmp.110;
+        goto @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_79_8_for_test;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_79_8_for_end:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 85 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_44_23_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_44_23_stop" ]
+        %info.8 = local;
+        %tmp.111 = getm $.Toybox.ActivityMonitor;
+        %tmp.112 = getv function %tmp.111 :getInfo;
+        %tmp.113 = invoke %tmp.111 %tmp.112();
+        lputv %info.8 %tmp.113;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 86 8 ]
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_86_8_if_stmt:
+        %tmp.114 = lgetv %info.8;
+        %tmp.115 = getv %tmp.114 :floorsClimbed;
+        %tmp.116 = lgetv %info.8;
+        %tmp.117 = getv %tmp.116 :floorsDescended;
+        %tmp.118 = lt %tmp.115 %tmp.117;
+        bf %tmp.118 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_86_8_if_false;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_86_8_if_true:
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_86_55_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 87 12 ]
+        %tmp.119 = getv self :climbed;
+        %tmp.120 = lgetv %info.8;
+        %tmp.121 = getv %tmp.120 :floorsDescended;
+        %tmp.122 = 3;
+        %tmp.123 = mul %tmp.121 %tmp.122;
+        %tmp.124 = add %tmp.119 %tmp.123;
+        putv self :climbed dup %tmp.124;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_86_55_stop:
+        goto @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_86_8_if_end;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_86_8_if_false:
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_88_15_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 89 12 ]
+        %tmp.125 = getv self :climbed;
+        %tmp.126 = lgetv %info.8;
+        %tmp.127 = getv %tmp.126 :floorsClimbed;
+        %tmp.128 = 3;
+        %tmp.129 = mul %tmp.127 %tmp.128;
+        %tmp.130 = add %tmp.125 %tmp.129;
+        putv self :climbed dup %tmp.130;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_88_15_stop:
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_86_8_if_end:
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_44_23_stop:
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 94; ]
+    function get_distance() {
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_94_28_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 95 8 ]
+        %tmp.1 = lgetv %self;
+        %tmp.2 = getv %tmp.1 :distance;
+        %tmp.3 = 1000.0;
+        %tmp.4 = div %tmp.2 %tmp.3;
+        %tmp.5 = getv function %tmp.4 :format;
+        %tmp.6 = "%.1f";
+        %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
+        ret %tmp.7;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_94_28_stop:
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 98; ]
+    function get_time() {
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_98_24_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 99 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_98_24_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_98_24_stop" ]
+        %div.1 = local;
+        %tmp.1 = lgetv %self;
+        %tmp.2 = getv %tmp.1 :duration;
+        %tmp.3 = 3600.0;
+        %tmp.4 = div %tmp.2 %tmp.3;
+        lputv %div.1 %tmp.4;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 100 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_98_24_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_98_24_stop" ]
+        %hours.2 = local;
+        %tmp.5 = getm $.Toybox.Math;
+        %tmp.6 = getv function %tmp.5 :floor;
+        %tmp.8 = lgetv %div.1;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        lputv %hours.2 %tmp.9;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 101 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_98_24_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_98_24_stop" ]
+        %mins.3 = local;
+        %tmp.10 = getm $.Toybox.Math;
+        %tmp.11 = getv function %tmp.10 :round;
+        %tmp.13 = lgetv %div.1;
+        %tmp.15 = lgetv %hours.2;
+        %tmp.16 = sub %tmp.13 %tmp.15;
+        %tmp.17 = 60;
+        %tmp.18 = mul %tmp.16 %tmp.17;
+        %tmp.19 = invoke %tmp.10 %tmp.11(%tmp.18);
+        lputv %mins.3 %tmp.19;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 103 8 ]
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_103_8_if_stmt:
+        %tmp.21 = lgetv %mins.3;
+        %tmp.22 = 60;
+        %tmp.23 = eq %tmp.21 %tmp.22;
+        bf %tmp.23 @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_103_8_if_end;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_103_8_if_true:
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_103_24_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 104 12 ]
+        %tmp.26 = lgetv %hours.2;
+        %tmp.27 = add %tmp.26 1;
+        lputv %hours.2 %tmp.27;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 105 12 ]
+        %tmp.28 = 0;
+        lputv %mins.3 %tmp.28;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_103_24_stop:
+        goto @_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_103_8_if_end;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_103_8_if_end:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 107 8 ]
+        %tmp.29 = getm $.Toybox.Lang;
+        %tmp.30 = getv function %tmp.29 :format;
+        %tmp.31 = "$1$h$2$";
+        %tmp.32 = newa 2;
+        %tmp.33 = lgetv %hours.2;
+        %tmp.34 = getv function %tmp.33 :format;
+        %tmp.35 = "%d";
+        %tmp.36 = invoke %tmp.33 %tmp.34(%tmp.35);
+        %tmp.37 = dup %tmp.32;
+        %tmp.38 = aputv %tmp.37 0 %tmp.36;
+        %tmp.39 = lgetv %mins.3;
+        %tmp.40 = getv function %tmp.39 :format;
+        %tmp.41 = "%02d";
+        %tmp.42 = invoke %tmp.39 %tmp.40(%tmp.41);
+        %tmp.43 = dup %tmp.38;
+        %tmp.44 = aputv %tmp.43 1 %tmp.42;
+        %tmp.45 = invoke %tmp.29 %tmp.30(%tmp.31, %tmp.44);
+        ret %tmp.45;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_98_24_stop:
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 110; ]
+    function get_runs() {
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_110_24_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 111 8 ]
+        %tmp.1 = lgetv %self;
+        %tmp.2 = getv %tmp.1 :runs;
+        %tmp.3 = getv function %tmp.2 :format;
+        %tmp.4 = "%d";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_110_24_stop:
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 114; ]
+    function get_climbed() {
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_114_27_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc" 115 8 ]
+        %tmp.1 = lgetv %self;
+        %tmp.2 = getv %tmp.1 :climbed;
+        ret %tmp.2;
+_home_hugo_Bureau_Garmin_running_watchface_source_runningMetrics_mc_114_27_stop:
+    }
+}
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningMetrics.mc"; @line = 1; ]
+<init> {
+}

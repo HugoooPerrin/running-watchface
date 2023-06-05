@@ -1,3 +1,4 @@
+import Toybox.Lang;
 import Toybox.Math;
 import Toybox.Time;
 import Toybox.Time.Gregorian;
@@ -20,10 +21,9 @@ function get_day_of_week() {
 
 function draw_strip(dc) {
 
-    dc.setColor(getApp().getProperty("BackgroundColor") as Number, getApp().getProperty("BackgroundColor") as Number);
+    dc.setColor(getApp().getProperty("BackgroundColor") as Lang.Number, getApp().getProperty("BackgroundColor") as Lang.Number);
     dc.setPenWidth(2);
 
-    var x_start = 20;
     var slope = 1;
     var step = 10;
 

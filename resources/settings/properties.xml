@@ -11,7 +11,7 @@
 
     <property id="METHOD_ID" type="number">0</property>
 
-    <property id="BONUS_1_ID" type="number">8</property>
+    <property id="BONUS_1_ID" type="number">0</property>
     <property id="BONUS_2_ID" type="number">9</property>
 
     <property id="RACE_DATE_ID" type="number">1670716800</property>

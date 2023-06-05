@@ -62,7 +62,7 @@ class RunningMetrics {
 
                     // Compute aggregated metrics
                     distance += activity.distance;
-                    duration += activity.duration.value();
+                    duration += activity.duration;
                     runs++;
                 }
                 activity = activityIterator.next();

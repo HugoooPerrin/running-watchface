@@ -1,0 +1,230 @@
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc"; @line = 5; ]
+import Toybox.Math;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc"; @line = 6; ]
+import Toybox.System;
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc"; @line = 8; ]
+class Background extends WatchUi.Drawable{
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc"; @line = 10; ]
+    function initialize() as Void {
+_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_10_26_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 11 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_10_26_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_10_26_stop" ]
+        %dictionary.1 = local;
+        %tmp.1 = newd 1;
+        %tmp.3 = const :identifier;
+        %tmp.4 = "Background";
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        lputv %dictionary.1 %tmp.6;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 15 8 ]
+        %tmp.8 = getv ? :Drawable;
+        %tmp.9 = getv function %tmp.8 :initialize;
+        %tmp.11 = lgetv %dictionary.1;
+        invoke %tmp.8 %tmp.9(%tmp.11);
+_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_10_26_stop:
+    }
+    [ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc"; @line = 18; ]
+    function draw(dc as Dc) as Void {
+_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_18_36_start:
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 21 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_18_36_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_18_36_stop" ]
+        %size.1 = local;
+        %tmp.1 = 260;
+        lputv %size.1 %tmp.1;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 22 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_18_36_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_18_36_stop" ]
+        %length.2 = local;
+        %tmp.2 = 50;
+        lputv %length.2 %tmp.2;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 24 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_18_36_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_18_36_stop" ]
+        %center.3 = local;
+        %tmp.4 = lgetv %size.1;
+        %tmp.5 = 2;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        lputv %center.3 %tmp.6;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 25 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_18_36_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_18_36_stop" ]
+        %cc1.4 = local;
+        %tmp.7 = getm $.Toybox.Math;
+        %tmp.8 = getv function %tmp.7 :round;
+        %tmp.10 = lgetv %center.3;
+        %tmp.11 = getm $.Toybox.Math;
+        %tmp.12 = getv function %tmp.11 :sqrt;
+        %tmp.13 = 2;
+        %tmp.14 = invoke %tmp.11 %tmp.12(%tmp.13);
+        %tmp.15 = div %tmp.10 %tmp.14;
+        %tmp.16 = invoke %tmp.7 %tmp.8(%tmp.15);
+        lputv %cc1.4 %tmp.16;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 26 8 ]
+        [ "_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_18_36_start" "_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_18_36_stop" ]
+        %cc2.5 = local;
+        %tmp.17 = getm $.Toybox.Math;
+        %tmp.18 = getv function %tmp.17 :round;
+        %tmp.20 = lgetv %center.3;
+        %tmp.22 = lgetv %length.2;
+        %tmp.23 = sub %tmp.20 %tmp.22;
+        %tmp.24 = getm $.Toybox.Math;
+        %tmp.25 = getv function %tmp.24 :sqrt;
+        %tmp.26 = 2;
+        %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
+        %tmp.28 = div %tmp.23 %tmp.27;
+        %tmp.29 = invoke %tmp.17 %tmp.18(%tmp.28);
+        lputv %cc2.5 %tmp.29;
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 28 8 ]
+        %tmp.30 = lgetv %dc;
+        %tmp.31 = getv function %tmp.30 :setColor;
+        %tmp.32 = getm $.Toybox.Graphics;
+        %tmp.33 = getv %tmp.32 :COLOR_WHITE;
+        %tmp.34 = self;
+        %tmp.35 = getv function %tmp.34 :getApp;
+        %tmp.36 = invoke %tmp.34 %tmp.35();
+        %tmp.37 = getv function %tmp.36 :getProperty;
+        %tmp.38 = "BackgroundColor";
+        %tmp.39 = invoke %tmp.36 %tmp.37(%tmp.38);
+        %tmp.40 = as %tmp.39 Number;
+        invoke %tmp.30 %tmp.31(%tmp.33, %tmp.40);
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 29 8 ]
+        %tmp.41 = lgetv %dc;
+        %tmp.42 = getv function %tmp.41 :setPenWidth;
+        %tmp.43 = 2;
+        invoke %tmp.41 %tmp.42(%tmp.43);
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 31 8 ]
+        %tmp.44 = lgetv %dc;
+        %tmp.45 = getv function %tmp.44 :drawLine;
+        %tmp.46 = 0;
+        %tmp.48 = lgetv %center.3;
+        %tmp.50 = lgetv %length.2;
+        %tmp.52 = lgetv %center.3;
+        invoke %tmp.44 %tmp.45(%tmp.46, %tmp.48, %tmp.50, %tmp.52);
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 32 8 ]
+        %tmp.53 = lgetv %dc;
+        %tmp.54 = getv function %tmp.53 :drawLine;
+        %tmp.56 = lgetv %size.1;
+        %tmp.58 = lgetv %center.3;
+        %tmp.60 = lgetv %size.1;
+        %tmp.62 = lgetv %length.2;
+        %tmp.63 = sub %tmp.60 %tmp.62;
+        %tmp.65 = lgetv %center.3;
+        invoke %tmp.53 %tmp.54(%tmp.56, %tmp.58, %tmp.63, %tmp.65);
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 34 8 ]
+        %tmp.66 = lgetv %dc;
+        %tmp.67 = getv function %tmp.66 :drawLine;
+        %tmp.69 = lgetv %center.3;
+        %tmp.70 = 0;
+        %tmp.72 = lgetv %center.3;
+        %tmp.74 = lgetv %length.2;
+        invoke %tmp.66 %tmp.67(%tmp.69, %tmp.70, %tmp.72, %tmp.74);
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 35 8 ]
+        %tmp.75 = lgetv %dc;
+        %tmp.76 = getv function %tmp.75 :drawLine;
+        %tmp.78 = lgetv %center.3;
+        %tmp.80 = lgetv %size.1;
+        %tmp.82 = lgetv %center.3;
+        %tmp.84 = lgetv %size.1;
+        %tmp.86 = lgetv %length.2;
+        %tmp.87 = sub %tmp.84 %tmp.86;
+        invoke %tmp.75 %tmp.76(%tmp.78, %tmp.80, %tmp.82, %tmp.87);
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 37 8 ]
+        %tmp.88 = lgetv %dc;
+        %tmp.89 = getv function %tmp.88 :drawLine;
+        %tmp.91 = lgetv %center.3;
+        %tmp.93 = lgetv %cc1.4;
+        %tmp.94 = add %tmp.91 %tmp.93;
+        %tmp.96 = lgetv %center.3;
+        %tmp.98 = lgetv %cc1.4;
+        %tmp.99 = add %tmp.96 %tmp.98;
+        %tmp.101 = lgetv %center.3;
+        %tmp.103 = lgetv %cc2.5;
+        %tmp.104 = add %tmp.101 %tmp.103;
+        %tmp.106 = lgetv %center.3;
+        %tmp.108 = lgetv %cc2.5;
+        %tmp.109 = add %tmp.106 %tmp.108;
+        invoke %tmp.88 %tmp.89(%tmp.94, %tmp.99, %tmp.104, %tmp.109);
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 38 8 ]
+        %tmp.110 = lgetv %dc;
+        %tmp.111 = getv function %tmp.110 :drawLine;
+        %tmp.113 = lgetv %center.3;
+        %tmp.115 = lgetv %cc1.4;
+        %tmp.116 = add %tmp.113 %tmp.115;
+        %tmp.118 = lgetv %center.3;
+        %tmp.120 = lgetv %cc1.4;
+        %tmp.121 = sub %tmp.118 %tmp.120;
+        %tmp.123 = lgetv %center.3;
+        %tmp.125 = lgetv %cc2.5;
+        %tmp.126 = add %tmp.123 %tmp.125;
+        %tmp.128 = lgetv %center.3;
+        %tmp.130 = lgetv %cc2.5;
+        %tmp.131 = sub %tmp.128 %tmp.130;
+        invoke %tmp.110 %tmp.111(%tmp.116, %tmp.121, %tmp.126, %tmp.131);
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 40 8 ]
+        %tmp.132 = lgetv %dc;
+        %tmp.133 = getv function %tmp.132 :drawLine;
+        %tmp.135 = lgetv %center.3;
+        %tmp.137 = lgetv %cc1.4;
+        %tmp.138 = sub %tmp.135 %tmp.137;
+        %tmp.140 = lgetv %center.3;
+        %tmp.142 = lgetv %cc1.4;
+        %tmp.143 = add %tmp.140 %tmp.142;
+        %tmp.145 = lgetv %center.3;
+        %tmp.147 = lgetv %cc2.5;
+        %tmp.148 = sub %tmp.145 %tmp.147;
+        %tmp.150 = lgetv %center.3;
+        %tmp.152 = lgetv %cc2.5;
+        %tmp.153 = add %tmp.150 %tmp.152;
+        invoke %tmp.132 %tmp.133(%tmp.138, %tmp.143, %tmp.148, %tmp.153);
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 41 8 ]
+        %tmp.154 = lgetv %dc;
+        %tmp.155 = getv function %tmp.154 :drawLine;
+        %tmp.157 = lgetv %center.3;
+        %tmp.159 = lgetv %cc1.4;
+        %tmp.160 = sub %tmp.157 %tmp.159;
+        %tmp.162 = lgetv %center.3;
+        %tmp.164 = lgetv %cc1.4;
+        %tmp.165 = sub %tmp.162 %tmp.164;
+        %tmp.167 = lgetv %center.3;
+        %tmp.169 = lgetv %cc2.5;
+        %tmp.170 = sub %tmp.167 %tmp.169;
+        %tmp.172 = lgetv %center.3;
+        %tmp.174 = lgetv %cc2.5;
+        %tmp.175 = sub %tmp.172 %tmp.174;
+        invoke %tmp.154 %tmp.155(%tmp.160, %tmp.165, %tmp.170, %tmp.175);
+[ "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc" 47 8 ]
+        %tmp.176 = lgetv %dc;
+        %tmp.177 = getv function %tmp.176 :setColor;
+        %tmp.178 = self;
+        %tmp.179 = getv function %tmp.178 :getApp;
+        %tmp.180 = invoke %tmp.178 %tmp.179();
+        %tmp.181 = getv function %tmp.180 :getProperty;
+        %tmp.182 = "ForegroundColor";
+        %tmp.183 = invoke %tmp.180 %tmp.181(%tmp.182);
+        %tmp.184 = as %tmp.183 Number;
+        %tmp.185 = self;
+        %tmp.186 = getv function %tmp.185 :getApp;
+        %tmp.187 = invoke %tmp.185 %tmp.186();
+        %tmp.188 = getv function %tmp.187 :getProperty;
+        %tmp.189 = "BackgroundColor";
+        %tmp.190 = invoke %tmp.187 %tmp.188(%tmp.189);
+        %tmp.191 = as %tmp.190 Number;
+        invoke %tmp.176 %tmp.177(%tmp.184, %tmp.191);
+_home_hugo_Bureau_Garmin_running_watchface_source_runningwfBackground_mc_18_36_stop:
+    }
+}
+[ @file = "/home/hugo/Bureau/Garmin/running-watchface/source/runningwfBackground.mc"; @line = 1; ]
+<init> {
+}

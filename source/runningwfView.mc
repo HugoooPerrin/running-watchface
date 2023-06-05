@@ -50,9 +50,6 @@ class runningwfView extends WatchUi.WatchFace {
     // Update the view
     function onUpdate(dc as Dc) as Void {
 
-        // Get data source
-        var data_source = getApp().getProperty("DATA_SOURCE_ID") as Number;
-
         //-----------------------------------
         // Get the current time and format it correctly
         var clockTime = System.getClockTime();
