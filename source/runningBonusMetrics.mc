@@ -78,7 +78,7 @@ class BonusMetrics {
     }
 
     function compute_counter() {
-        var race_day = new Time.Moment(getApp().getProperty("RACE_DATE_ID") as Lang.Number);
+        var race_day = new Time.Moment(getApp().getProperty("RACE_DATE_ID") as Number);
 
         var now = Gregorian.utcInfo(Time.now(), Time.FORMAT_SHORT);
         var today = Gregorian.moment({

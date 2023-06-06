@@ -43,10 +43,10 @@ module Rez {
 _home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start:
 [ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 20 12 ]
             [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
-            %rez_cmp_local_custom_drawable_12925420821509363985.1 = local;
+            %rez_cmp_local_custom_drawable_25841555610706294363.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_12925420821509363985.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_25841555610706294363.1 %tmp.1;
 [ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 22 12 ]
             [ "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_start" "_home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen_19_73_stop" ]
             %rez_cmp_local_text_HoursLabel.2 = local;
@@ -683,7 +683,7 @@ _home_hugo_Bureau_Garmin_running_watchface_bin_gen_006_B3992_00_source_Rez_mcgen
             lputv %rez_cmp_local_text_Data8.19 %tmp.655;
 [ "/home/hugo/Bureau/Garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" 58 12 ]
             %tmp.693 = newa Array<WatchUi.Drawable> 19;
-            %tmp.695 = lgetv %rez_cmp_local_custom_drawable_12925420821509363985.1;
+            %tmp.695 = lgetv %rez_cmp_local_custom_drawable_25841555610706294363.1;
             %tmp.696 = dup %tmp.693;
             %tmp.697 = aputv %tmp.696 0 %tmp.695;
             %tmp.699 = lgetv %rez_cmp_local_text_HoursLabel.2;

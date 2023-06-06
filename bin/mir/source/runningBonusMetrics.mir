@@ -259,7 +259,7 @@ _home_hugo_Bureau_Garmin_running_watchface_source_runningBonusMetrics_mc_80_31_s
         %tmp.8 = getv function %tmp.7 :getProperty;
         %tmp.9 = "RACE_DATE_ID";
         %tmp.10 = invoke %tmp.7 %tmp.8(%tmp.9);
-        %tmp.11 = as %tmp.10 Lang.Number;
+        %tmp.11 = as %tmp.10 Number;
         %tmp.1 = newc %tmp.4 (%tmp.11);
         lputv %race_day.1 %tmp.1;
 [ "/home/hugo/Bureau/Garmin/running-watchface/source/runningBonusMetrics.mc" 83 8 ]

@@ -21,7 +21,7 @@ function get_day_of_week() {
 
 function draw_strip(dc) {
 
-    dc.setColor(getApp().getProperty("BackgroundColor") as Lang.Number, getApp().getProperty("BackgroundColor") as Lang.Number);
+    dc.setColor(getApp().getProperty("BackgroundColor") as Number, getApp().getProperty("BackgroundColor") as Number);
     dc.setPenWidth(2);
 
     var slope = 1;

@@ -58,11 +58,13 @@ class RunningMetrics {
 
             while (activity != null) {
 
-                if ((activity.type == 1) & activity.startTime.greaterThan(n_days_id)) {
+                // activity is not null but all its attributes are if the activity is running
+                // This is the case when using the "resume later" option !
+                if ((activity.type == 1) && activity.startTime.greaterThan(n_days_id)) {
 
                     // Compute aggregated metrics
                     distance += activity.distance;
-                    duration += activity.duration;
+                    duration += activity.duration.value();  // Duration type even if should be Number according to API docs (Type checking must be off in extension settings to compile)
                     runs++;
                 }
                 activity = activityIterator.next();

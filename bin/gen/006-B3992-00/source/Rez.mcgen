@@ -17,7 +17,7 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_12925420821509363985 = new Background();
+            var rez_cmp_local_custom_drawable_25841555610706294363 = new Background();
 
             var rez_cmp_local_text_HoursLabel = new WatchUi.Text({:identifier=>"HoursLabel", :color=>Graphics.COLOR_WHITE, :locX=>(260 * 0.5), :locY=>45, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SYSTEM_NUMBER_THAI_HOT});
 
@@ -55,7 +55,7 @@ module Rez {
 
             var rez_cmp_local_text_Data8 = new WatchUi.Text({:identifier=>"Data8", :color=>Graphics.COLOR_WHITE, :locX=>40, :locY=>90, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SYSTEM_TINY});
 
-            return [rez_cmp_local_custom_drawable_12925420821509363985, rez_cmp_local_text_HoursLabel, rez_cmp_local_text_MinutesLabel, rez_cmp_local_text_Name1, rez_cmp_local_text_Data1, rez_cmp_local_text_Name2, rez_cmp_local_text_Data2, rez_cmp_local_text_Name3, rez_cmp_local_text_Data3, rez_cmp_local_text_Name4, rez_cmp_local_text_Data4, rez_cmp_local_text_Name5, rez_cmp_local_text_Data5, rez_cmp_local_text_Name6, rez_cmp_local_text_Data6, rez_cmp_local_text_Name7, rez_cmp_local_text_Data7, rez_cmp_local_text_Name8, rez_cmp_local_text_Data8] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_25841555610706294363, rez_cmp_local_text_HoursLabel, rez_cmp_local_text_MinutesLabel, rez_cmp_local_text_Name1, rez_cmp_local_text_Data1, rez_cmp_local_text_Name2, rez_cmp_local_text_Data2, rez_cmp_local_text_Name3, rez_cmp_local_text_Data3, rez_cmp_local_text_Name4, rez_cmp_local_text_Data4, rez_cmp_local_text_Name5, rez_cmp_local_text_Data5, rez_cmp_local_text_Name6, rez_cmp_local_text_Data6, rez_cmp_local_text_Name7, rez_cmp_local_text_Data7, rez_cmp_local_text_Name8, rez_cmp_local_text_Data8] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

@@ -61,14 +61,14 @@ _home_hugo_Bureau_Garmin_running_watchface_source_utils_mc_22_24_start:
     %tmp.6 = getv function %tmp.5 :getProperty;
     %tmp.7 = "BackgroundColor";
     %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
-    %tmp.9 = as %tmp.8 Lang.Number;
+    %tmp.9 = as %tmp.8 Number;
     %tmp.10 = self;
     %tmp.11 = getv function %tmp.10 :getApp;
     %tmp.12 = invoke %tmp.10 %tmp.11();
     %tmp.13 = getv function %tmp.12 :getProperty;
     %tmp.14 = "BackgroundColor";
     %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
-    %tmp.16 = as %tmp.15 Lang.Number;
+    %tmp.16 = as %tmp.15 Number;
     invoke %tmp.1 %tmp.2(%tmp.9, %tmp.16);
 [ "/home/hugo/Bureau/Garmin/running-watchface/source/utils.mc" 25 4 ]
     %tmp.17 = lgetv %dc;
