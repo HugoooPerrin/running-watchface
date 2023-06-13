@@ -88,10 +88,7 @@ class BonusMetrics {
         });
     
         title = "Race";
-        var days = Math.round(race_day.subtract(today).value() / 86400.0);
-        var weeks = Math.floor(days / 7.0);
-
-        value = (weeks > 1) ? weeks.format("%d")+"w" : days.format("%d")+"d";
+        value = Math.round(race_day.subtract(today).value() / 86400.0).format("%d")+"d";
     }
 
     function compute_avg_resting_hr() {
