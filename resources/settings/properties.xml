@@ -1,6 +1,6 @@
 <properties>
 
-    <property id="VERSION_ID" type="string">2.3.2</property>
+    <property id="VERSION_ID" type="string">2.3.3</property>
 
     <property id="BackgroundColor" type="number">0x000000</property>
     <property id="ForegroundColor" type="number">0xFF0000</property>
