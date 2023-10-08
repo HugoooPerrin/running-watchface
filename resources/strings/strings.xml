@@ -14,6 +14,9 @@
     <string id="ColorWhite">White</string>
     <string id="ColorBlue">Blue</string>
     <string id="ColorRed">Red</string>
+    <string id="ColorGreen">Green</string>
+    <string id="ColorOrange">Orange</string>
+    <string id="ColorPurple">Purple</string>
 
     <string id="DATA_SOURCE_TITLE">Data source</string>
     <string id="week">Current week</string>

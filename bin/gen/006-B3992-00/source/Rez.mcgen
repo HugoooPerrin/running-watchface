@@ -17,7 +17,7 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_25841555610706294363 = new Background();
+            var rez_cmp_local_custom_drawable_75307587313181912705 = new Background();
 
             var rez_cmp_local_text_HoursLabel = new WatchUi.Text({:identifier=>"HoursLabel", :color=>Graphics.COLOR_WHITE, :locX=>(260 * 0.5), :locY=>45, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SYSTEM_NUMBER_THAI_HOT});
 
@@ -55,7 +55,7 @@ module Rez {
 
             var rez_cmp_local_text_Data8 = new WatchUi.Text({:identifier=>"Data8", :color=>Graphics.COLOR_WHITE, :locX=>40, :locY=>90, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SYSTEM_TINY});
 
-            return [rez_cmp_local_custom_drawable_25841555610706294363, rez_cmp_local_text_HoursLabel, rez_cmp_local_text_MinutesLabel, rez_cmp_local_text_Name1, rez_cmp_local_text_Data1, rez_cmp_local_text_Name2, rez_cmp_local_text_Data2, rez_cmp_local_text_Name3, rez_cmp_local_text_Data3, rez_cmp_local_text_Name4, rez_cmp_local_text_Data4, rez_cmp_local_text_Name5, rez_cmp_local_text_Data5, rez_cmp_local_text_Name6, rez_cmp_local_text_Data6, rez_cmp_local_text_Name7, rez_cmp_local_text_Data7, rez_cmp_local_text_Name8, rez_cmp_local_text_Data8] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_75307587313181912705, rez_cmp_local_text_HoursLabel, rez_cmp_local_text_MinutesLabel, rez_cmp_local_text_Name1, rez_cmp_local_text_Data1, rez_cmp_local_text_Name2, rez_cmp_local_text_Data2, rez_cmp_local_text_Name3, rez_cmp_local_text_Data3, rez_cmp_local_text_Name4, rez_cmp_local_text_Data4, rez_cmp_local_text_Name5, rez_cmp_local_text_Data5, rez_cmp_local_text_Name6, rez_cmp_local_text_Data6, rez_cmp_local_text_Name7, rez_cmp_local_text_Data7, rez_cmp_local_text_Name8, rez_cmp_local_text_Data8] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
@@ -80,6 +80,7 @@ module Rez {
         (:initialized) var seconds as Symbol;
         (:initialized) var vo2 as Symbol;
         (:initialized) var ColorWhite as Symbol;
+        (:initialized) var ColorGreen as Symbol;
         (:initialized) var ColorLightGray as Symbol;
         (:initialized) var DATA_SOURCE_TITLE as Symbol;
         (:initialized) var avg_hr as Symbol;
@@ -88,10 +89,12 @@ module Rez {
         (:initialized) var ColorBlack as Symbol;
         (:initialized) var BONUS_2_TITLE as Symbol;
         (:initialized) var counter as Symbol;
+        (:initialized) var ColorOrange as Symbol;
         (:initialized) var steps as Symbol;
         (:initialized) var BONUS_1_TITLE as Symbol;
         (:initialized) var ForegroundColorTitle as Symbol;
         (:initialized) var METHOD_TITLE as Symbol;
+        (:initialized) var ColorPurple as Symbol;
         (:initialized) var DATA_TITLE as Symbol;
         (:initialized) var rhr as Symbol;
         (:initialized) var avg_rhr as Symbol;

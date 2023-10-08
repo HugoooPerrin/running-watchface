@@ -53,3 +53,5 @@ dkms.conf
 
 # Monkey C & Connect IQ
 *.iq
+iq/
+bin/
