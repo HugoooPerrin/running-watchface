@@ -1,14 +1,27 @@
+import Toybox.Application;
 import Toybox.Lang;
 import Toybox.Math;
 import Toybox.Time;
 import Toybox.Time.Gregorian;
+
+function get_n_days_id(num_days) {
+    var n_days_secs = new Time.Duration(-1 * (num_days - 1) * Gregorian.SECONDS_PER_DAY);
+    var n_days_info = Gregorian.utcInfo(Time.now().add(n_days_secs), Time.FORMAT_SHORT);
+    return Gregorian.moment({
+        :year   => n_days_info.year,
+        :month  => n_days_info.month,
+        :day    => n_days_info.day,
+        :hour   => 0,
+        :minute => 1,
+    });
+}
 
 function get_day_of_week() {
 
     // Get Garmin day of week
     var day_of_week = Gregorian.utcInfo(Time.now(), Time.FORMAT_SHORT).day_of_week;
 
-    // Correct to have 1=monday, 2=tuesday, etc.
+    // Correcting action to have 1=monday, 2=tuesday, etc.
     if (day_of_week > 1) {
         day_of_week -= 1;
     } else {
@@ -21,7 +34,7 @@ function get_day_of_week() {
 
 function draw_strip(dc) {
 
-    dc.setColor(getApp().getProperty("BackgroundColor") as Number, getApp().getProperty("BackgroundColor") as Number);
+    dc.setColor(Properties.getValue("BackgroundColor") as Number, Properties.getValue("BackgroundColor") as Number);
     dc.setPenWidth(2);
 
     var slope = 1;

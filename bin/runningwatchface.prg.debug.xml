@@ -1,369 +1,362 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
-    <manifest filename="/home/hugo/Bureau/Garmin/running watchface/manifest.xml"/>
+    <manifest filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/manifest.xml"/>
     <pcToLineNum>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="44" parent="globals/RunningMetrics" pc="268435460" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="49" parent="globals/RunningMetrics" pc="268435464" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="52" parent="globals/RunningMetrics" pc="268435485" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="54" parent="globals/RunningMetrics" pc="268435502" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="57" parent="globals/RunningMetrics" pc="268435509" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="59" parent="globals/RunningMetrics" pc="268435522" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="63" parent="globals/RunningMetrics" pc="268435529" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="66" parent="globals/RunningMetrics" pc="268435571" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="67" parent="globals/RunningMetrics" pc="268435593" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="68" parent="globals/RunningMetrics" pc="268435624" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="70" parent="globals/RunningMetrics" pc="268435646" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="76" parent="globals/RunningMetrics" pc="268435665" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="79" parent="globals/RunningMetrics" pc="268435682" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="81" parent="globals/RunningMetrics" pc="268435735" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="80" parent="globals/RunningMetrics" pc="268435735" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="82" parent="globals/RunningMetrics" pc="268435750" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="83" parent="globals/RunningMetrics" pc="268435803" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="87" parent="globals/RunningMetrics" pc="268435838" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="88" parent="globals/RunningMetrics" pc="268435855" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="89" parent="globals/RunningMetrics" pc="268435875" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="1" lineNum="91" parent="globals/RunningMetrics" pc="268435906" symbol="compute"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="2" lineNum="112" parent="globals/RunningMetrics" pc="268435935" symbol="get_runs"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="2" lineNum="113" parent="globals/RunningMetrics" pc="268435937" symbol="get_runs"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="3" lineNum="32" parent="globals/RunningMetrics" pc="268435960" symbol="get_n_days_id"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="3" lineNum="33" parent="globals/RunningMetrics" pc="268435964" symbol="get_n_days_id"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="3" lineNum="34" parent="globals/RunningMetrics" pc="268436012" symbol="get_n_days_id"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="3" lineNum="35" parent="globals/RunningMetrics" pc="268436060" symbol="get_n_days_id"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="4" lineNum="116" parent="globals/RunningMetrics" pc="268436156" symbol="get_climbed"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="4" lineNum="117" parent="globals/RunningMetrics" pc="268436158" symbol="get_climbed"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="5" lineNum="100" parent="globals/RunningMetrics" pc="268436167" symbol="get_time"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="5" lineNum="101" parent="globals/RunningMetrics" pc="268436171" symbol="get_time"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="5" lineNum="102" parent="globals/RunningMetrics" pc="268436187" symbol="get_time"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="5" lineNum="103" parent="globals/RunningMetrics" pc="268436206" symbol="get_time"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="5" lineNum="105" parent="globals/RunningMetrics" pc="268436234" symbol="get_time"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="5" lineNum="106" parent="globals/RunningMetrics" pc="268436245" symbol="get_time"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="5" lineNum="107" parent="globals/RunningMetrics" pc="268436255" symbol="get_time"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="5" lineNum="109" parent="globals/RunningMetrics" pc="268436265" symbol="get_time"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="6" lineNum="20" parent="globals/RunningMetrics" pc="268436340" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="6" lineNum="23" parent="globals/RunningMetrics" pc="268436342" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="6" lineNum="24" parent="globals/RunningMetrics" pc="268436355" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="6" lineNum="25" parent="globals/RunningMetrics" pc="268436368" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="6" lineNum="26" parent="globals/RunningMetrics" pc="268436381" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="6" lineNum="29" parent="globals/RunningMetrics" pc="268436394" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="7" lineNum="96" parent="globals/RunningMetrics" pc="268436433" symbol="get_distance"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningMetrics.mc" id="7" lineNum="97" parent="globals/RunningMetrics" pc="268436435" symbol="get_distance"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfApp.mc" id="8" lineNum="31" parent="globals" pc="268436464" symbol="getApp"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfApp.mc" id="8" lineNum="32" parent="globals" pc="268436474" symbol="getApp"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="9" lineNum="8" parent="globals/Background" pc="268436490" symbol="&lt;init&gt;"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="10" lineNum="10" parent="globals/Background" pc="268436509" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="10" lineNum="11" parent="globals/Background" pc="268436513" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="10" lineNum="15" parent="globals/Background" pc="268436534" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="18" parent="globals/Background" pc="268436555" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="21" parent="globals/Background" pc="268436559" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="22" parent="globals/Background" pc="268436566" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="24" parent="globals/Background" pc="268436573" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="25" parent="globals/Background" pc="268436583" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="26" parent="globals/Background" pc="268436623" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="28" parent="globals/Background" pc="268436666" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="29" parent="globals/Background" pc="268436708" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="31" parent="globals/Background" pc="268436725" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="32" parent="globals/Background" pc="268436748" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="34" parent="globals/Background" pc="268436771" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="35" parent="globals/Background" pc="268436794" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="37" parent="globals/Background" pc="268436817" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="38" parent="globals/Background" pc="268436849" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="40" parent="globals/Background" pc="268436881" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="41" parent="globals/Background" pc="268436913" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfBackground.mc" id="11" lineNum="47" parent="globals/Background" pc="268436945" symbol="draw"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="22" parent="globals" pc="268437008" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="24" parent="globals" pc="268437020" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="25" parent="globals" pc="268437082" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="27" parent="globals" pc="268437099" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="28" parent="globals" pc="268437106" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="30" parent="globals" pc="268437113" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="31" parent="globals" pc="268437120" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="33" parent="globals" pc="268437127" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="34" parent="globals" pc="268437134" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="36" parent="globals" pc="268437141" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="39" parent="globals" pc="268437159" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="38" parent="globals" pc="268437159" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="43" parent="globals" pc="268437159" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="40" parent="globals" pc="268437159" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="41" parent="globals" pc="268437159" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="44" parent="globals" pc="268437167" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="45" parent="globals" pc="268437171" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="47" parent="globals" pc="268437187" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="48" parent="globals" pc="268437191" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="51" parent="globals" pc="268437195" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="53" parent="globals" pc="268437211" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="54" parent="globals" pc="268437219" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="55" parent="globals" pc="268437223" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="57" parent="globals" pc="268437239" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="58" parent="globals" pc="268437243" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="12" lineNum="61" parent="globals" pc="268437247" symbol="draw_strip"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="13" lineNum="7" parent="globals/Rez" pc="268437278" symbol="&lt;init&gt;"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="14" lineNum="141" parent="globals/BonusMetrics" pc="268437302" symbol="compute_steps"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="14" lineNum="142" parent="globals/BonusMetrics" pc="268437304" symbol="compute_steps"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="14" lineNum="144" parent="globals/BonusMetrics" pc="268437327" symbol="compute_steps"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="14" lineNum="145" parent="globals/BonusMetrics" pc="268437340" symbol="compute_steps"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="14" lineNum="146" parent="globals/BonusMetrics" pc="268437359" symbol="compute_steps"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="14" lineNum="147" parent="globals/BonusMetrics" pc="268437375" symbol="compute_steps"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="14" lineNum="148" parent="globals/BonusMetrics" pc="268437398" symbol="compute_steps"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="14" lineNum="150" parent="globals/BonusMetrics" pc="268437449" symbol="compute_steps"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="15" lineNum="154" parent="globals/BonusMetrics" pc="268437513" symbol="compute_custom_data"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="15" lineNum="156" parent="globals/BonusMetrics" pc="268437515" symbol="compute_custom_data"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="15" lineNum="157" parent="globals/BonusMetrics" pc="268437548" symbol="compute_custom_data"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="16" lineNum="167" parent="globals/BonusMetrics" pc="268437582" symbol="compute_seconds"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="16" lineNum="168" parent="globals/BonusMetrics" pc="268437586" symbol="compute_seconds"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="16" lineNum="170" parent="globals/BonusMetrics" pc="268437605" symbol="compute_seconds"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="16" lineNum="171" parent="globals/BonusMetrics" pc="268437618" symbol="compute_seconds"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="17" lineNum="94" parent="globals/BonusMetrics" pc="268437649" symbol="compute_avg_resting_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="17" lineNum="95" parent="globals/BonusMetrics" pc="268437651" symbol="compute_avg_resting_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="17" lineNum="97" parent="globals/BonusMetrics" pc="268437674" symbol="compute_avg_resting_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="17" lineNum="98" parent="globals/BonusMetrics" pc="268437687" symbol="compute_avg_resting_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="101" parent="globals/BonusMetrics" pc="268437751" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="103" parent="globals/BonusMetrics" pc="268437755" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="102" parent="globals/BonusMetrics" pc="268437755" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="104" parent="globals/BonusMetrics" pc="268437788" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="106" parent="globals/BonusMetrics" pc="268437809" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="108" parent="globals/BonusMetrics" pc="268437816" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="109" parent="globals/BonusMetrics" pc="268437823" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="112" parent="globals/BonusMetrics" pc="268437830" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="114" parent="globals/BonusMetrics" pc="268437843" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="116" parent="globals/BonusMetrics" pc="268437850" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="119" parent="globals/BonusMetrics" pc="268437867" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="120" parent="globals/BonusMetrics" pc="268437880" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="122" parent="globals/BonusMetrics" pc="268437893" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="124" parent="globals/BonusMetrics" pc="268437909" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="127" parent="globals/BonusMetrics" pc="268437967" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="130" parent="globals/BonusMetrics" pc="268437974" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="18" lineNum="131" parent="globals/BonusMetrics" pc="268437987" symbol="compute_avg_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="19" lineNum="174" parent="globals/BonusMetrics" pc="268437998" symbol="compute_elevation"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="19" lineNum="175" parent="globals/BonusMetrics" pc="268438000" symbol="compute_elevation"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="19" lineNum="179" parent="globals/BonusMetrics" pc="268438042" symbol="compute_elevation"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="19" lineNum="180" parent="globals/BonusMetrics" pc="268438055" symbol="compute_elevation"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="20" lineNum="65" parent="globals/BonusMetrics" pc="268438122" symbol="get_title"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="20" lineNum="66" parent="globals/BonusMetrics" pc="268438124" symbol="get_title"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="21" lineNum="80" parent="globals/BonusMetrics" pc="268438133" symbol="compute_counter"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="21" lineNum="81" parent="globals/BonusMetrics" pc="268438137" symbol="compute_counter"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="21" lineNum="83" parent="globals/BonusMetrics" pc="268438190" symbol="compute_counter"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="21" lineNum="84" parent="globals/BonusMetrics" pc="268438227" symbol="compute_counter"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="21" lineNum="90" parent="globals/BonusMetrics" pc="268438298" symbol="compute_counter"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="21" lineNum="91" parent="globals/BonusMetrics" pc="268438311" symbol="compute_counter"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="22" lineNum="73" parent="globals/BonusMetrics" pc="268438383" symbol="compute_vo2_max"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="22" lineNum="74" parent="globals/BonusMetrics" pc="268438385" symbol="compute_vo2_max"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="22" lineNum="76" parent="globals/BonusMetrics" pc="268438408" symbol="compute_vo2_max"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="22" lineNum="77" parent="globals/BonusMetrics" pc="268438421" symbol="compute_vo2_max"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="23" lineNum="69" parent="globals/BonusMetrics" pc="268438485" symbol="get_value"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="23" lineNum="70" parent="globals/BonusMetrics" pc="268438487" symbol="get_value"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="24" lineNum="134" parent="globals/BonusMetrics" pc="268438496" symbol="compute_time_to_recovery"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="24" lineNum="135" parent="globals/BonusMetrics" pc="268438498" symbol="compute_time_to_recovery"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="24" lineNum="137" parent="globals/BonusMetrics" pc="268438521" symbol="compute_time_to_recovery"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="24" lineNum="138" parent="globals/BonusMetrics" pc="268438534" symbol="compute_time_to_recovery"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="25" lineNum="160" parent="globals/BonusMetrics" pc="268438604" symbol="compute_resting_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="25" lineNum="161" parent="globals/BonusMetrics" pc="268438606" symbol="compute_resting_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="25" lineNum="163" parent="globals/BonusMetrics" pc="268438629" symbol="compute_resting_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="25" lineNum="164" parent="globals/BonusMetrics" pc="268438642" symbol="compute_resting_hr"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="20" parent="globals/BonusMetrics" pc="268438706" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="23" parent="globals/BonusMetrics" pc="268438708" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="24" parent="globals/BonusMetrics" pc="268438719" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="27" parent="globals/BonusMetrics" pc="268438734" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="28" parent="globals/BonusMetrics" pc="268438745" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="31" parent="globals/BonusMetrics" pc="268438760" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="32" parent="globals/BonusMetrics" pc="268438771" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="35" parent="globals/BonusMetrics" pc="268438786" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="36" parent="globals/BonusMetrics" pc="268438797" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="39" parent="globals/BonusMetrics" pc="268438812" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="40" parent="globals/BonusMetrics" pc="268438823" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="43" parent="globals/BonusMetrics" pc="268438838" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="44" parent="globals/BonusMetrics" pc="268438849" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="47" parent="globals/BonusMetrics" pc="268438864" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="48" parent="globals/BonusMetrics" pc="268438875" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="51" parent="globals/BonusMetrics" pc="268438890" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="52" parent="globals/BonusMetrics" pc="268438901" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="55" parent="globals/BonusMetrics" pc="268438916" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="56" parent="globals/BonusMetrics" pc="268438927" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="59" parent="globals/BonusMetrics" pc="268438942" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningBonusMetrics.mc" id="26" lineNum="60" parent="globals/BonusMetrics" pc="268438953" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="27" lineNum="6" parent="globals" pc="268438969" symbol="get_day_of_week"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="27" lineNum="9" parent="globals" pc="268438981" symbol="get_day_of_week"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="27" lineNum="12" parent="globals" pc="268439024" symbol="get_day_of_week"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="27" lineNum="13" parent="globals" pc="268439035" symbol="get_day_of_week"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="27" lineNum="15" parent="globals" pc="268439048" symbol="get_day_of_week"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/utils.mc" id="27" lineNum="18" parent="globals" pc="268439055" symbol="get_day_of_week"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="28" lineNum="12" parent="globals/runningwfView" pc="268439058" symbol="&lt;init&gt;"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="31" lineNum="40" parent="globals/runningwfView" pc="268439077" symbol="onLayout"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="31" lineNum="41" parent="globals/runningwfView" pc="268439079" symbol="onLayout"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="14" parent="globals/runningwfView" pc="268439121" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="15" parent="globals/runningwfView" pc="268439125" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="17" parent="globals/runningwfView" pc="268439143" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="19" parent="globals/runningwfView" pc="268439170" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="21" parent="globals/runningwfView" pc="268439181" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="22" parent="globals/runningwfView" pc="268439208" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="24" parent="globals/runningwfView" pc="268439238" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="26" parent="globals/runningwfView" pc="268439250" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="27" parent="globals/runningwfView" pc="268439263" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="28" parent="globals/runningwfView" pc="268439276" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="29" parent="globals/runningwfView" pc="268439289" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="32" parent="globals/runningwfView" pc="268439302" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="33" parent="globals/runningwfView" pc="268439325" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="34" parent="globals/runningwfView" pc="268439348" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="33" lineNum="35" parent="globals/runningwfView" pc="268439371" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="34" lineNum="177" parent="globals/runningwfView" pc="268439398" symbol="onHide"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="34" lineNum="179" parent="globals/runningwfView" pc="268439402" symbol="onHide"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="34" lineNum="181" parent="globals/runningwfView" pc="268439429" symbol="onHide"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="34" lineNum="183" parent="globals/runningwfView" pc="268439440" symbol="onHide"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="34" lineNum="184" parent="globals/runningwfView" pc="268439467" symbol="onHide"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="34" lineNum="186" parent="globals/runningwfView" pc="268439497" symbol="onHide"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="34" lineNum="188" parent="globals/runningwfView" pc="268439509" symbol="onHide"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="34" lineNum="189" parent="globals/runningwfView" pc="268439522" symbol="onHide"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="34" lineNum="190" parent="globals/runningwfView" pc="268439535" symbol="onHide"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="34" lineNum="191" parent="globals/runningwfView" pc="268439548" symbol="onHide"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="34" lineNum="194" parent="globals/runningwfView" pc="268439561" symbol="onHide"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="34" lineNum="195" parent="globals/runningwfView" pc="268439584" symbol="onHide"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="34" lineNum="196" parent="globals/runningwfView" pc="268439607" symbol="onHide"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="34" lineNum="197" parent="globals/runningwfView" pc="268439630" symbol="onHide"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="51" parent="globals/runningwfView" pc="268439657" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="55" parent="globals/runningwfView" pc="268439661" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="58" parent="globals/runningwfView" pc="268439678" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="59" parent="globals/runningwfView" pc="268439706" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="62" parent="globals/runningwfView" pc="268439740" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="63" parent="globals/runningwfView" pc="268439768" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="64" parent="globals/runningwfView" pc="268439805" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="68" parent="globals/runningwfView" pc="268439839" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="70" parent="globals/runningwfView" pc="268439866" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="71" parent="globals/runningwfView" pc="268439873" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="72" parent="globals/runningwfView" pc="268439880" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="73" parent="globals/runningwfView" pc="268439887" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="75" parent="globals/runningwfView" pc="268439894" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="77" parent="globals/runningwfView" pc="268439905" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="78" parent="globals/runningwfView" pc="268439927" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="79" parent="globals/runningwfView" pc="268439949" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="80" parent="globals/runningwfView" pc="268439971" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="82" parent="globals/runningwfView" pc="268439996" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="84" parent="globals/runningwfView" pc="268440007" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="85" parent="globals/runningwfView" pc="268440034" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="87" parent="globals/runningwfView" pc="268440064" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="89" parent="globals/runningwfView" pc="268440076" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="90" parent="globals/runningwfView" pc="268440089" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="91" parent="globals/runningwfView" pc="268440102" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="92" parent="globals/runningwfView" pc="268440115" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="96" parent="globals/runningwfView" pc="268440131" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="97" parent="globals/runningwfView" pc="268440159" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="98" parent="globals/runningwfView" pc="268440187" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="99" parent="globals/runningwfView" pc="268440224" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="100" parent="globals/runningwfView" pc="268440241" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="103" parent="globals/runningwfView" pc="268440269" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="104" parent="globals/runningwfView" pc="268440297" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="105" parent="globals/runningwfView" pc="268440325" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="106" parent="globals/runningwfView" pc="268440362" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="107" parent="globals/runningwfView" pc="268440379" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="110" parent="globals/runningwfView" pc="268440393" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="111" parent="globals/runningwfView" pc="268440421" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="112" parent="globals/runningwfView" pc="268440449" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="113" parent="globals/runningwfView" pc="268440486" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="114" parent="globals/runningwfView" pc="268440503" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="117" parent="globals/runningwfView" pc="268440517" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="118" parent="globals/runningwfView" pc="268440545" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="119" parent="globals/runningwfView" pc="268440573" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="120" parent="globals/runningwfView" pc="268440610" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="121" parent="globals/runningwfView" pc="268440630" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="123" parent="globals/runningwfView" pc="268440650" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="125" parent="globals/runningwfView" pc="268440667" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="128" parent="globals/runningwfView" pc="268440681" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="130" parent="globals/runningwfView" pc="268440734" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="131" parent="globals/runningwfView" pc="268440762" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="132" parent="globals/runningwfView" pc="268440790" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="133" parent="globals/runningwfView" pc="268440827" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="134" parent="globals/runningwfView" pc="268440850" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="137" parent="globals/runningwfView" pc="268440873" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="139" parent="globals/runningwfView" pc="268440910" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="140" parent="globals/runningwfView" pc="268440938" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="141" parent="globals/runningwfView" pc="268440966" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="142" parent="globals/runningwfView" pc="268441003" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="143" parent="globals/runningwfView" pc="268441023" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="146" parent="globals/runningwfView" pc="268441057" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="148" parent="globals/runningwfView" pc="268441117" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="149" parent="globals/runningwfView" pc="268441145" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="150" parent="globals/runningwfView" pc="268441173" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="151" parent="globals/runningwfView" pc="268441210" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="152" parent="globals/runningwfView" pc="268441227" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="155" parent="globals/runningwfView" pc="268441241" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="157" parent="globals/runningwfView" pc="268441294" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="158" parent="globals/runningwfView" pc="268441322" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="159" parent="globals/runningwfView" pc="268441350" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="160" parent="globals/runningwfView" pc="268441387" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="161" parent="globals/runningwfView" pc="268441410" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="165" parent="globals/runningwfView" pc="268441433" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="168" parent="globals/runningwfView" pc="268441457" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="169" parent="globals/runningwfView" pc="268441488" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfView.mc" id="35" lineNum="170" parent="globals/runningwfView" pc="268441493" symbol="onUpdate"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfApp.mc" id="36" lineNum="5" parent="globals/runningwfApp" pc="268441511" symbol="&lt;init&gt;"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfApp.mc" id="37" lineNum="12" parent="globals/runningwfApp" pc="268441530" symbol="onStart"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfApp.mc" id="38" lineNum="25" parent="globals/runningwfApp" pc="268441533" symbol="onSettingsChanged"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfApp.mc" id="38" lineNum="26" parent="globals/runningwfApp" pc="268441535" symbol="onSettingsChanged"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfApp.mc" id="39" lineNum="20" parent="globals/runningwfApp" pc="268441552" symbol="getInitialView"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfApp.mc" id="39" lineNum="21" parent="globals/runningwfApp" pc="268441554" symbol="getInitialView"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfApp.mc" id="40" lineNum="7" parent="globals/runningwfApp" pc="268441595" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfApp.mc" id="40" lineNum="8" parent="globals/runningwfApp" pc="268441597" symbol="initialize"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/source/runningwfApp.mc" id="41" lineNum="16" parent="globals/runningwfApp" pc="268441616" symbol="onStop"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="19" parent="globals/Rez/Layouts" pc="268441619" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="20" parent="globals/Rez/Layouts" pc="268441631" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="22" parent="globals/Rez/Layouts" pc="268441659" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="24" parent="globals/Rez/Layouts" pc="268441771" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="26" parent="globals/Rez/Layouts" pc="268441883" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="28" parent="globals/Rez/Layouts" pc="268441995" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="30" parent="globals/Rez/Layouts" pc="268442107" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="32" parent="globals/Rez/Layouts" pc="268442219" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="34" parent="globals/Rez/Layouts" pc="268442331" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="36" parent="globals/Rez/Layouts" pc="268442443" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="38" parent="globals/Rez/Layouts" pc="268442555" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="40" parent="globals/Rez/Layouts" pc="268442667" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="42" parent="globals/Rez/Layouts" pc="268442779" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="44" parent="globals/Rez/Layouts" pc="268442891" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="46" parent="globals/Rez/Layouts" pc="268443003" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="48" parent="globals/Rez/Layouts" pc="268443115" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="50" parent="globals/Rez/Layouts" pc="268443227" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="52" parent="globals/Rez/Layouts" pc="268443339" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="54" parent="globals/Rez/Layouts" pc="268443451" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="56" parent="globals/Rez/Layouts" pc="268443563" symbol="WatchFace"/>
-        <entry filename="/home/hugo/Bureau/Garmin/running watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="42" lineNum="58" parent="globals/Rez/Layouts" pc="268443675" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="1" lineNum="7" parent="globals" pc="268435460" symbol="get_n_days_id"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="1" lineNum="8" parent="globals" pc="268435472" symbol="get_n_days_id"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="1" lineNum="9" parent="globals" pc="268435520" symbol="get_n_days_id"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="1" lineNum="10" parent="globals" pc="268435568" symbol="get_n_days_id"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="33" parent="globals/RunningMetrics" pc="268435664" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="37" parent="globals/RunningMetrics" pc="268435668" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="40" parent="globals/RunningMetrics" pc="268435689" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="42" parent="globals/RunningMetrics" pc="268435706" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="45" parent="globals/RunningMetrics" pc="268435713" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="47" parent="globals/RunningMetrics" pc="268435726" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="51" parent="globals/RunningMetrics" pc="268435733" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="54" parent="globals/RunningMetrics" pc="268435775" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="55" parent="globals/RunningMetrics" pc="268435797" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="56" parent="globals/RunningMetrics" pc="268435828" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="58" parent="globals/RunningMetrics" pc="268435850" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="64" parent="globals/RunningMetrics" pc="268435869" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="67" parent="globals/RunningMetrics" pc="268435886" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="68" parent="globals/RunningMetrics" pc="268435939" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="69" parent="globals/RunningMetrics" pc="268435939" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="70" parent="globals/RunningMetrics" pc="268435954" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="71" parent="globals/RunningMetrics" pc="268436007" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="75" parent="globals/RunningMetrics" pc="268436042" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="76" parent="globals/RunningMetrics" pc="268436059" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="77" parent="globals/RunningMetrics" pc="268436079" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="2" lineNum="79" parent="globals/RunningMetrics" pc="268436110" symbol="compute"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="3" lineNum="100" parent="globals/RunningMetrics" pc="268436139" symbol="get_runs"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="3" lineNum="101" parent="globals/RunningMetrics" pc="268436141" symbol="get_runs"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="4" lineNum="104" parent="globals/RunningMetrics" pc="268436164" symbol="get_climbed"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="4" lineNum="105" parent="globals/RunningMetrics" pc="268436166" symbol="get_climbed"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="5" lineNum="88" parent="globals/RunningMetrics" pc="268436175" symbol="get_time"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="5" lineNum="89" parent="globals/RunningMetrics" pc="268436179" symbol="get_time"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="5" lineNum="90" parent="globals/RunningMetrics" pc="268436195" symbol="get_time"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="5" lineNum="91" parent="globals/RunningMetrics" pc="268436214" symbol="get_time"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="5" lineNum="93" parent="globals/RunningMetrics" pc="268436242" symbol="get_time"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="5" lineNum="94" parent="globals/RunningMetrics" pc="268436253" symbol="get_time"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="5" lineNum="95" parent="globals/RunningMetrics" pc="268436263" symbol="get_time"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="5" lineNum="97" parent="globals/RunningMetrics" pc="268436273" symbol="get_time"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="6" lineNum="21" parent="globals/RunningMetrics" pc="268436348" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="6" lineNum="24" parent="globals/RunningMetrics" pc="268436350" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="6" lineNum="25" parent="globals/RunningMetrics" pc="268436363" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="6" lineNum="26" parent="globals/RunningMetrics" pc="268436376" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="6" lineNum="27" parent="globals/RunningMetrics" pc="268436389" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="6" lineNum="30" parent="globals/RunningMetrics" pc="268436402" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="7" lineNum="84" parent="globals/RunningMetrics" pc="268436441" symbol="get_distance"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningMetrics.mc" id="7" lineNum="85" parent="globals/RunningMetrics" pc="268436443" symbol="get_distance"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfApp.mc" id="8" lineNum="31" parent="globals" pc="268436472" symbol="getApp"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfApp.mc" id="8" lineNum="32" parent="globals" pc="268436482" symbol="getApp"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="9" lineNum="8" parent="globals/Background" pc="268436498" symbol="&lt;init&gt;"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="10" lineNum="10" parent="globals/Background" pc="268436517" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="10" lineNum="11" parent="globals/Background" pc="268436521" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="10" lineNum="15" parent="globals/Background" pc="268436542" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="18" parent="globals/Background" pc="268436563" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="21" parent="globals/Background" pc="268436567" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="22" parent="globals/Background" pc="268436574" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="24" parent="globals/Background" pc="268436581" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="25" parent="globals/Background" pc="268436591" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="26" parent="globals/Background" pc="268436631" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="28" parent="globals/Background" pc="268436674" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="29" parent="globals/Background" pc="268436711" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="31" parent="globals/Background" pc="268436728" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="32" parent="globals/Background" pc="268436751" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="34" parent="globals/Background" pc="268436774" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="35" parent="globals/Background" pc="268436797" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="37" parent="globals/Background" pc="268436820" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="38" parent="globals/Background" pc="268436852" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="40" parent="globals/Background" pc="268436884" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="41" parent="globals/Background" pc="268436916" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfBackground.mc" id="11" lineNum="47" parent="globals/Background" pc="268436948" symbol="draw"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="35" parent="globals" pc="268437001" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="37" parent="globals" pc="268437013" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="38" parent="globals" pc="268437065" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="40" parent="globals" pc="268437082" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="41" parent="globals" pc="268437089" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="43" parent="globals" pc="268437096" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="44" parent="globals" pc="268437103" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="46" parent="globals" pc="268437110" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="47" parent="globals" pc="268437117" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="49" parent="globals" pc="268437124" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="52" parent="globals" pc="268437142" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="51" parent="globals" pc="268437142" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="54" parent="globals" pc="268437142" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="53" parent="globals" pc="268437142" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="56" parent="globals" pc="268437142" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="57" parent="globals" pc="268437150" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="58" parent="globals" pc="268437154" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="60" parent="globals" pc="268437170" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="61" parent="globals" pc="268437174" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="64" parent="globals" pc="268437178" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="66" parent="globals" pc="268437194" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="67" parent="globals" pc="268437202" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="68" parent="globals" pc="268437206" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="70" parent="globals" pc="268437222" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="71" parent="globals" pc="268437226" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="12" lineNum="74" parent="globals" pc="268437230" symbol="draw_strip"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="13" lineNum="7" parent="globals/Rez" pc="268437261" symbol="&lt;init&gt;"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="14" lineNum="146" parent="globals/BonusMetrics" pc="268437285" symbol="compute_steps"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="14" lineNum="147" parent="globals/BonusMetrics" pc="268437287" symbol="compute_steps"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="14" lineNum="149" parent="globals/BonusMetrics" pc="268437310" symbol="compute_steps"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="14" lineNum="150" parent="globals/BonusMetrics" pc="268437323" symbol="compute_steps"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="14" lineNum="151" parent="globals/BonusMetrics" pc="268437342" symbol="compute_steps"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="14" lineNum="152" parent="globals/BonusMetrics" pc="268437358" symbol="compute_steps"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="14" lineNum="153" parent="globals/BonusMetrics" pc="268437381" symbol="compute_steps"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="14" lineNum="155" parent="globals/BonusMetrics" pc="268437432" symbol="compute_steps"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="15" lineNum="159" parent="globals/BonusMetrics" pc="268437496" symbol="compute_custom_data"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="15" lineNum="161" parent="globals/BonusMetrics" pc="268437498" symbol="compute_custom_data"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="15" lineNum="162" parent="globals/BonusMetrics" pc="268437526" symbol="compute_custom_data"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="16" lineNum="172" parent="globals/BonusMetrics" pc="268437555" symbol="compute_seconds"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="16" lineNum="173" parent="globals/BonusMetrics" pc="268437559" symbol="compute_seconds"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="16" lineNum="175" parent="globals/BonusMetrics" pc="268437578" symbol="compute_seconds"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="16" lineNum="176" parent="globals/BonusMetrics" pc="268437591" symbol="compute_seconds"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="17" lineNum="99" parent="globals/BonusMetrics" pc="268437622" symbol="compute_avg_resting_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="17" lineNum="100" parent="globals/BonusMetrics" pc="268437624" symbol="compute_avg_resting_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="17" lineNum="102" parent="globals/BonusMetrics" pc="268437647" symbol="compute_avg_resting_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="17" lineNum="103" parent="globals/BonusMetrics" pc="268437660" symbol="compute_avg_resting_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="106" parent="globals/BonusMetrics" pc="268437724" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="107" parent="globals/BonusMetrics" pc="268437728" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="108" parent="globals/BonusMetrics" pc="268437728" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="109" parent="globals/BonusMetrics" pc="268437761" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="111" parent="globals/BonusMetrics" pc="268437782" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="113" parent="globals/BonusMetrics" pc="268437789" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="114" parent="globals/BonusMetrics" pc="268437796" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="117" parent="globals/BonusMetrics" pc="268437803" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="119" parent="globals/BonusMetrics" pc="268437816" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="121" parent="globals/BonusMetrics" pc="268437823" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="124" parent="globals/BonusMetrics" pc="268437840" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="125" parent="globals/BonusMetrics" pc="268437853" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="127" parent="globals/BonusMetrics" pc="268437866" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="129" parent="globals/BonusMetrics" pc="268437882" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="132" parent="globals/BonusMetrics" pc="268437940" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="135" parent="globals/BonusMetrics" pc="268437947" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="18" lineNum="136" parent="globals/BonusMetrics" pc="268437960" symbol="compute_avg_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="19" lineNum="179" parent="globals/BonusMetrics" pc="268437971" symbol="compute_elevation"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="19" lineNum="180" parent="globals/BonusMetrics" pc="268437973" symbol="compute_elevation"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="19" lineNum="184" parent="globals/BonusMetrics" pc="268438015" symbol="compute_elevation"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="19" lineNum="185" parent="globals/BonusMetrics" pc="268438028" symbol="compute_elevation"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="20" lineNum="70" parent="globals/BonusMetrics" pc="268438095" symbol="get_title"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="20" lineNum="71" parent="globals/BonusMetrics" pc="268438097" symbol="get_title"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="21" lineNum="85" parent="globals/BonusMetrics" pc="268438106" symbol="compute_counter"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="21" lineNum="86" parent="globals/BonusMetrics" pc="268438110" symbol="compute_counter"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="21" lineNum="88" parent="globals/BonusMetrics" pc="268438158" symbol="compute_counter"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="21" lineNum="89" parent="globals/BonusMetrics" pc="268438195" symbol="compute_counter"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="21" lineNum="95" parent="globals/BonusMetrics" pc="268438266" symbol="compute_counter"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="21" lineNum="96" parent="globals/BonusMetrics" pc="268438279" symbol="compute_counter"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="22" lineNum="78" parent="globals/BonusMetrics" pc="268438351" symbol="compute_vo2_max"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="22" lineNum="79" parent="globals/BonusMetrics" pc="268438353" symbol="compute_vo2_max"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="22" lineNum="81" parent="globals/BonusMetrics" pc="268438376" symbol="compute_vo2_max"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="22" lineNum="82" parent="globals/BonusMetrics" pc="268438389" symbol="compute_vo2_max"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="23" lineNum="74" parent="globals/BonusMetrics" pc="268438453" symbol="get_value"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="23" lineNum="75" parent="globals/BonusMetrics" pc="268438455" symbol="get_value"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="24" lineNum="139" parent="globals/BonusMetrics" pc="268438464" symbol="compute_time_to_recovery"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="24" lineNum="140" parent="globals/BonusMetrics" pc="268438466" symbol="compute_time_to_recovery"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="24" lineNum="142" parent="globals/BonusMetrics" pc="268438489" symbol="compute_time_to_recovery"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="24" lineNum="143" parent="globals/BonusMetrics" pc="268438502" symbol="compute_time_to_recovery"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="25" lineNum="165" parent="globals/BonusMetrics" pc="268438572" symbol="compute_resting_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="25" lineNum="166" parent="globals/BonusMetrics" pc="268438574" symbol="compute_resting_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="25" lineNum="168" parent="globals/BonusMetrics" pc="268438597" symbol="compute_resting_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="25" lineNum="169" parent="globals/BonusMetrics" pc="268438610" symbol="compute_resting_hr"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="188" parent="globals/BonusMetrics" pc="268438674" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="191" parent="globals/BonusMetrics" pc="268438678" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="192" parent="globals/BonusMetrics" pc="268438700" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="193" parent="globals/BonusMetrics" pc="268438700" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="197" parent="globals/BonusMetrics" pc="268438722" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="194" parent="globals/BonusMetrics" pc="268438722" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="198" parent="globals/BonusMetrics" pc="268438729" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="201" parent="globals/BonusMetrics" pc="268438736" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="202" parent="globals/BonusMetrics" pc="268438751" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="205" parent="globals/BonusMetrics" pc="268438766" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="208" parent="globals/BonusMetrics" pc="268438783" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="210" parent="globals/BonusMetrics" pc="268438790" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="212" parent="globals/BonusMetrics" pc="268438803" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="214" parent="globals/BonusMetrics" pc="268438810" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="215" parent="globals/BonusMetrics" pc="268438852" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="218" parent="globals/BonusMetrics" pc="268438877" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="219" parent="globals/BonusMetrics" pc="268438919" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="222" parent="globals/BonusMetrics" pc="268438944" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="226" parent="globals/BonusMetrics" pc="268438963" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="227" parent="globals/BonusMetrics" pc="268438970" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="230" parent="globals/BonusMetrics" pc="268438977" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="231" parent="globals/BonusMetrics" pc="268439006" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="233" parent="globals/BonusMetrics" pc="268439022" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="234" parent="globals/BonusMetrics" pc="268439059" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="235" parent="globals/BonusMetrics" pc="268439085" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="26" lineNum="237" parent="globals/BonusMetrics" pc="268439139" symbol="compute_acute_chronic_ratio"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="21" parent="globals/BonusMetrics" pc="268439153" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="24" parent="globals/BonusMetrics" pc="268439155" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="25" parent="globals/BonusMetrics" pc="268439166" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="28" parent="globals/BonusMetrics" pc="268439181" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="29" parent="globals/BonusMetrics" pc="268439192" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="32" parent="globals/BonusMetrics" pc="268439207" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="33" parent="globals/BonusMetrics" pc="268439218" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="36" parent="globals/BonusMetrics" pc="268439233" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="37" parent="globals/BonusMetrics" pc="268439244" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="40" parent="globals/BonusMetrics" pc="268439259" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="41" parent="globals/BonusMetrics" pc="268439270" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="44" parent="globals/BonusMetrics" pc="268439285" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="45" parent="globals/BonusMetrics" pc="268439296" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="48" parent="globals/BonusMetrics" pc="268439311" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="49" parent="globals/BonusMetrics" pc="268439322" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="52" parent="globals/BonusMetrics" pc="268439337" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="53" parent="globals/BonusMetrics" pc="268439348" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="56" parent="globals/BonusMetrics" pc="268439363" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="57" parent="globals/BonusMetrics" pc="268439374" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="60" parent="globals/BonusMetrics" pc="268439389" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="61" parent="globals/BonusMetrics" pc="268439400" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="64" parent="globals/BonusMetrics" pc="268439415" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningBonusMetrics.mc" id="27" lineNum="65" parent="globals/BonusMetrics" pc="268439426" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="28" lineNum="19" parent="globals" pc="268439442" symbol="get_day_of_week"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="28" lineNum="22" parent="globals" pc="268439454" symbol="get_day_of_week"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="28" lineNum="25" parent="globals" pc="268439497" symbol="get_day_of_week"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="28" lineNum="26" parent="globals" pc="268439508" symbol="get_day_of_week"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="28" lineNum="28" parent="globals" pc="268439521" symbol="get_day_of_week"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/utils.mc" id="28" lineNum="31" parent="globals" pc="268439528" symbol="get_day_of_week"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="29" lineNum="11" parent="globals/runningwfView" pc="268439531" symbol="&lt;init&gt;"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="32" lineNum="18" parent="globals/runningwfView" pc="268439550" symbol="onLayout"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="32" lineNum="19" parent="globals/runningwfView" pc="268439552" symbol="onLayout"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="34" lineNum="13" parent="globals/runningwfView" pc="268439594" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="34" lineNum="14" parent="globals/runningwfView" pc="268439596" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="29" parent="globals/runningwfView" pc="268439615" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="33" parent="globals/runningwfView" pc="268439619" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="36" parent="globals/runningwfView" pc="268439636" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="37" parent="globals/runningwfView" pc="268439664" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="40" parent="globals/runningwfView" pc="268439698" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="41" parent="globals/runningwfView" pc="268439726" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="42" parent="globals/runningwfView" pc="268439758" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="47" parent="globals/runningwfView" pc="268439792" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="48" parent="globals/runningwfView" pc="268439799" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="49" parent="globals/runningwfView" pc="268439806" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="50" parent="globals/runningwfView" pc="268439813" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="53" parent="globals/runningwfView" pc="268439820" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="54" parent="globals/runningwfView" pc="268439842" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="56" parent="globals/runningwfView" pc="268439872" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="58" parent="globals/runningwfView" pc="268439884" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="59" parent="globals/runningwfView" pc="268439897" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="60" parent="globals/runningwfView" pc="268439910" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="61" parent="globals/runningwfView" pc="268439923" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="64" parent="globals/runningwfView" pc="268439936" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="65" parent="globals/runningwfView" pc="268439964" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="66" parent="globals/runningwfView" pc="268439992" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="67" parent="globals/runningwfView" pc="268440024" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="68" parent="globals/runningwfView" pc="268440041" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="71" parent="globals/runningwfView" pc="268440069" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="72" parent="globals/runningwfView" pc="268440097" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="73" parent="globals/runningwfView" pc="268440125" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="74" parent="globals/runningwfView" pc="268440157" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="75" parent="globals/runningwfView" pc="268440174" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="78" parent="globals/runningwfView" pc="268440188" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="79" parent="globals/runningwfView" pc="268440216" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="80" parent="globals/runningwfView" pc="268440244" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="81" parent="globals/runningwfView" pc="268440276" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="82" parent="globals/runningwfView" pc="268440293" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="85" parent="globals/runningwfView" pc="268440307" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="86" parent="globals/runningwfView" pc="268440335" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="87" parent="globals/runningwfView" pc="268440363" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="88" parent="globals/runningwfView" pc="268440395" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="89" parent="globals/runningwfView" pc="268440415" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="91" parent="globals/runningwfView" pc="268440435" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="93" parent="globals/runningwfView" pc="268440452" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="96" parent="globals/runningwfView" pc="268440466" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="98" parent="globals/runningwfView" pc="268440514" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="99" parent="globals/runningwfView" pc="268440542" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="100" parent="globals/runningwfView" pc="268440570" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="101" parent="globals/runningwfView" pc="268440602" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="102" parent="globals/runningwfView" pc="268440625" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="105" parent="globals/runningwfView" pc="268440648" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="107" parent="globals/runningwfView" pc="268440685" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="108" parent="globals/runningwfView" pc="268440713" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="109" parent="globals/runningwfView" pc="268440741" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="110" parent="globals/runningwfView" pc="268440773" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="111" parent="globals/runningwfView" pc="268440793" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="114" parent="globals/runningwfView" pc="268440827" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="116" parent="globals/runningwfView" pc="268440887" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="117" parent="globals/runningwfView" pc="268440915" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="118" parent="globals/runningwfView" pc="268440943" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="119" parent="globals/runningwfView" pc="268440975" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="120" parent="globals/runningwfView" pc="268440992" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="123" parent="globals/runningwfView" pc="268441006" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="125" parent="globals/runningwfView" pc="268441054" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="126" parent="globals/runningwfView" pc="268441082" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="127" parent="globals/runningwfView" pc="268441110" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="128" parent="globals/runningwfView" pc="268441142" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="129" parent="globals/runningwfView" pc="268441165" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="133" parent="globals/runningwfView" pc="268441188" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="136" parent="globals/runningwfView" pc="268441212" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="137" parent="globals/runningwfView" pc="268441240" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfView.mc" id="36" lineNum="138" parent="globals/runningwfView" pc="268441245" symbol="onUpdate"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfApp.mc" id="37" lineNum="5" parent="globals/runningwfApp" pc="268441263" symbol="&lt;init&gt;"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfApp.mc" id="38" lineNum="12" parent="globals/runningwfApp" pc="268441282" symbol="onStart"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfApp.mc" id="39" lineNum="25" parent="globals/runningwfApp" pc="268441285" symbol="onSettingsChanged"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfApp.mc" id="39" lineNum="26" parent="globals/runningwfApp" pc="268441287" symbol="onSettingsChanged"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfApp.mc" id="40" lineNum="20" parent="globals/runningwfApp" pc="268441304" symbol="getInitialView"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfApp.mc" id="40" lineNum="21" parent="globals/runningwfApp" pc="268441306" symbol="getInitialView"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfApp.mc" id="41" lineNum="7" parent="globals/runningwfApp" pc="268441347" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfApp.mc" id="41" lineNum="8" parent="globals/runningwfApp" pc="268441349" symbol="initialize"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/source/runningwfApp.mc" id="42" lineNum="16" parent="globals/runningwfApp" pc="268441368" symbol="onStop"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="19" parent="globals/Rez/Layouts" pc="268441371" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="20" parent="globals/Rez/Layouts" pc="268441383" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="22" parent="globals/Rez/Layouts" pc="268441411" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="24" parent="globals/Rez/Layouts" pc="268441523" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="26" parent="globals/Rez/Layouts" pc="268441635" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="28" parent="globals/Rez/Layouts" pc="268441747" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="30" parent="globals/Rez/Layouts" pc="268441859" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="32" parent="globals/Rez/Layouts" pc="268441971" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="34" parent="globals/Rez/Layouts" pc="268442083" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="36" parent="globals/Rez/Layouts" pc="268442195" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="38" parent="globals/Rez/Layouts" pc="268442307" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="40" parent="globals/Rez/Layouts" pc="268442419" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="42" parent="globals/Rez/Layouts" pc="268442531" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="44" parent="globals/Rez/Layouts" pc="268442643" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="46" parent="globals/Rez/Layouts" pc="268442755" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="48" parent="globals/Rez/Layouts" pc="268442867" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="50" parent="globals/Rez/Layouts" pc="268442979" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="52" parent="globals/Rez/Layouts" pc="268443091" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="54" parent="globals/Rez/Layouts" pc="268443203" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="56" parent="globals/Rez/Layouts" pc="268443315" symbol="WatchFace"/>
+        <entry filename="/home/hugo/Desktop/Engineer/garmin/running-watchface/bin/gen/006-B3992-00/source/Rez.mcgen" id="43" lineNum="58" parent="globals/Rez/Layouts" pc="268443427" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry field="true" id="55" symbol="METHOD_TITLE"/>
         <entry field="true" id="8389344" symbol="seconds"/>
-        <entry field="true" id="65" symbol="rolling7d"/>
-        <entry field="true" id="60" symbol="avg_rhr"/>
+        <entry field="true" id="68" symbol="rolling7d"/>
+        <entry field="true" id="63" symbol="avg_rhr"/>
         <entry field="true" id="8388936" method="true" symbol="info"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry field="true" id="49" symbol="ColorPurple"/>
+        <entry field="true" id="52" symbol="ColorPurple"/>
         <entry id="7" module="true" symbol="globals/Rez/Menus"/>
-        <entry id="29" method="true" symbol="compute_elevation"/>
-        <entry id="35" method="true" symbol="get_title"/>
-        <entry field="true" id="46" symbol="ColorGreen"/>
+        <entry id="30" method="true" symbol="compute_elevation"/>
+        <entry id="36" method="true" symbol="get_title"/>
+        <entry field="true" id="49" symbol="ColorGreen"/>
         <entry id="8389683" method="true" symbol="onSettingsChanged"/>
-        <entry field="true" id="50" symbol="ColorRed"/>
+        <entry field="true" id="53" symbol="ColorRed"/>
+        <entry id="25" method="true" symbol="compute_acute_chronic_ratio"/>
         <entry field="true" id="8388938" symbol="month"/>
-        <entry id="8390424" module="true" symbol="Storage"/>
-        <entry field="true" id="58" symbol="VERSION_TITLE"/>
+        <entry field="true" id="60" symbol="VERSION_TITLE"/>
         <entry id="8388924" module="true" symbol="Gregorian"/>
-        <entry id="31" method="true" symbol="compute_seconds"/>
+        <entry id="32" method="true" symbol="compute_seconds"/>
         <entry id="8388647" module="true" symbol="UserProfile"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="40" symbol="BONUS_1_TITLE"/>
-        <entry field="true" id="41" symbol="BONUS_2_TITLE"/>
-        <entry field="true" id="37" symbol="profile"/>
-        <entry field="true" id="44" symbol="ColorBlue"/>
-        <entry field="true" id="39" symbol="AppName"/>
+        <entry field="true" id="42" symbol="BONUS_1_TITLE"/>
+        <entry field="true" id="43" symbol="BONUS_2_TITLE"/>
+        <entry field="true" id="38" symbol="profile"/>
+        <entry field="true" id="47" symbol="ColorBlue"/>
+        <entry field="true" id="41" symbol="AppName"/>
         <entry id="8388633" module="true" symbol="ActivityMonitor"/>
         <entry field="true" id="8388963" symbol="altitude"/>
-        <entry field="true" id="62" symbol="free_one"/>
+        <entry field="true" id="65" symbol="free_one"/>
         <entry field="true" id="22" symbol="runs"/>
-        <entry field="true" id="52" symbol="DATA_SOURCE_TITLE"/>
+        <entry field="true" id="55" symbol="DATA_SOURCE_TITLE"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-        <entry field="true" id="53" symbol="DATA_TITLE"/>
+        <entry field="true" id="56" symbol="DATA_TITLE"/>
         <entry field="true" id="8388912" symbol="steps"/>
         <entry id="8389338" symbol="minute"/>
         <entry field="true" id="8388947" method="true" symbol="value"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
-        <entry field="true" id="48" symbol="ColorOrange"/>
+        <entry field="true" id="51" symbol="ColorOrange"/>
         <entry field="true" id="8388935" method="true" symbol="duration"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
         <entry id="19" method="true" symbol="get_runs"/>
@@ -373,65 +366,65 @@
         <entry field="true" id="8389064" symbol="locX"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry id="16" method="true" symbol="get_climbed"/>
+        <entry id="17" method="true" symbol="get_climbed"/>
         <entry id="24" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
-        <entry field="true" id="45" symbol="ColorDarkGray"/>
+        <entry field="true" id="48" symbol="ColorDarkGray"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
-        <entry id="36" method="true" symbol="get_value"/>
+        <entry id="37" method="true" symbol="get_value"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry field="true" id="56" symbol="NAME_TITLE"/>
+        <entry field="true" id="58" symbol="NAME_TITLE"/>
         <entry id="8389376" method="true" symbol="onEnterSleep"/>
         <entry field="true" id="8389063" symbol="identifier"/>
-        <entry field="true" id="66" symbol="stripTitle"/>
-        <entry id="14" object="true" symbol="runningwfView"/>
-        <entry id="17" method="true" symbol="get_distance"/>
+        <entry field="true" id="69" symbol="stripTitle"/>
+        <entry id="15" object="true" symbol="runningwfView"/>
+        <entry id="18" method="true" symbol="get_distance"/>
         <entry id="8389349" symbol="justification"/>
-        <entry field="true" id="8389137" method="true" symbol="compute"/>
-        <entry id="34" method="true" symbol="compute_vo2_max"/>
-        <entry field="true" id="63" symbol="resting_time"/>
-        <entry field="true" id="51" symbol="ColorWhite"/>
-        <entry field="true" id="8388882" method="true" symbol="save"/>
+        <entry id="8389137" method="true" symbol="compute"/>
+        <entry id="35" method="true" symbol="compute_vo2_max"/>
+        <entry field="true" id="66" symbol="resting_time"/>
+        <entry field="true" id="40" symbol="ACUTE_TITLE"/>
+        <entry field="true" id="54" symbol="ColorWhite"/>
         <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
-        <entry field="true" id="43" symbol="ColorBlack"/>
+        <entry field="true" id="46" symbol="ColorBlack"/>
         <entry field="true" id="8388911" symbol="distance"/>
         <entry id="20" method="true" symbol="get_time"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry id="13" object="true" symbol="runningwfApp"/>
-        <entry field="true" id="68" symbol="week"/>
+        <entry id="14" object="true" symbol="runningwfApp"/>
+        <entry field="true" id="71" symbol="week"/>
         <entry id="11" method="true" symbol="draw_strip"/>
-        <entry id="28" method="true" symbol="compute_custom_data"/>
+        <entry id="29" method="true" symbol="compute_custom_data"/>
         <entry id="8389377" method="true" symbol="onExitSleep"/>
         <entry id="8388644" module="true" symbol="System"/>
-        <entry field="true" id="64" symbol="rhr"/>
+        <entry field="true" id="67" symbol="rhr"/>
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry id="18" method="true" symbol="get_n_days_id"/>
-        <entry id="33" method="true" symbol="compute_time_to_recovery"/>
+        <entry id="13" method="true" symbol="get_n_days_id"/>
+        <entry id="34" method="true" symbol="compute_time_to_recovery"/>
         <entry field="true" id="8388720" symbol="hour"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
         <entry id="8389068" method="true" symbol="draw"/>
-        <entry field="true" id="61" symbol="counter"/>
-        <entry field="true" id="38" symbol="LauncherIcon"/>
+        <entry field="true" id="64" symbol="counter"/>
+        <entry field="true" id="39" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
         <entry id="12" method="true" symbol="get_day_of_week"/>
-        <entry id="32" method="true" symbol="compute_steps"/>
+        <entry id="33" method="true" symbol="compute_steps"/>
         <entry id="8389350" module="true" symbol="globals"/>
-        <entry field="true" id="42" symbol="BackgroundColorTitle"/>
+        <entry field="true" id="44" symbol="BackgroundColorTitle"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
         <entry id="8390146" module="true" object="true" symbol="Background"/>
         <entry id="8388702" method="true" symbol="initialize"/>
-        <entry field="true" id="15" symbol="climbed"/>
+        <entry field="true" id="16" symbol="climbed"/>
         <entry id="9" object="true" symbol="BonusMetrics"/>
-        <entry field="true" id="59" symbol="avg_hr"/>
+        <entry field="true" id="62" symbol="avg_hr"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry id="25" method="true" symbol="compute_avg_hr"/>
+        <entry id="26" method="true" symbol="compute_avg_hr"/>
         <entry id="8389808" symbol="period"/>
         <entry id="8388641" module="true" symbol="Math"/>
-        <entry field="true" id="47" symbol="ColorLightGray"/>
-        <entry field="true" id="57" symbol="RACE_DATE_TITLE"/>
+        <entry field="true" id="50" symbol="ColorLightGray"/>
+        <entry field="true" id="59" symbol="RACE_DATE_TITLE"/>
         <entry field="true" id="21" symbol="n_days"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
@@ -439,150 +432,147 @@
         <entry field="true" id="8388939" symbol="day"/>
         <entry id="8389781" module="true" symbol="SensorHistory"/>
         <entry id="10" object="true" symbol="RunningMetrics"/>
-        <entry id="27" method="true" symbol="compute_counter"/>
-        <entry field="true" id="54" symbol="ForegroundColorTitle"/>
-        <entry id="30" method="true" symbol="compute_resting_hr"/>
+        <entry id="28" method="true" symbol="compute_counter"/>
+        <entry field="true" id="57" symbol="ForegroundColorTitle"/>
+        <entry id="31" method="true" symbol="compute_resting_hr"/>
         <entry field="true" id="8388940" symbol="year"/>
-        <entry id="26" method="true" symbol="compute_avg_resting_hr"/>
+        <entry id="27" method="true" symbol="compute_avg_resting_hr"/>
         <entry id="23" module="true" symbol="Layouts"/>
+        <entry field="true" id="61" symbol="ac_ratio"/>
+        <entry field="true" id="45" symbol="CHRONIC_TITLE"/>
         <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
         <entry id="8389125" method="true" symbol="onHide"/>
-        <entry field="true" id="67" symbol="vo2"/>
+        <entry field="true" id="70" symbol="vo2"/>
         <entry id="8388635" module="true" symbol="Application"/>
         <entry field="true" id="8389642" symbol="title"/>
     </symbolTable>
     <localVars>
-        <entry endPc="268435933" name="n_days_id" stackId="1" startPc="268435464"/>
-        <entry endPc="268435933" name="activityIterator" stackId="2" startPc="268435464"/>
-        <entry endPc="268435661" name="activity" stackId="3" startPc="268435509"/>
-        <entry endPc="268435933" name="history" stackId="4" startPc="268435464"/>
-        <entry endPc="268435933" name="loop" stackId="5" startPc="268435464"/>
-        <entry endPc="268435933" name="daily_floor" stackId="6" startPc="268435464"/>
-        <entry endPc="268435837" name="i" stackId="7" startPc="268435750"/>
-        <entry endPc="268435933" name="info" stackId="8" startPc="268435464"/>
-        <entry arg="true" endPc="268436155" name="n_days" stackId="1" startPc="268435960"/>
-        <entry endPc="268436155" name="n_days_secs" stackId="2" startPc="268435964"/>
-        <entry endPc="268436155" name="n_days_info" stackId="3" startPc="268435964"/>
-        <entry endPc="268436339" name="div" stackId="1" startPc="268436171"/>
-        <entry endPc="268436339" name="hours" stackId="2" startPc="268436171"/>
-        <entry endPc="268436339" name="mins" stackId="3" startPc="268436171"/>
-        <entry arg="true" endPc="268436432" name="window" stackId="1" startPc="268436340"/>
-        <entry endPc="268436553" name="dictionary" stackId="1" startPc="268436513"/>
-        <entry arg="true" endPc="268437007" name="dc" stackId="1" startPc="268436555"/>
-        <entry endPc="268437006" name="size" stackId="2" startPc="268436559"/>
-        <entry endPc="268437006" name="length" stackId="3" startPc="268436559"/>
-        <entry endPc="268437006" name="center" stackId="4" startPc="268436559"/>
-        <entry endPc="268437006" name="cc1" stackId="5" startPc="268436559"/>
-        <entry endPc="268437006" name="cc2" stackId="6" startPc="268436559"/>
-        <entry arg="true" endPc="268437277" name="dc" stackId="1" startPc="268437008"/>
-        <entry endPc="268437276" name="slope" stackId="2" startPc="268437020"/>
-        <entry endPc="268437276" name="step" stackId="3" startPc="268437020"/>
-        <entry endPc="268437276" name="x_min" stackId="4" startPc="268437020"/>
-        <entry endPc="268437276" name="x_max" stackId="5" startPc="268437020"/>
-        <entry endPc="268437276" name="y_min" stackId="6" startPc="268437020"/>
-        <entry endPc="268437276" name="y_max" stackId="7" startPc="268437020"/>
-        <entry endPc="268437276" name="i" stackId="8" startPc="268437159"/>
-        <entry endPc="268437266" name="x1" stackId="9" startPc="268437159"/>
-        <entry endPc="268437266" name="x2" stackId="10" startPc="268437159"/>
-        <entry endPc="268437266" name="y1" stackId="11" startPc="268437159"/>
-        <entry endPc="268437266" name="y2" stackId="12" startPc="268437159"/>
-        <entry endPc="268437266" name="j" stackId="13" startPc="268437159"/>
-        <entry endPc="268437647" name="clockTime" stackId="1" startPc="268437586"/>
-        <entry endPc="268437996" name="avg_hr" stackId="1" startPc="268437755"/>
-        <entry endPc="268437996" name="one_minute" stackId="2" startPc="268437755"/>
-        <entry endPc="268437996" name="hrIterator" stackId="3" startPc="268437755"/>
-        <entry endPc="268437963" name="hr_sum" stackId="4" startPc="268437816"/>
-        <entry endPc="268437963" name="hr_count" stackId="5" startPc="268437816"/>
-        <entry endPc="268437963" name="hrSample" stackId="6" startPc="268437816"/>
-        <entry endPc="268438381" name="race_day" stackId="1" startPc="268438137"/>
-        <entry endPc="268438381" name="now" stackId="2" startPc="268438137"/>
-        <entry endPc="268438381" name="today" stackId="3" startPc="268438137"/>
-        <entry arg="true" endPc="268438968" name="metric_id" stackId="1" startPc="268438706"/>
-        <entry endPc="268439057" name="day_of_week" stackId="1" startPc="268438981"/>
-        <entry arg="true" endPc="268439120" name="dc" stackId="1" startPc="268439077"/>
-        <entry endPc="268439396" name="method" stackId="1" startPc="268439125"/>
-        <entry endPc="268439393" name="window" stackId="2" startPc="268439181"/>
-        <entry endPc="268439393" name="running_metrics" stackId="3" startPc="268439181"/>
-        <entry endPc="268439393" name="distance" stackId="4" startPc="268439181"/>
-        <entry endPc="268439393" name="time" stackId="5" startPc="268439181"/>
-        <entry endPc="268439393" name="runs" stackId="6" startPc="268439181"/>
-        <entry endPc="268439393" name="climbed" stackId="7" startPc="268439181"/>
-        <entry endPc="268439655" name="method" stackId="1" startPc="268439402"/>
-        <entry endPc="268439652" name="window" stackId="2" startPc="268439440"/>
-        <entry endPc="268439652" name="running_metrics" stackId="3" startPc="268439440"/>
-        <entry endPc="268439652" name="distance" stackId="4" startPc="268439440"/>
-        <entry endPc="268439652" name="time" stackId="5" startPc="268439440"/>
-        <entry endPc="268439652" name="runs" stackId="6" startPc="268439440"/>
-        <entry endPc="268439652" name="climbed" stackId="7" startPc="268439440"/>
-        <entry arg="true" endPc="268441510" name="dc" stackId="1" startPc="268439657"/>
-        <entry endPc="268441509" name="clockTime" stackId="2" startPc="268439661"/>
-        <entry endPc="268441509" name="hours" stackId="3" startPc="268439661"/>
-        <entry endPc="268441509" name="minutes" stackId="4" startPc="268439661"/>
-        <entry endPc="268441509" name="method" stackId="5" startPc="268439661"/>
-        <entry endPc="268441509" name="distance" stackId="6" startPc="268439661"/>
-        <entry endPc="268441509" name="time" stackId="7" startPc="268439661"/>
-        <entry endPc="268441509" name="runs" stackId="8" startPc="268439661"/>
-        <entry endPc="268441509" name="climbed" stackId="9" startPc="268439661"/>
-        <entry endPc="268440127" name="window" stackId="10" startPc="268440007"/>
-        <entry endPc="268440127" name="running_metrics" stackId="11" startPc="268440007"/>
-        <entry endPc="268441509" name="name1" stackId="12" startPc="268439661"/>
-        <entry endPc="268441509" name="data1" stackId="13" startPc="268439661"/>
-        <entry endPc="268441509" name="name2" stackId="14" startPc="268439661"/>
-        <entry endPc="268441509" name="data2" stackId="15" startPc="268439661"/>
-        <entry endPc="268441509" name="name3" stackId="16" startPc="268439661"/>
-        <entry endPc="268441509" name="data3" stackId="17" startPc="268439661"/>
-        <entry endPc="268441509" name="name4" stackId="18" startPc="268439661"/>
-        <entry endPc="268441509" name="data4" stackId="19" startPc="268439661"/>
-        <entry endPc="268441509" name="bonus_field_1" stackId="20" startPc="268439661"/>
-        <entry endPc="268441509" name="name5" stackId="21" startPc="268439661"/>
-        <entry endPc="268441509" name="data5" stackId="22" startPc="268439661"/>
-        <entry endPc="268441509" name="today" stackId="23" startPc="268439661"/>
-        <entry endPc="268441509" name="name6" stackId="24" startPc="268439661"/>
-        <entry endPc="268441509" name="data6" stackId="25" startPc="268439661"/>
-        <entry endPc="268441509" name="battery" stackId="26" startPc="268439661"/>
-        <entry endPc="268441509" name="name7" stackId="27" startPc="268439661"/>
-        <entry endPc="268441509" name="data7" stackId="28" startPc="268439661"/>
-        <entry endPc="268441509" name="bonus_field_2" stackId="29" startPc="268439661"/>
-        <entry endPc="268441509" name="name8" stackId="30" startPc="268439661"/>
-        <entry endPc="268441509" name="data8" stackId="31" startPc="268439661"/>
-        <entry endPc="268441509" name="hour_strip" stackId="32" startPc="268439661"/>
-        <entry arg="true" endPc="268443871" name="dc" stackId="1" startPc="268441619"/>
-        <entry endPc="268443871" name="rez_cmp_local_custom_drawable_12509980561050585795" stackId="2" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_HoursLabel" stackId="3" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_MinutesLabel" stackId="4" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Name1" stackId="5" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Data1" stackId="6" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Name2" stackId="7" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Data2" stackId="8" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Name3" stackId="9" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Data3" stackId="10" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Name4" stackId="11" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Data4" stackId="12" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Name5" stackId="13" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Data5" stackId="14" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Name6" stackId="15" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Data6" stackId="16" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Name7" stackId="17" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Data7" stackId="18" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Name8" stackId="19" startPc="268441631"/>
-        <entry endPc="268443871" name="rez_cmp_local_text_Data8" stackId="20" startPc="268441631"/>
+        <entry arg="true" endPc="268435663" name="num_days" stackId="1" startPc="268435460"/>
+        <entry endPc="268435663" name="n_days_secs" stackId="2" startPc="268435472"/>
+        <entry endPc="268435663" name="n_days_info" stackId="3" startPc="268435472"/>
+        <entry endPc="268436137" name="n_days_id" stackId="1" startPc="268435668"/>
+        <entry endPc="268436137" name="activityIterator" stackId="2" startPc="268435668"/>
+        <entry endPc="268435865" name="activity" stackId="3" startPc="268435713"/>
+        <entry endPc="268436137" name="history" stackId="4" startPc="268435668"/>
+        <entry endPc="268436137" name="loop" stackId="5" startPc="268435668"/>
+        <entry endPc="268436137" name="daily_floor" stackId="6" startPc="268435668"/>
+        <entry endPc="268436041" name="i" stackId="7" startPc="268435954"/>
+        <entry endPc="268436137" name="info" stackId="8" startPc="268435668"/>
+        <entry endPc="268436347" name="div" stackId="1" startPc="268436179"/>
+        <entry endPc="268436347" name="hours" stackId="2" startPc="268436179"/>
+        <entry endPc="268436347" name="mins" stackId="3" startPc="268436179"/>
+        <entry arg="true" endPc="268436440" name="window" stackId="1" startPc="268436348"/>
+        <entry endPc="268436561" name="dictionary" stackId="1" startPc="268436521"/>
+        <entry arg="true" endPc="268437000" name="dc" stackId="1" startPc="268436563"/>
+        <entry endPc="268436999" name="size" stackId="2" startPc="268436567"/>
+        <entry endPc="268436999" name="length" stackId="3" startPc="268436567"/>
+        <entry endPc="268436999" name="center" stackId="4" startPc="268436567"/>
+        <entry endPc="268436999" name="cc1" stackId="5" startPc="268436567"/>
+        <entry endPc="268436999" name="cc2" stackId="6" startPc="268436567"/>
+        <entry arg="true" endPc="268437260" name="dc" stackId="1" startPc="268437001"/>
+        <entry endPc="268437259" name="slope" stackId="2" startPc="268437013"/>
+        <entry endPc="268437259" name="step" stackId="3" startPc="268437013"/>
+        <entry endPc="268437259" name="x_min" stackId="4" startPc="268437013"/>
+        <entry endPc="268437259" name="x_max" stackId="5" startPc="268437013"/>
+        <entry endPc="268437259" name="y_min" stackId="6" startPc="268437013"/>
+        <entry endPc="268437259" name="y_max" stackId="7" startPc="268437013"/>
+        <entry endPc="268437259" name="i" stackId="8" startPc="268437142"/>
+        <entry endPc="268437249" name="x1" stackId="9" startPc="268437142"/>
+        <entry endPc="268437249" name="x2" stackId="10" startPc="268437142"/>
+        <entry endPc="268437249" name="y1" stackId="11" startPc="268437142"/>
+        <entry endPc="268437249" name="y2" stackId="12" startPc="268437142"/>
+        <entry endPc="268437249" name="j" stackId="13" startPc="268437142"/>
+        <entry endPc="268437620" name="clockTime" stackId="1" startPc="268437559"/>
+        <entry endPc="268437969" name="avg_hr" stackId="1" startPc="268437728"/>
+        <entry endPc="268437969" name="one_minute" stackId="2" startPc="268437728"/>
+        <entry endPc="268437969" name="hrIterator" stackId="3" startPc="268437728"/>
+        <entry endPc="268437936" name="hr_sum" stackId="4" startPc="268437789"/>
+        <entry endPc="268437936" name="hr_count" stackId="5" startPc="268437789"/>
+        <entry endPc="268437936" name="hrSample" stackId="6" startPc="268437789"/>
+        <entry endPc="268438349" name="race_day" stackId="1" startPc="268438110"/>
+        <entry endPc="268438349" name="now" stackId="2" startPc="268438110"/>
+        <entry endPc="268438349" name="today" stackId="3" startPc="268438110"/>
+        <entry endPc="268439151" name="acute_days" stackId="1" startPc="268438678"/>
+        <entry endPc="268439151" name="acute_duration" stackId="2" startPc="268438678"/>
+        <entry endPc="268439151" name="chronic_days" stackId="3" startPc="268438678"/>
+        <entry endPc="268439151" name="chronic_duration" stackId="4" startPc="268438678"/>
+        <entry endPc="268439151" name="acute_days_id" stackId="5" startPc="268438678"/>
+        <entry endPc="268439151" name="chronic_days_id" stackId="6" startPc="268438678"/>
+        <entry endPc="268439151" name="activityIterator" stackId="7" startPc="268438678"/>
+        <entry endPc="268438959" name="activity" stackId="8" startPc="268438790"/>
+        <entry endPc="268439138" name="load" stackId="9" startPc="268439022"/>
+        <entry endPc="268439138" name="sym" stackId="10" startPc="268439022"/>
+        <entry arg="true" endPc="268439441" name="metric_id" stackId="1" startPc="268439153"/>
+        <entry endPc="268439530" name="day_of_week" stackId="1" startPc="268439454"/>
+        <entry arg="true" endPc="268439593" name="dc" stackId="1" startPc="268439550"/>
+        <entry arg="true" endPc="268441262" name="dc" stackId="1" startPc="268439615"/>
+        <entry endPc="268441261" name="clockTime" stackId="2" startPc="268439619"/>
+        <entry endPc="268441261" name="hours" stackId="3" startPc="268439619"/>
+        <entry endPc="268441261" name="minutes" stackId="4" startPc="268439619"/>
+        <entry endPc="268441261" name="distance" stackId="5" startPc="268439619"/>
+        <entry endPc="268441261" name="time" stackId="6" startPc="268439619"/>
+        <entry endPc="268441261" name="runs" stackId="7" startPc="268439619"/>
+        <entry endPc="268441261" name="climbed" stackId="8" startPc="268439619"/>
+        <entry endPc="268441261" name="window" stackId="9" startPc="268439619"/>
+        <entry endPc="268441261" name="running_metrics" stackId="10" startPc="268439619"/>
+        <entry endPc="268441261" name="name1" stackId="11" startPc="268439619"/>
+        <entry endPc="268441261" name="data1" stackId="12" startPc="268439619"/>
+        <entry endPc="268441261" name="name2" stackId="13" startPc="268439619"/>
+        <entry endPc="268441261" name="data2" stackId="14" startPc="268439619"/>
+        <entry endPc="268441261" name="name3" stackId="15" startPc="268439619"/>
+        <entry endPc="268441261" name="data3" stackId="16" startPc="268439619"/>
+        <entry endPc="268441261" name="name4" stackId="17" startPc="268439619"/>
+        <entry endPc="268441261" name="data4" stackId="18" startPc="268439619"/>
+        <entry endPc="268441261" name="bonus_field_1" stackId="19" startPc="268439619"/>
+        <entry endPc="268441261" name="name5" stackId="20" startPc="268439619"/>
+        <entry endPc="268441261" name="data5" stackId="21" startPc="268439619"/>
+        <entry endPc="268441261" name="today" stackId="22" startPc="268439619"/>
+        <entry endPc="268441261" name="name6" stackId="23" startPc="268439619"/>
+        <entry endPc="268441261" name="data6" stackId="24" startPc="268439619"/>
+        <entry endPc="268441261" name="battery" stackId="25" startPc="268439619"/>
+        <entry endPc="268441261" name="name7" stackId="26" startPc="268439619"/>
+        <entry endPc="268441261" name="data7" stackId="27" startPc="268439619"/>
+        <entry endPc="268441261" name="bonus_field_2" stackId="28" startPc="268439619"/>
+        <entry endPc="268441261" name="name8" stackId="29" startPc="268439619"/>
+        <entry endPc="268441261" name="data8" stackId="30" startPc="268439619"/>
+        <entry endPc="268441261" name="hour_strip" stackId="31" startPc="268439619"/>
+        <entry arg="true" endPc="268443623" name="dc" stackId="1" startPc="268441371"/>
+        <entry endPc="268443623" name="rez_cmp_local_custom_drawable_47701814080619854102" stackId="2" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_HoursLabel" stackId="3" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_MinutesLabel" stackId="4" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Name1" stackId="5" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Data1" stackId="6" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Name2" stackId="7" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Data2" stackId="8" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Name3" stackId="9" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Data3" stackId="10" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Name4" stackId="11" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Data4" stackId="12" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Name5" stackId="13" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Data5" stackId="14" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Name6" stackId="15" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Data6" stackId="16" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Name7" stackId="17" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Data7" stackId="18" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Name8" stackId="19" startPc="268441383"/>
+        <entry endPc="268443623" name="rez_cmp_local_text_Data8" stackId="20" startPc="268441383"/>
     </localVars>
     <annotations>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ACUTE_TITLE"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="vo2"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BONUS_2_TITLE"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="rolling7d"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="CHRONIC_TITLE"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DATA_TITLE"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorGreen"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorPurple"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="METHOD_TITLE"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="altitude"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DATA_SOURCE_TITLE"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="compute"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="VERSION_TITLE"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorOrange"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="steps"/>
@@ -593,6 +583,7 @@
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="free_one"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BONUS_1_TITLE"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="avg_hr"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ac_ratio"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="counter"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ForegroundColorTitle"/>
@@ -601,119 +592,121 @@
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="seconds"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="resting_time"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="save"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="NAME_TITLE"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
     </annotations>
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/RunningMetrics" offset="198" parentId="globals" symbolId="RunningMetrics" type="class"/>
+        <dataEntry label="globals/RunningMetrics" offset="206" parentId="globals" symbolId="RunningMetrics" type="class"/>
         <dataEntry label="globals/Background" offset="333" parentId="globals" symbolId="Background" type="class"/>
         <dataEntry label="globals/Rez" offset="388" parentId="globals" symbolId="Rez" type="module"/>
         <dataEntry label="globals/BonusMetrics" offset="467" parentId="globals" symbolId="BonusMetrics" type="class"/>
-        <dataEntry label="globals/runningwfView" offset="642" parentId="globals" symbolId="runningwfView" type="class"/>
-        <dataEntry label="globals/runningwfApp" offset="737" parentId="globals" symbolId="runningwfApp" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="816" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="855" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="894" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Fonts" offset="925" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="956" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/Rez/JsonData" offset="1267" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/runningwfView" offset="650" parentId="globals" symbolId="runningwfView" type="class"/>
+        <dataEntry label="globals/runningwfApp" offset="745" parentId="globals" symbolId="runningwfApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="824" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="863" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="902" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="933" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="964" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="1275" parentId="Rez" symbolId="JsonData" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
+        <functionEntry accessMode="public" endPc="268435663" name="get_n_days_id" startPc="268435460">
+            <param id="num_days"/>
+            <documentation/>
+        </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="RunningMetrics">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435934" name="compute" parent="RunningMetrics" startPc="268435460">
+        <functionEntry accessMode="public" endPc="268436138" name="compute" parent="RunningMetrics" startPc="268435664">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435959" name="get_runs" parent="RunningMetrics" startPc="268435935">
+        <functionEntry accessMode="public" endPc="268436163" name="get_runs" parent="RunningMetrics" startPc="268436139">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436155" name="get_n_days_id" parent="RunningMetrics" startPc="268435960">
-            <param id="n_days"/>
+        <functionEntry accessMode="public" endPc="268436174" name="get_climbed" parent="RunningMetrics" startPc="268436164">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436166" name="get_climbed" parent="RunningMetrics" startPc="268436156">
+        <functionEntry accessMode="public" endPc="268436347" name="get_time" parent="RunningMetrics" startPc="268436175">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436339" name="get_time" parent="RunningMetrics" startPc="268436167">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436432" name="initialize" parent="RunningMetrics" startPc="268436340">
+        <functionEntry accessMode="public" endPc="268436440" name="initialize" parent="RunningMetrics" startPc="268436348">
             <param id="window"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436463" name="get_distance" parent="RunningMetrics" startPc="268436433">
+        <functionEntry accessMode="public" endPc="268436471" name="get_distance" parent="RunningMetrics" startPc="268436441">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436489" name="getApp" startPc="268436464">
+        <functionEntry accessMode="public" endPc="268436497" name="getApp" startPc="268436472">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436508" name="&lt;init&gt;" parent="Background" startPc="268436490">
+        <functionEntry accessMode="public" endPc="268436516" name="&lt;init&gt;" parent="Background" startPc="268436498">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436554" name="initialize" parent="Background" startPc="268436509">
+        <functionEntry accessMode="public" endPc="268436562" name="initialize" parent="Background" startPc="268436517">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437007" name="draw" parent="Background" startPc="268436555">
+        <functionEntry accessMode="public" endPc="268437000" name="draw" parent="Background" startPc="268436563">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437277" name="draw_strip" startPc="268437008">
+        <functionEntry accessMode="public" endPc="268437260" name="draw_strip" startPc="268437001">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437301" name="&lt;init&gt;" parent="Rez" startPc="268437278">
+        <functionEntry accessMode="public" endPc="268437284" name="&lt;init&gt;" parent="Rez" startPc="268437261">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="BonusMetrics">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437512" name="compute_steps" parent="BonusMetrics" startPc="268437302">
+        <functionEntry accessMode="public" endPc="268437495" name="compute_steps" parent="BonusMetrics" startPc="268437285">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437581" name="compute_custom_data" parent="BonusMetrics" startPc="268437513">
+        <functionEntry accessMode="public" endPc="268437554" name="compute_custom_data" parent="BonusMetrics" startPc="268437496">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437648" name="compute_seconds" parent="BonusMetrics" startPc="268437582">
+        <functionEntry accessMode="public" endPc="268437621" name="compute_seconds" parent="BonusMetrics" startPc="268437555">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437750" name="compute_avg_resting_hr" parent="BonusMetrics" startPc="268437649">
+        <functionEntry accessMode="public" endPc="268437723" name="compute_avg_resting_hr" parent="BonusMetrics" startPc="268437622">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437997" name="compute_avg_hr" parent="BonusMetrics" startPc="268437751">
+        <functionEntry accessMode="public" endPc="268437970" name="compute_avg_hr" parent="BonusMetrics" startPc="268437724">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438121" name="compute_elevation" parent="BonusMetrics" startPc="268437998">
+        <functionEntry accessMode="public" endPc="268438094" name="compute_elevation" parent="BonusMetrics" startPc="268437971">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438132" name="get_title" parent="BonusMetrics" startPc="268438122">
+        <functionEntry accessMode="public" endPc="268438105" name="get_title" parent="BonusMetrics" startPc="268438095">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438382" name="compute_counter" parent="BonusMetrics" startPc="268438133">
+        <functionEntry accessMode="public" endPc="268438350" name="compute_counter" parent="BonusMetrics" startPc="268438106">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438484" name="compute_vo2_max" parent="BonusMetrics" startPc="268438383">
+        <functionEntry accessMode="public" endPc="268438452" name="compute_vo2_max" parent="BonusMetrics" startPc="268438351">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438495" name="get_value" parent="BonusMetrics" startPc="268438485">
+        <functionEntry accessMode="public" endPc="268438463" name="get_value" parent="BonusMetrics" startPc="268438453">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438603" name="compute_time_to_recovery" parent="BonusMetrics" startPc="268438496">
+        <functionEntry accessMode="public" endPc="268438571" name="compute_time_to_recovery" parent="BonusMetrics" startPc="268438464">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438705" name="compute_resting_hr" parent="BonusMetrics" startPc="268438604">
+        <functionEntry accessMode="public" endPc="268438673" name="compute_resting_hr" parent="BonusMetrics" startPc="268438572">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438968" name="initialize" parent="BonusMetrics" startPc="268438706">
+        <functionEntry accessMode="public" endPc="268439152" name="compute_acute_chronic_ratio" parent="BonusMetrics" startPc="268438674">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439441" name="initialize" parent="BonusMetrics" startPc="268439153">
             <param id="metric_id"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439057" name="get_day_of_week" startPc="268438969">
+        <functionEntry accessMode="public" endPc="268439530" name="get_day_of_week" startPc="268439442">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439076" name="&lt;init&gt;" parent="runningwfView" startPc="268439058">
+        <functionEntry accessMode="public" endPc="268439549" name="&lt;init&gt;" parent="runningwfView" startPc="268439531">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onExitSleep" parent="runningwfView">
@@ -722,40 +715,40 @@
         <functionEntry accessMode="public" name="onShow" parent="runningwfView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439120" name="onLayout" parent="runningwfView" startPc="268439077">
+        <functionEntry accessMode="public" endPc="268439593" name="onLayout" parent="runningwfView" startPc="268439550">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onEnterSleep" parent="runningwfView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439397" name="initialize" parent="runningwfView" startPc="268439121">
+        <functionEntry accessMode="public" endPc="268439614" name="initialize" parent="runningwfView" startPc="268439594">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439656" name="onHide" parent="runningwfView" startPc="268439398">
+        <functionEntry accessMode="public" name="onHide" parent="runningwfView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441510" name="onUpdate" parent="runningwfView" startPc="268439657">
+        <functionEntry accessMode="public" endPc="268441262" name="onUpdate" parent="runningwfView" startPc="268439615">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441529" name="&lt;init&gt;" parent="runningwfApp" startPc="268441511">
+        <functionEntry accessMode="public" endPc="268441281" name="&lt;init&gt;" parent="runningwfApp" startPc="268441263">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441532" name="onStart" parent="runningwfApp" startPc="268441530">
+        <functionEntry accessMode="public" endPc="268441284" name="onStart" parent="runningwfApp" startPc="268441282">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441551" name="onSettingsChanged" parent="runningwfApp" startPc="268441533">
+        <functionEntry accessMode="public" endPc="268441303" name="onSettingsChanged" parent="runningwfApp" startPc="268441285">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441594" name="getInitialView" parent="runningwfApp" startPc="268441552">
+        <functionEntry accessMode="public" endPc="268441346" name="getInitialView" parent="runningwfApp" startPc="268441304">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441615" name="initialize" parent="runningwfApp" startPc="268441595">
+        <functionEntry accessMode="public" endPc="268441367" name="initialize" parent="runningwfApp" startPc="268441347">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441618" name="onStop" parent="runningwfApp" startPc="268441616">
+        <functionEntry accessMode="public" endPc="268441370" name="onStop" parent="runningwfApp" startPc="268441368">
             <param id="state"/>
             <documentation/>
         </functionEntry>
@@ -777,7 +770,7 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268443871" name="WatchFace" parent="Layouts" startPc="268441619">
+        <functionEntry accessMode="public" endPc="268443623" name="WatchFace" parent="Layouts" startPc="268441371">
             <param id="dc"/>
             <documentation/>
         </functionEntry>

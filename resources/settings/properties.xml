@@ -1,6 +1,6 @@
 <properties>
 
-    <property id="VERSION_ID" type="string">2.3.4</property>
+    <property id="VERSION_ID" type="string">2.4.0</property>
 
     <property id="BackgroundColor" type="number">0x000000</property>
     <property id="ForegroundColor" type="number">0xFF0000</property>
@@ -9,10 +9,11 @@
 
     <property id="DATA_SOURCE_ID" type="number">1</property>
 
-    <property id="METHOD_ID" type="number">1</property>
+    <property id="ACUTE_ID" type="number">7</property>
+    <property id="CHRONIC_ID" type="number">42</property>
 
     <property id="BONUS_1_ID" type="number">0</property>
-    <property id="BONUS_2_ID" type="number">5</property>
+    <property id="BONUS_2_ID" type="number">10</property>
 
     <property id="RACE_DATE_ID" type="number">1670716800</property>
 

@@ -1,3 +1,4 @@
+import Toybox.Application;
 import Toybox.Lang;
 import Toybox.Time;
 import Toybox.Time.Gregorian;
@@ -58,6 +59,10 @@ class BonusMetrics {
         // Elevation
         } else if (metric_id == 9) {
             self.compute_elevation();
+
+        // Acute to chronic ratio
+        } else if (metric_id == 10) {
+            self.compute_acute_chronic_ratio();
         }
 
     }
@@ -78,7 +83,7 @@ class BonusMetrics {
     }
 
     function compute_counter() {
-        var race_day = new Time.Moment(getApp().getProperty("RACE_DATE_ID") as Number);
+        var race_day = new Time.Moment(Properties.getValue("RACE_DATE_ID") as Number);
 
         var now = Gregorian.utcInfo(Time.now(), Time.FORMAT_SHORT);
         var today = Gregorian.moment({
@@ -153,8 +158,8 @@ class BonusMetrics {
 
     function compute_custom_data() {
 
-        title = getApp().getProperty("NAME_ID");
-        value = getApp().getProperty("DATA_ID");
+        title = Properties.getValue("NAME_ID");
+        value = Properties.getValue("DATA_ID");
     }
 
     function compute_resting_hr() {
@@ -178,6 +183,55 @@ class BonusMetrics {
 
         title = "Alti.";
         value = (info != null) ? info.next().data.format("%d") : "--";
+    }
+
+    function compute_acute_chronic_ratio() {
+
+        // Var
+        var acute_days = Properties.getValue("ACUTE_ID") as Number;
+        var acute_duration;
+        var chronic_days = Properties.getValue("CHRONIC_ID") as Number;
+        var chronic_duration;
+
+        // Initialize counters
+        acute_duration = 0;
+        chronic_duration = 0;
+
+        // Get dates
+        var acute_days_id = get_n_days_id(acute_days);
+        var chronic_days_id = get_n_days_id(chronic_days);
+
+        // Get user activity history
+        var activityIterator = UserProfile.getUserActivityHistory();
+
+        // Iterate through runs and agg durations
+        if (activityIterator != null) {
+
+            var activity = activityIterator.next();
+
+            while (activity != null) {
+
+                if ((activity.type == 1) && activity.startTime.greaterThan(acute_days_id)) {
+                    acute_duration += activity.duration.value(); // seconds
+                }
+
+                if ((activity.type == 1) && activity.startTime.greaterThan(chronic_days_id)) {
+                    chronic_duration += activity.duration.value(); // seconds
+                }
+
+                activity = activityIterator.next();
+            }
+        }
+
+        // Compute ratio
+        if ((chronic_duration == 0) | (chronic_days == 0) | (acute_days == 0)) {
+            value = "--";
+        } else {
+            var load = (acute_duration.toFloat() / acute_days) / (chronic_duration.toFloat() / chronic_days) - 1;
+            var sym = (load > 0) ? "+" : "";
+            value = sym + Math.round(100 * load).format("%d") + "%";
+        }
+        title = "Load";
     }
 }
         

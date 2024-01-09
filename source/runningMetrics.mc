@@ -1,3 +1,4 @@
+import Toybox.Application;
 import Toybox.Lang;
 import Toybox.Time;
 import Toybox.Time.Gregorian;
@@ -29,23 +30,10 @@ class RunningMetrics {
         n_days = (window == 0) ? get_day_of_week() : 7; // 1 to 7
     }
 
-    function get_n_days_id(n_days) {
-        var n_days_secs = new Time.Duration(-1 * (n_days - 1) * Gregorian.SECONDS_PER_DAY);
-        var n_days_info = Gregorian.utcInfo(Time.now().add(n_days_secs), Time.FORMAT_SHORT);
-        return Gregorian.moment({
-            :year   => n_days_info.year,
-            :month  => n_days_info.month,
-            :day    => n_days_info.day,
-            :hour   => 0,
-            :minute => 1,
-        });
-    }
-
     function compute() {
 
         //--------------------------------------
         // Distance, duration and runs count
-
         var n_days_id = self.get_n_days_id(self.n_days);
 
         // Get user activity history
@@ -58,7 +46,7 @@ class RunningMetrics {
 
             while (activity != null) {
 
-                // activity is not null but all its attributes are if the activity is running
+                // activity is not null but all its attributes are during an activity
                 // This is the case when using the "resume later" option !
                 if ((activity.type == 1) && activity.startTime.greaterThan(n_days_id)) {
 

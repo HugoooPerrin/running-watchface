@@ -18,16 +18,15 @@
     <string id="ColorOrange">Orange</string>
     <string id="ColorPurple">Purple</string>
 
+    <string id="ACUTE_TITLE">Acute window</string>
+    <string id="CHRONIC_TITLE">Chronic window</string>
+
     <string id="DATA_SOURCE_TITLE">Data source</string>
     <string id="week">Current week</string>
     <string id="rolling7d">Last 7 days</string>
 
-    <string id="METHOD_TITLE">Update method</string>
-    <string id="save">Pre-compute once</string>
-    <string id="compute">Compute on each update</string>
-
-    <string id="BONUS_1_TITLE">1st datafield</string>
-    <string id="BONUS_2_TITLE">2nd datafield</string>
+    <string id="BONUS_1_TITLE">Free datafield 1</string>
+    <string id="BONUS_2_TITLE">Free datafield 2</string>
 
     <string id="counter">Race countdown (define date below)</string>
     <string id="vo2">Estimated VO2max</string>
@@ -39,6 +38,7 @@
     <string id="free_one">Custom datafield</string>
     <string id="seconds">Seconds</string>
     <string id="altitude">Altitude</string>
+    <string id="ac_ratio">A:C workload ratio</string>
 
     <string id="RACE_DATE_TITLE">Next race date</string>
     <string id="NAME_TITLE">Custom data title</string>

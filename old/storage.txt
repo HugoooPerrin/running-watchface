@@ -1,0 +1,83 @@
+<setting propertyKey="@Properties.METHOD_ID" title="@Strings.METHOD_TITLE">
+    <settingConfig type="list" >
+        <listEntry value="0">@Strings.save</listEntry>
+        <listEntry value="1">@Strings.compute</listEntry>
+    </settingConfig>
+</setting>
+
+<string id="METHOD_TITLE">Update method</string>
+<string id="save">Pre-compute once</string>
+<string id="compute">Compute on each update</string>
+
+<property id="METHOD_ID" type="number">1</property>
+
+function initialize() {
+    WatchFace.initialize();
+
+    var method = Properties.getValue("METHOD_ID") as Number;
+
+    if (method == 0) {
+        // Compute weekly metrics
+        var window = Properties.getValue("DATA_SOURCE_ID") as Number;
+        var running_metrics = new RunningMetrics(window);
+
+        running_metrics.compute();
+        
+        var distance = running_metrics.get_distance();
+        var time = running_metrics.get_time();
+        var runs = running_metrics.get_runs();
+        var climbed = running_metrics.get_climbed();
+
+        // Store them
+        Storage.setValue("distance", distance);
+        Storage.setValue("time", time);
+        Storage.setValue("runs", runs);
+        Storage.setValue("climbed", climbed);
+    }
+}
+
+var method = Properties.getValue("METHOD_ID") as Number;
+
+if (method == 0) {
+    // Get pre-computed weekly metrics
+    distance = Storage.getValue("distance");
+    time = Storage.getValue("time");
+    runs = Storage.getValue("runs");
+    climbed = Storage.getValue("climbed");
+
+} else if (method == 1) {
+    // Compute weekly metrics
+    var window = Properties.getValue("DATA_SOURCE_ID") as Number;
+    var running_metrics = new RunningMetrics(window);
+
+    running_metrics.compute();
+    
+    distance = running_metrics.get_distance();
+    time = running_metrics.get_time();
+    runs = running_metrics.get_runs();
+    climbed = running_metrics.get_climbed();
+    a2c_ratio = running_metrics.get_acute_chronic_ratio();
+}
+
+function onHide() as Void {
+    var method = Properties.getValue("METHOD_ID") as Number;
+
+    if (method == 0) {
+        // Compute weekly metrics
+        var window = Properties.getValue("DATA_SOURCE_ID") as Number;
+        var running_metrics = new RunningMetrics(window);
+
+        running_metrics.compute();
+        
+        var distance = running_metrics.get_distance();
+        var time = running_metrics.get_time();
+        var runs = running_metrics.get_runs();
+        var climbed = running_metrics.get_climbed();
+
+        // Store them
+        Storage.setValue("distance", distance);
+        Storage.setValue("time", time);
+        Storage.setValue("runs", runs);
+        Storage.setValue("climbed", climbed);
+    }
+}

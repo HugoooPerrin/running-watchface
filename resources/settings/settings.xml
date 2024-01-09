@@ -11,11 +11,12 @@
         </settingConfig>
     </setting>
 
-    <setting propertyKey="@Properties.METHOD_ID" title="@Strings.METHOD_TITLE">
-        <settingConfig type="list" >
-            <!-- <listEntry value="0">@Strings.save</listEntry> -->
-            <listEntry value="1">@Strings.compute</listEntry>
-        </settingConfig>
+    <setting propertyKey="@Properties.ACUTE_ID" title="@Strings.ACUTE_TITLE">
+        <settingConfig type="numeric" />
+    </setting>
+
+    <setting propertyKey="@Properties.CHRONIC_ID" title="@Strings.CHRONIC_TITLE">
+        <settingConfig type="numeric" />
     </setting>
 
     <setting propertyKey="@Properties.BONUS_1_ID" title="@Strings.BONUS_1_TITLE">
@@ -30,6 +31,7 @@
             <listEntry value="6">@Strings.free_one</listEntry>
             <listEntry value="8">@Strings.seconds</listEntry>
             <listEntry value="9">@Strings.altitude</listEntry>
+            <listEntry value="10">@Strings.ac_ratio</listEntry>
         </settingConfig>
     </setting>
 
@@ -45,6 +47,7 @@
             <listEntry value="6">@Strings.free_one</listEntry>
             <listEntry value="8">@Strings.seconds</listEntry>
             <listEntry value="9">@Strings.altitude</listEntry>
+            <listEntry value="10">@Strings.ac_ratio</listEntry>
         </settingConfig>
     </setting>
 

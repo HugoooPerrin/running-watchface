@@ -1,5 +1,4 @@
 import Toybox.Application;
-import Toybox.Application.Storage;
 import Toybox.ActivityMonitor;
 import Toybox.Graphics;
 import Toybox.Lang;
@@ -13,27 +12,6 @@ class runningwfView extends WatchUi.WatchFace {
 
     function initialize() {
         WatchFace.initialize();
-
-        var method = getApp().getProperty("METHOD_ID") as Number;
-
-        if (method == 0) {
-            // Compute weekly metrics
-            var window = getApp().getProperty("DATA_SOURCE_ID") as Number;
-            var running_metrics = new RunningMetrics(window);
-
-            running_metrics.compute();
-            
-            var distance = running_metrics.get_distance();
-            var time = running_metrics.get_time();
-            var runs = running_metrics.get_runs();
-            var climbed = running_metrics.get_climbed();
-
-            // Store them
-            Storage.setValue("distance", distance);
-            Storage.setValue("time", time);
-            Storage.setValue("runs", runs);
-            Storage.setValue("climbed", climbed);
-        }
     }
 
     // Load your resources here
@@ -60,63 +38,53 @@ class runningwfView extends WatchUi.WatchFace {
 
         // Update minutes
         var minutes = View.findDrawableById("MinutesLabel") as Text;
-        minutes.setColor(getApp().getProperty("ForegroundColor") as Number);
+        minutes.setColor(Properties.getValue("ForegroundColor") as Number);
         minutes.setText(clockTime.min.format("%02d"));
 
         //-----------------------------------
         // DATA
-        var method = getApp().getProperty("METHOD_ID") as Number;
 
         var distance = "--";
         var time = "--";
         var runs = "--";
         var climbed = "--";
+    
+        // Compute weekly metrics
+        var window = Properties.getValue("DATA_SOURCE_ID") as Number;
+        var running_metrics = new RunningMetrics(window);
 
-        if (method == 0) {
-            // Get pre-computed weekly metrics
-            distance = Storage.getValue("distance");
-            time = Storage.getValue("time");
-            runs = Storage.getValue("runs");
-            climbed = Storage.getValue("climbed");
-
-        } else if (method == 1) {
-            // Compute weekly metrics
-            var window = getApp().getProperty("DATA_SOURCE_ID") as Number;
-            var running_metrics = new RunningMetrics(window);
-
-            running_metrics.compute();
-            
-            distance = running_metrics.get_distance();
-            time = running_metrics.get_time();
-            runs = running_metrics.get_runs();
-            climbed = running_metrics.get_climbed();
-        }
+        running_metrics.compute();
+        
+        distance = running_metrics.get_distance();
+        time = running_metrics.get_time();
+        runs = running_metrics.get_runs();
+        climbed = running_metrics.get_climbed();
 
         // Elevation gain
         var name1 = View.findDrawableById("Name1") as Text;
         var data1 = View.findDrawableById("Data1") as Text;
-        name1.setColor(getApp().getProperty("ForegroundColor") as Number);
+        name1.setColor(Properties.getValue("ForegroundColor") as Number);
         name1.setText("Climb");
         data1.setText(climbed.format("%d"));
 
         // Duration
         var name2 = View.findDrawableById("Name2") as Text;
         var data2 = View.findDrawableById("Data2") as Text;
-        name2.setColor(getApp().getProperty("ForegroundColor") as Number);
+        name2.setColor(Properties.getValue("ForegroundColor") as Number);
         name2.setText("Time");
         data2.setText(time);
 
         // Distance
         var name3 = View.findDrawableById("Name3") as Text;
         var data3 = View.findDrawableById("Data3") as Text;
-        name3.setColor(getApp().getProperty("ForegroundColor") as Number);
+        name3.setColor(Properties.getValue("ForegroundColor") as Number);
         name3.setText("Km");
         data3.setText(distance);
 
         // Number of runs
         var name4 = View.findDrawableById("Name4") as Text;
         var data4 = View.findDrawableById("Data4") as Text;
-        name4.setColor(getApp().getProperty("ForegroundColor") as Number);
+        name4.setColor(Properties.getValue("ForegroundColor") as Number);
         if (runs.toNumber() <= 1) {
             name4.setText("Run");
         } else {
@@ -125,11 +93,11 @@ class runningwfView extends WatchUi.WatchFace {
         data4.setText(runs);
 
         // Bonus field 1
-        var bonus_field_1 = new BonusMetrics(getApp().getProperty("BONUS_1_ID") as Number);
+        var bonus_field_1 = new BonusMetrics(Properties.getValue("BONUS_1_ID") as Number);
 
         var name5 = View.findDrawableById("Name5") as Text;
         var data5 = View.findDrawableById("Data5") as Text;
-        name5.setColor(getApp().getProperty("ForegroundColor") as Number);
+        name5.setColor(Properties.getValue("ForegroundColor") as Number);
         name5.setText(bonus_field_1.get_title());
         data5.setText(bonus_field_1.get_value());
 
@@ -138,7 +106,7 @@ class runningwfView extends WatchUi.WatchFace {
 
         var name6 = View.findDrawableById("Name6") as Text;
         var data6 = View.findDrawableById("Data6") as Text;
-        name6.setColor(getApp().getProperty("ForegroundColor") as Number);
+        name6.setColor(Properties.getValue("ForegroundColor") as Number);
         name6.setText(today.month);
         data6.setText(today.day.format("%02d"));
 
@@ -147,16 +115,16 @@ class runningwfView extends WatchUi.WatchFace {
 
         var name7 = View.findDrawableById("Name7") as Text;
         var data7 = View.findDrawableById("Data7") as Text;
-        name7.setColor(getApp().getProperty("ForegroundColor") as Number);
+        name7.setColor(Properties.getValue("ForegroundColor") as Number);
         name7.setText("Batt.");
         data7.setText(battery);
 
         // Bonus field 2
-        var bonus_field_2 = new BonusMetrics(getApp().getProperty("BONUS_2_ID") as Number);
+        var bonus_field_2 = new BonusMetrics(Properties.getValue("BONUS_2_ID") as Number);
 
         var name8 = View.findDrawableById("Name8") as Text;
         var data8 = View.findDrawableById("Data8") as Text;
-        name8.setColor(getApp().getProperty("ForegroundColor") as Number);
+        name8.setColor(Properties.getValue("ForegroundColor") as Number);
         name8.setText(bonus_field_2.get_title());
         data8.setText(bonus_field_2.get_value());
         
@@ -165,7 +133,7 @@ class runningwfView extends WatchUi.WatchFace {
         View.onUpdate(dc);
 
         // Hour strip
-        var hour_strip = Application.getApp().getProperty("Strip");
+        var hour_strip = Application.Properties.getValue("Strip");
         if (hour_strip) {
             draw_strip(dc);
         }
@@ -175,27 +143,6 @@ class runningwfView extends WatchUi.WatchFace {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
-
-        var method = getApp().getProperty("METHOD_ID") as Number;
-
-        if (method == 0) {
-            // Compute weekly metrics
-            var window = getApp().getProperty("DATA_SOURCE_ID") as Number;
-            var running_metrics = new RunningMetrics(window);
-
-            running_metrics.compute();
-            
-            var distance = running_metrics.get_distance();
-            var time = running_metrics.get_time();
-            var runs = running_metrics.get_runs();
-            var climbed = running_metrics.get_climbed();
-
-            // Store them
-            Storage.setValue("distance", distance);
-            Storage.setValue("time", time);
-            Storage.setValue("runs", runs);
-            Storage.setValue("climbed", climbed);
-        }
     }
 
     // The user has just looked at their watch. Timers and animations may be started here.
